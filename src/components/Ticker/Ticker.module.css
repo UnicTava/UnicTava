@@ -1,0 +1,88 @@
+.tickerContainer {
+  width: 100%;
+  overflow: hidden;
+  background: transparent;
+  padding: 24px 0;
+  position: relative;
+}
+
+.tickerContent {
+  display: flex;
+  white-space: nowrap;
+  animation: scroll infinite linear;
+  gap: 2rem;
+}
+
+.tickerGroup {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.imageWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  min-width: fit-content;
+}
+
+.tickerText {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #777CDD;
+  white-space: nowrap;
+  padding-right: 2rem;
+}
+
+.tickerImage {
+  display: block;
+  object-fit: contain;
+  filter: grayscale(0%);
+  transition: filter 0.3s ease;
+  flex-shrink: 0;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .tickerText {
+    font-size: 20px;
+  }
+
+  .tickerContainer {
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .tickerText {
+    font-size: 16px;
+  }
+
+  .tickerContainer {
+    padding: 16px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .tickerText {
+    font-size: 14px;
+  }
+
+  .tickerContainer {
+    padding: 12px 0;
+  }
+}

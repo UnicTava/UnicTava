@@ -1,0 +1,97 @@
+import { NextRequest, NextResponse } from 'next/server'
+import { createClient } from '@/lib/supabase-server'
+
+export async function POST(request: NextRequest) {
+  try {
+    // Verify admin authentication with Supabase token
+    const authHeader = request.headers.get('authorization')
+    const token = authHeader?.replace('Bearer ', '')
+
+    if (!token) {
+      return NextResponse.json({ error: 'Unauthorized - No token provided' }, { status: 401 })
+    }
+
+    // Verify token with Supabase
+    const supabase = createClient()
+    const { data: { user }, error: authError } = await supabase.auth.getUser(token)
+
+    if (authError || !user) {
+      console.error('Auth verification error:', authError)
+      return NextResponse.json({ error: 'Unauthorized - Invalid token' }, { status: 401 })
+    }
+
+    const formData = await request.formData()
+    const file = formData.get('file') as File
+    const testimonialId = formData.get('testimonialId') as string | null
+
+    if (!file) {
+      return NextResponse.json({ error: 'No file provided' }, { status: 400 })
+    }
+
+    // Validate file type
+    const allowedTypes = ['image/jpeg', 'image/jpg', 'image/png', 'image/gif', 'image/webp']
+    if (!allowedTypes.includes(file.type)) {
+      return NextResponse.json(
+        { error: 'Invalid file type. Only JPEG, PNG, GIF, and WebP are allowed.' },
+        { status: 400 }
+      )
+    }
+
+    // Validate file size (max 5MB for avatars)
+    const maxSize = 5 * 1024 * 1024 // 5MB
+    if (file.size > maxSize) {
+      return NextResponse.json(
+        { error: 'File too large. Maximum size is 5MB.' },
+        { status: 400 }
+      )
+    }
+
+    // Generate unique filename
+    const timestamp = Date.now()
+    const randomString = Math.random().toString(36).substring(7)
+    const fileExt = file.name.split('.').pop()
+    const fileName = `${timestamp}-${randomString}.${fileExt}`
+    const filePath = testimonialId ? `${testimonialId}/${fileName}` : fileName
+
+    // Convert File to ArrayBuffer then to Buffer
+    const arrayBuffer = await file.arrayBuffer()
+    const buffer = Buffer.from(arrayBuffer)
+
+    // Upload to Supabase Storage
+    const { data, error } = await supabase.storage
+      .from('project-images')
+      .upload(`testimonials/${filePath}`, buffer, {
+        contentType: file.type,
+        cacheControl: '3600',
+        upsert: false
+      })
+
+    if (error) {
+      console.error('Supabase upload error:', error)
+      console.error('Error details:', JSON.stringify(error, null, 2))
+      return NextResponse.json(
+        { error: 'Failed to upload avatar', details: error.message || error },
+        { status: 500 }
+      )
+    }
+
+    // Get public URL
+    const { data: urlData } = supabase.storage
+      .from('project-images')
+      .getPublicUrl(data.path)
+
+    return NextResponse.json({
+      success: true,
+      url: urlData.publicUrl,
+      path: data.path
+    })
+
+  } catch (error) {
+    console.error('Upload avatar error:', error)
+    console.error('Error stack:', error instanceof Error ? error.stack : 'No stack trace')
+    return NextResponse.json(
+      { error: 'Internal server error', details: error instanceof Error ? error.message : String(error) },
+      { status: 500 }
+    )
+  }
+}

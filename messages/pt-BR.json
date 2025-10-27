@@ -1,0 +1,980 @@
+{
+  "navigation": {
+    "home": "Início",
+    "services": "Serviços",
+    "projects": "Projetos",
+    "about": "Sobre nós",
+    "contact": "CONTATO"
+  },
+  "hero": {
+    "title": "Transformamos ideias em experiências 3D imersivas.",
+    "subtitle": "Soluções visuais, técnicas e interativas para empresas que querem inovar.",
+    "requestProposal": "Solicite uma proposta",
+    "learnMore": "Saiba Mais"
+  },
+  "services": {
+    "sectionTitle": "Transforme suas ideias em realidade com nossas soluções 3D de ponta.",
+    "requestProposal": "Solicite uma proposta",
+    "learnMore": "Saiba Mais",
+    "altAI": "Inteligência Artificial 3D",
+    "altCinematic": "Cinemática 3D",
+    "altSimulation": "Simulação 3D",
+    "altEducation": "Educação e Treinamento 3D",
+    "altGames": "Desenvolvimento de Jogos 3D",
+    "altVR": "Realidade Virtual e Aumentada"
+  },
+  "iaSetorial": {
+    "title": "Inteligência Artificial Setorial",
+    "description": "A Unictava se destaca pela integração da inteligência artificial em ambientes 3D. Criamos avatares com {highlight1} que não apenas interagem com os usuários, mas também são especialistas em setores específicos, como {highlight2}, {highlight3} e {highlight4}. Esses avatares inteligentes podem ser personalizados para atender a {highlight5}, oferecendo {highlight6}. Seja atuando como tutores em um ambiente de treinamento ou como assistentes em uma {highlight7}, nossos {highlight8} elevam a interação com o usuário a um novo nível.",
+    "highlight1": "inteligência artificial",
+    "highlight2": "simulação",
+    "highlight3": "treinamento",
+    "highlight4": "assistência",
+    "highlight5": "necessidades particulares",
+    "highlight6": "suporte especializado em tempo real",
+    "highlight7": "simulação complexa",
+    "highlight8": "avatares de IA"
+  },
+  "contact": {
+    "title": "Solicite uma proposta personalizada agora!",
+    "buttonContact": "Contato",
+    "buttonProposal": "Solicite uma proposta",
+    "name": "Nome",
+    "namePlaceholder": "Como podemos te chamar?",
+    "email": "E-mail:",
+    "emailPlaceholder": "Para onde devemos responder?",
+    "company": "Empresa:",
+    "companyPlaceholder": "Você representa alguma empresa ou instituição?",
+    "position": "Cargo ou setor:",
+    "positionPlaceholder": "Se quiser, nos diga onde atua ou qual seu papel no projeto.",
+    "timeline": "Prazo desejado",
+    "timelinePlaceholder": "00/00/0000",
+    "budget": "Orçamento estimado",
+    "budgetPlaceholder": "R$ 0,00",
+    "projectType": "Tipo de projeto",
+    "projectTypePlaceholder": "Qual solução você está buscando? (ex: IA, Simulação, Cinemática, Treinamento, VR, etc.)",
+    "message": "Mensagem:",
+    "messagePlaceholder": "Conte um pouco do que você está imaginando. Quanto mais detalhes, melhor a gente entende sua ideia!",
+    "fileUploadLabel": "Adicione imagens, esboços ou qualquer outro material visual que ajude a entender melhor o projeto",
+    "fileDragDrop": "Arraste o arquivo para cá",
+    "fileDragOr": "ou",
+    "fileClickUpload": "Clique para fazer upload",
+    "privacyConsentText": "Declaro que li e aceito a",
+    "privacyPolicyLink": "Política de Privacidade",
+    "submitButton": "Enviar Mensagem",
+    "submitting": "Enviando...",
+    "successTitle": "Mensagem enviada!",
+    "successMessage": "Recebemos sua mensagem e entraremos em contato em breve.",
+    "successProposalTitle": "Proposta enviada com sucesso!",
+    "successProposalMessage": "Recebemos sua proposta{files}. Nossa equipe analisará e entrará em contato em breve.",
+    "successProposalFiles": " com {count} arquivo(s)",
+    "errorTitle": "Ops! Algo deu errado",
+    "errorMessage": "Ocorreu um erro ao enviar o formulário. Por favor, tente novamente.",
+    "projectTypes": {
+      "ai": "INTELIGÊNCIA ARTIFICIAL 3D",
+      "cinematic": "CINEMÁTICA 3D",
+      "simulation": "SIMULAÇÕES 3D",
+      "education": "EDUCAÇÃO E TREINAMENTO 3D",
+      "games": "JOGOS 3D",
+      "vrar": "VR AR",
+      "other": "OUTROS"
+    },
+    "ticker": "3D | REALIDADE VIRTUAL | REALIDADE AUMENTADA | SIMULAÇÃO | IA | EXPERIÊNCIAS IMERSIVAS | CINEMÁTICA | INOVAÇÃO | VISUAL INTERATIVO | MODELAGEM | GAMES | TREINAMENTO VIRTUAL | METAVERSO | TECNOLOGIA | EXPERIÊNCIA DIGITAL | DESIGN 3D | ANIMAÇÃO | INTERATIVIDADE | REAL-TIME | ENGAJAMENTO"
+  },
+  "footer": {
+    "quickLinks": "Links Rápidos",
+    "resources": "Recursos",
+    "home": "Home",
+    "about": "Sobre",
+    "services": "Serviços",
+    "projects": "Projetos",
+    "contact": "Contato",
+    "privacyPolicy": "Política de Privacidade",
+    "cookiePolicy": "Política de Cookies",
+    "termsOfService": "Termos de Serviço",
+    "email": "E-mail",
+    "emailValue": "contato@unictava.com",
+    "address": "Endereço",
+    "addressValue": "Via Montefeltro, 8/10, 20156 Milano MI, Italia",
+    "copyright": "© {year} UnicTava. Todos os direitos reservados | Desenvolvido com criatividade e tecnologia."
+  },
+  "testimonials": {
+    "ariaLabel": "Ir para depoimento {number}",
+    "testimonial1Name": "Ana Ribeiro",
+    "testimonial1Position": "Diretora de Inovação",
+    "testimonial1Company": "Biotec Edu",
+    "testimonial1Quote": "Ficamos impressionados com o nível de imersão e interatividade. A equipe entendeu exatamente o que precisávamos e elevou o projeto a outro patamar!",
+    "testimonial2Name": "Lucas Freitas",
+    "testimonial2Position": "CEO",
+    "testimonial2Company": "GameLab Studio",
+    "testimonial2Quote": "O profissionalismo e a qualidade da entrega foram impecáveis. Nosso jogo ganhou vida de um jeito que surpreendeu até nossos investidores.",
+    "testimonial3Name": "Carla Menezes",
+    "testimonial3Position": "Gerente de Comunicação",
+    "testimonial3Company": "NexaCorp",
+    "testimonial3Quote": "A produção 3D superou nossas expectativas. A campanha ficou visualmente impactante e ajudou a engajar nosso público de forma única."
+  },
+  "accessibility": {
+    "closeModal": "Fechar modal",
+    "selectLanguage": "Selecionar idioma"
+  },
+  "modals": {
+    "ai": {
+      "title": "Inteligência",
+      "titleHighlight": "Artificial 3D",
+      "description": "Revolucione suas experiências 3D com avatares inteligentes, treinamentos interativos e atendimento humanizado.",
+      "feature1Title": "Nossos Treinamentos",
+      "feature1Text": "Transforme cada sessão em uma experiência envolvente e realista com respostas imediatas e personalizadas dos nossos avatares 3D. Aumente a interação e o aprendizado com nossa tecnologia de ponta.",
+      "feature2Title": "Atendimento Online",
+      "feature2Text": "Esqueça os chatbots tradicionais. Nossos \"human bots\" 3D oferecem um atendimento ao cliente avançado e humanizado diretamente no seu site, melhorando significativamente a satisfação dos usuários.",
+      "feature3Title": "Suporte Digital",
+      "feature3Text": "Descubra o futuro das interações 3D com nossa inteligência artificial.",
+      "learnMore": "Saiba Mais",
+      "imageAlt": "Inteligência Artificial 3D"
+    },
+    "games": {
+      "title": "Desenvolvimento",
+      "titleHighlight": "de Jogos 3D",
+      "description": "Do conceito ao lançamento: desenvolvemos jogos 3D imersivos, em múltiplas plataformas.",
+      "feature1Title": "Nossos Treinamentos",
+      "feature1Text": "Transforme cada sessão em uma experiência envolvente e realista com respostas imediatas e personalizadas dos nossos avatares 3D. Aumente a interação e o aprendizado com nossa tecnologia de ponta.",
+      "feature2Title": "Atendimento Online",
+      "feature2Text": "Esqueça os chatbots tradicionais. Nossos \"human bots\" 3D oferecem um atendimento ao cliente avançado e humanizado diretamente no seu site, melhorando significativamente a satisfação dos usuários.",
+      "feature3Title": "Suporte Digital",
+      "feature3Text": "Descubra o futuro das interações 3D com nossa inteligência artificial.",
+      "learnMore": "Saiba Mais",
+      "imageAlt": "Desenvolvimento de Jogos 3D"
+    },
+    "cinematics": {
+      "titleHighlight": "Cinemática 3D",
+      "description": "Prepare suas equipes com experiências realistas e seguras por meio de ambientes simulados em 3D.",
+      "feature1Title": "Nossos Treinamentos",
+      "feature1Text": "Transforme cada sessão em uma experiência envolvente e realista com respostas imediatas e personalizadas dos nossos avatares 3D. Aumente a interação e o aprendizado com nossa tecnologia de ponta.",
+      "feature2Title": "Atendimento Online",
+      "feature2Text": "Esqueça os chatbots tradicionais. Nossos \"human bots\" 3D oferecem um atendimento ao cliente avançado e humanizado diretamente no seu site, melhorando significativamente a satisfação dos usuários.",
+      "feature3Title": "Suporte Digital",
+      "feature3Text": "Descubra o futuro das interações 3D com nossa inteligência artificial.",
+      "learnMore": "Saiba Mais",
+      "imageAlt": "Cinemática 3D"
+    },
+    "education": {
+      "title": "Educação e",
+      "titleHighlight": "Treinamento 3D",
+      "description": "Transforme o ensino com experiências de aprendizagem imersivas e tecnológicas.",
+      "feature1Title": "Nossos Treinamentos",
+      "feature1Text": "Transforme cada sessão em uma experiência envolvente e realista com respostas imediatas e personalizadas dos nossos avatares 3D. Aumente a interação e o aprendizado com nossa tecnologia de ponta.",
+      "feature2Title": "Atendimento Online",
+      "feature2Text": "Esqueça os chatbots tradicionais. Nossos \"human bots\" 3D oferecem um atendimento ao cliente avançado e humanizado diretamente no seu site, melhorando significativamente a satisfação dos usuários.",
+      "feature3Title": "Suporte Digital",
+      "feature3Text": "Descubra o futuro das interações 3D com nossa inteligência artificial.",
+      "learnMore": "Saiba Mais",
+      "imageAlt": "Educação e Treinamento 3D"
+    },
+    "vr": {
+      "title": "Realidade Virtual",
+      "titleHighlight": "e Aumentada",
+      "description": "Crie experiências imersivas com realidade aumentada e virtual para diversos contextos.",
+      "feature1Title": "Nossos Treinamentos",
+      "feature1Text": "Transforme cada sessão em uma experiência envolvente e realista com respostas imediatas e personalizadas dos nossos avatares 3D. Aumente a interação e o aprendizado com nossa tecnologia de ponta.",
+      "feature2Title": "Atendimento Online",
+      "feature2Text": "Esqueça os chatbots tradicionais. Nossos \"human bots\" 3D oferecem um atendimento ao cliente avançado e humanizado diretamente no seu site, melhorando significativamente a satisfação dos usuários.",
+      "feature3Title": "Suporte Digital",
+      "feature3Text": "Descubra o futuro das interações 3D com nossa inteligência artificial.",
+      "learnMore": "Saiba Mais",
+      "imageAlt": "Realidade Virtual e Aumentada"
+    },
+    "simulation": {
+      "titleHighlight": "Simulação 3D",
+      "description": "Prepare suas equipes com experiências realistas e seguras por meio de ambientes simulados em 3D.",
+      "feature1Title": "Nossos Treinamentos",
+      "feature1Text": "Transforme cada sessão em uma experiência envolvente e realista com respostas imediatas e personalizadas dos nossos avatares 3D. Aumente a interação e o aprendizado com nossa tecnologia de ponta.",
+      "feature2Title": "Atendimento Online",
+      "feature2Text": "Esqueça os chatbots tradicionais. Nossos \"human bots\" 3D oferecem um atendimento ao cliente avançado e humanizado diretamente no seu site, melhorando significativamente a satisfação dos usuários.",
+      "feature3Title": "Suporte Digital",
+      "feature3Text": "Descubra o futuro das interações 3D com nossa inteligência artificial.",
+      "learnMore": "Saiba Mais",
+      "imageAlt": "Simulação 3D"
+    }
+  },
+  "about": {
+    "history": {
+      "title": "Nossa História",
+      "description": "A Unictava nasceu da paixão pela inovação tecnológica e da visão de transformar a forma como as empresas utilizam tecnologias imersivas. Nossa jornada começou com uma profunda curiosidade sobre o potencial do 3D e da realidade virtual, combinada com uma contínua exploração de soluções de ponta. Com anos de experiência no setor e um constante aprendizado em modelagem e programação, construímos uma base sólida de competências que nos permite oferecer resultados excepcionais aos nossos clientes. Hoje, a Unictava é reconhecida como um parceiro de confiança para empresas que buscam integrar as tecnologias mais avançadas em seus processos.",
+      "imageAlt": "Nossa História"
+    },
+    "team": {
+      "title": "Nosso Time",
+      "description": "Nosso time é composto por profissionais altamente qualificados, cada um com competências específicas em sua área. A combinação de criatividade, habilidades técnicas e dedicação é o que nos permite realizar projetos inovadores e de alta qualidade para nossos clientes. Somos mais do que uma equipe: somos um grupo de entusiastas trabalhando juntos para transformar ideias em realidade.",
+      "imageAlt": "Nosso Time"
+    },
+    "mission": {
+      "title": "Missão",
+      "description": "A missão da Unictava é levar tecnologias 3D de ponta para realidades empresariais e institucionais, transformando a inovação em resultados concretos e tangíveis. Nos dedicamos a facilitar a adoção de soluções imersivas e de inteligência artificial setorial, personalizadas para atender às necessidades específicas de nossos clientes. Seja em simulações, treinamentos ou assistência por meio de avatares inteligentes, nosso objetivo é sempre melhorar a eficiência e a eficácia das operações de nossos clientes, ao mesmo tempo em que reduzimos os custos operacionais.",
+      "imageAlt": "Missão Unictava"
+    },
+    "vision": {
+      "title": "Visão",
+      "description": "A missão da Unictava é levar tecnologias 3D de ponta para realidades empresariais e institucionais, transformando a inovação em resultados concretos e tangíveis. Nos dedicamos a facilitar a adoção de soluções imersivas e de inteligência artificial setorial, personalizadas para atender às necessidades específicas de nossos clientes. Seja em simulações, treinamentos ou assistência por meio de avatares inteligentes, nosso objetivo é sempre melhorar a eficiência e a eficácia das operações de nossos clientes, ao mesmo tempo em que reduzimos os custos operacionais.",
+      "imageAlt": "Visão Unictava"
+    },
+    "values": {
+      "title": "Nossos Valores",
+      "items": [
+        {
+          "title": "Inovação",
+          "description": "Estamos constantemente em busca de novas maneiras de levar a tecnologia a níveis superiores, explorando as últimas fronteiras da IA e do 3D."
+        },
+        {
+          "title": "Qualidade",
+          "description": "Garantimos resultados excelentes, com atenção aos detalhes em todas as fases do projeto, desde a concepção até a implementação final."
+        },
+        {
+          "title": "Transparência",
+          "description": "Acreditamos em uma comunicação clara e honesta com nossos clientes, construindo relacionamentos baseados na confiança e na colaboração duradoura."
+        }
+      ]
+    },
+    "future": {
+      "title": "Propósito Atual e Futuro",
+      "description": "O foco atual da Unictava é permanecer na vanguarda do setor de tecnologias 3D, <highlight1>expandindo nossos serviços</highlight1> e continuar a inovar nos campos da <highlight2>realidade virtual</highlight2>, da <highlight3>inteligência artificial</highlight3> e das <highlight4>simulações imersivas</highlight4>. <highlight5>Olhamos para o futuro com o objetivo</highlight5> de consolidar nossa posição como <highlight6>líderes do setor</highlight6> e <highlight7>continuar a oferecer soluções que transformem as realidades empresariais</highlight7>.",
+      "ctaButton": "Solicite uma proposta"
+    }
+  },
+  "metadata": {
+    "title": "UnicTava - Transformamos ideias em experiências 3D imersivas de ponta.",
+    "description": "Soluções visuais, técnicas e interativas para empresas que querem inovar.",
+    "keywords": "3D, experiências imersivas, soluções visuais, tecnologia, inovação"
+  },
+  "servicesPage": {
+    "learnMore": "Saiba Mais",
+    "ai": {
+      "mainTitle": "Inteligência Artificial 3D",
+      "heroTitle": "Descubra como nossas soluções de inteligência artificial 3D podem transformar o seu negócio.",
+      "description": "Revolucione suas experiências com avatares 3D dotados de inteligência artificial. Se você está procurando melhorar simulações, potencializar treinamentos ou oferecer assistência online sem precedentes, nossos avatares interagem de forma natural, elevando a eficácia e o engajamento a novos níveis."
+    },
+    "cinematics": {
+      "mainTitle": "Cinemática 3D",
+      "heroTitle": "Dê vida às suas histórias com nossas extraordinárias Cinemáticas 3D.",
+      "description": "Seja criando personagens totalmente digitais ou integrando filmagens reais com ambientes e efeitos 3D, oferecemos soluções cinematográficas de ponta para cada projeto."
+    },
+    "simulation": {
+      "mainTitle": "Simulação 3D",
+      "heroTitle": "Leve seu treinamento e avaliação a um novo nível com nossas simulações 3D de ponta.",
+      "description": "Projetadas para indústrias, centros de treinamento e instituições, nossas simulações oferecem um ambiente seguro e realista para preparar seus usuários do mundo real."
+    },
+    "education": {
+      "mainTitle": "Educação e Treinamento 3D",
+      "heroTitle": "Transforme a educação e o treinamento com nossas soluções 3D imersivas.",
+      "description": "Se você é uma instituição pública ou privada, oferecemos experiências de aprendizado que capturam e mantêm a atenção dos alunos."
+    },
+    "games": {
+      "mainTitle": "Desenvolvimento de Jogos 3D",
+      "heroTitle": "Traga suas ideias de jogo à vida com nossas soluções de desenvolvimento de jogos 3D.",
+      "description": "Se você está procurando criar um jogo indie ou apoiar um grande projeto, oferecemos expertise de ponta para criar jogos envolventes e de alta qualidade."
+    },
+    "vrar": {
+      "mainTitle": "Realidade Virtual (VR) e Realidade Aumentada (AR)",
+      "heroTitle": "Traga a inovação para suas mãos com nossas soluções de realidade virtual e aumentada.",
+      "description": "Oferecemos experiências imersivas e mistas para uma ampla gama de aplicações, transformando sua visão em realidade."
+    },
+    "advantages": {
+      "title": "Vantagens Específicas",
+      "tag1": "Interação Natural",
+      "tag2": "Personalização",
+      "tag3": "Eficiência e Economia de Tempo",
+      "tag4": "Acessibilidade"
+    },
+    "technologies": {
+      "title": "Tecnologias Utilizadas",
+      "tag1": "Machine Learning",
+      "tag2": "Reconhecimento Vocal",
+      "tag3": "Processamento de Linguagem Natural (NLP)",
+      "tag4": "Gráficos 3D Avançados"
+    },
+    "projects": {
+      "title": "Projetos Realizados",
+      "project1Title": "Treinamento Corporativo",
+      "project1Desc": "Implementação de avatares 3D para cursos de treinamento interativos, melhorando o aprendizado e a retenção de informações.",
+      "project2Title": "Atendimento ao Cliente",
+      "project2Desc": "Substituição de chatbots tradicionais por human bots 3D, aumentando a satisfação dos clientes e reduzindo os tempos de resposta.",
+      "project3Title": "Simulações Médicas",
+      "project3Desc": "Criação de simulações realistas para treinamento de médicos e enfermeiros, utilizando avatares que podem responder e interagir em tempo real."
+    },
+    "faq": {
+      "title": "FAQ",
+      "question1": "Quais são os requisitos técnicos para implementar as soluções de VR e AR?",
+      "answer1": "Os requisitos variam de acordo com a complexidade do projeto, mas geralmente requerem uma plataforma com capacidade de renderização 3D e suporte para tecnologias de IA, como NLP e machine learning.",
+      "question2": "Os avatares 3D podem ser integrados aos sistemas existentes?",
+      "answer2": "Sim, nossos avatares são projetados para se integrar facilmente com a maioria dos sistemas CRM, plataformas de e-learning e sites.",
+      "question3": "Qual é o tempo médio de implementação?",
+      "answer3": "O tempo de implementação varia de acordo com a complexidade do projeto, mas normalmente leva entre 4 a 12 semanas para uma solução completa."
+    }
+  },
+  "admin": {
+    "login": {
+      "title": "Admin Dashboard",
+      "username": "Usuário",
+      "password": "Senha",
+      "passwordPlaceholder": "Digite sua senha",
+      "loginButton": "Entrar",
+      "loggingIn": "Entrando...",
+      "error": "Falha no login"
+    },
+    "dashboard": {
+      "adminBadge": "ADMIN",
+      "contacts": "Contatos",
+      "proposals": "Propostas",
+      "projects": "Projetos",
+      "testimonials": "Testemunhos",
+      "logout": "Sair",
+      "contactsTitle": "Mensagens de Contato",
+      "proposalsTitle": "Solicitações de Proposta",
+      "projectsTitle": "Galeria de Projetos",
+      "testimonialsTitle": "Depoimentos de Clientes",
+      "contactsDescription": "Visualize todas as mensagens recebidas através do formulário de contato",
+      "proposalsDescription": "Gerencie as solicitações de proposta com arquivos anexados",
+      "projectsDescription": "Gerencie a galeria de projetos exibida no site",
+      "testimonialsDescription": "Gerencie os depoimentos de clientes exibidos no site"
+    },
+    "contacts": {
+      "loading": "Carregando contatos...",
+      "searchPlaceholder": "Buscar por nome, email ou mensagem...",
+      "total": "Total",
+      "today": "Hoje",
+      "noContacts": "Nenhum contato encontrado",
+      "detailsTitle": "Detalhes do Contato",
+      "name": "Nome:",
+      "email": "Email:",
+      "message": "Mensagem:",
+      "sentDate": "Data de Envio:",
+      "replyButton": "Responder por Email"
+    },
+    "proposals": {
+      "loading": "Carregando propostas...",
+      "searchPlaceholder": "Buscar propostas...",
+      "allTypes": "Todos os tipos",
+      "total": "Total",
+      "withAttachments": "Com Anexos",
+      "noProposals": "Nenhuma proposta encontrada",
+      "files": "arquivo(s)",
+      "detailsTitle": "Detalhes da Proposta",
+      "clientInfo": "Informações do Cliente",
+      "company": "Empresa:",
+      "position": "Cargo:",
+      "projectDetails": "Detalhes do Projeto",
+      "projectType": "Tipo de Projeto:",
+      "budget": "Orçamento:",
+      "timeline": "Prazo:",
+      "message": "Mensagem",
+      "attachments": "Anexos",
+      "file": "arquivo",
+      "sentDate": "Data de Envio",
+      "replyButton": "Responder Proposta"
+    },
+    "projects": {
+      "loading": "Carregando projetos...",
+      "searchPlaceholder": "Buscar projetos...",
+      "create": "Criar Projeto",
+      "edit": "Editar Projeto",
+      "delete": "Deletar Projeto",
+      "save": "Salvar",
+      "saving": "Salvando...",
+      "cancel": "Cancelar",
+      "total": "Total",
+      "published": "Publicados",
+      "drafts": "Rascunhos",
+      "noProjects": "Nenhum projeto encontrado",
+      "statusPublished": "Publicado",
+      "statusDraft": "Rascunho",
+      "confirmDelete": "Excluir Projeto",
+      "confirmDeleteText": "Tem certeza que deseja excluir o projeto \"{title}\"? Esta ação não pode ser desfeita.",
+      "titles": "Títulos",
+      "titlePt": "Título (Português)",
+      "titleEn": "Título (Inglês)",
+      "titleIt": "Título (Italiano)",
+      "descriptions": "Descrições",
+      "descriptionPt": "Descrição (Português)",
+      "descriptionEn": "Descrição (Inglês)",
+      "descriptionIt": "Descrição (Italiano)",
+      "details": "Detalhes",
+      "tags": "Tags",
+      "addTag": "Adicionar tag",
+      "projectUrl": "Link do Projeto",
+      "status": "Status",
+      "displayOrder": "Ordem de Exibição",
+      "thumbnail": "Imagem Principal",
+      "gallery": "Galeria de Imagens",
+      "uploadThumbnail": "Fazer upload da imagem principal",
+      "uploadGallery": "Adicionar imagens à galeria",
+      "uploading": "Enviando...",
+      "remove": "Remover"
+    },
+    "testimonials": {
+      "loading": "Carregando testemunhos...",
+      "searchPlaceholder": "Buscar testemunhos...",
+      "create": "Criar Testemunho",
+      "edit": "Editar Testemunho",
+      "delete": "Deletar Testemunho",
+      "save": "Salvar",
+      "saving": "Salvando...",
+      "cancel": "Cancelar",
+      "total": "Total",
+      "published": "Publicados",
+      "drafts": "Rascunhos",
+      "noTestimonials": "Nenhum testemunho encontrado",
+      "statusPublished": "Publicado",
+      "statusDraft": "Rascunho",
+      "confirmDelete": "Excluir Testemunho",
+      "confirmDeleteText": "Tem certeza que deseja excluir o testemunho de \"{name}\"? Esta ação não pode ser desfeita.",
+      "names": "Nomes",
+      "namePt": "Nome (Português)",
+      "nameEn": "Nome (Inglês)",
+      "nameIt": "Nome (Italiano)",
+      "positions": "Cargos",
+      "positionPt": "Cargo (Português)",
+      "positionEn": "Cargo (Inglês)",
+      "positionIt": "Cargo (Italiano)",
+      "companies": "Empresas",
+      "companyPt": "Empresa (Português)",
+      "companyEn": "Empresa (Inglês)",
+      "companyIt": "Empresa (Italiano)",
+      "quotes": "Depoimentos",
+      "quotePt": "Depoimento (Português)",
+      "quoteEn": "Depoimento (Inglês)",
+      "quoteIt": "Depoimento (Italiano)",
+      "settings": "Configurações",
+      "status": "Status",
+      "displayOrder": "Ordem de Exibição",
+      "uploadAvatar": "Fazer upload da foto",
+      "uploading": "Enviando...",
+      "remove": "Remover"
+    }
+  },
+  "projects": {
+    "pageTitle": "Nossos Projetos",
+    "pageSubtitle": "Explore nossa galeria de projetos e veja como transformamos ideias em realidade",
+    "loading": "Carregando projetos...",
+    "noProjects": "Nenhum projeto disponível no momento",
+    "backToProjects": "Voltar aos Projetos",
+    "visitProject": "Visitar Projeto",
+    "watchVideo": "Assistir Vídeo",
+    "gallery": "Galeria",
+    "notFound": "Projeto não encontrado"
+  },
+  "notFound": {
+    "title": "404",
+    "subtitle": "Página não encontrada",
+    "description": "A página que você está procurando não existe ou foi movida.",
+    "backToHome": "Voltar para Home"
+  },
+  "aiService": {
+    "hero": {
+      "mainTitle": "Inteligência Artificial 3D",
+      "title": "Descubra como nossas soluções de inteligência artificial 3D podem transformar o seu negócio.",
+      "description": "Revolucione suas experiências com avatares 3D dotados de inteligência artificial. Se você está procurando melhorar simulações, potencializar treinamentos ou oferecer assistência online sem precedentes, nossos avatares interagem de forma natural, elevando a eficácia e o engajamento a novos níveis."
+    },
+    "advantages": {
+      "title": "Vantagens Específicas",
+      "item1Title": "Interação Natural:",
+      "item1Text": "Nossos avatares 3D respondem de forma fluida e humana, criando uma experiência de usuário envolvente.",
+      "item2Title": "Personalização:",
+      "item2Text": "Cada avatar pode ser adaptado às necessidades específicas do seu projeto, tornando cada interação única e relevante.",
+      "item3Title": "Eficiência e Economia de Tempo:",
+      "item3Text": "Automatize as interações repetitivas, permitindo que o pessoal humano se concentre em tarefas mais complexas.",
+      "item4Title": "Acessibilidade:",
+      "item4Text": "Disponíveis 24/7, nossos avatares garantem assistência contínua sem interrupções."
+    },
+    "technologies": {
+      "title": "Tecnologias Utilizadas",
+      "item1Title": "Machine Learning:",
+      "item1Text": "Nossos avatares utilizam algoritmos de aprendizado de máquina para melhorar continuamente suas respostas e interações.",
+      "item2Title": "Reconhecimento Vocal:",
+      "item2Text": "Capacidade de compreender e responder a comandos vocais, melhorando a acessibilidade e a usabilidade.",
+      "item3Title": "Processamento de Linguagem Natural (NLP):",
+      "item3Text": "Nossos avatares são capazes de compreender e gerar linguagem natural, oferecendo respostas precisas e contextuais.",
+      "item4Title": "Gráficos 3D Avançados:",
+      "item4Text": "Utilizamos tecnologias gráficas de última geração para criar avatares realistas e visualmente atraentes."
+    },
+    "projects": {
+      "title": "Exemplos de Projetos Realizados",
+      "item1Title": "Treinamento Corporativo:",
+      "item1Text": "Implementação de avatares 3D para cursos de treinamento interativos, melhorando o aprendizado e a retenção de informações.",
+      "item2Title": "Atendimento ao Cliente:",
+      "item2Text": "Substituição de chatbots tradicionais por human bots 3D, aumentando a satisfação dos clientes e reduzindo os tempos de resposta.",
+      "item3Title": "Simulações Médicas:",
+      "item3Text": "Criação de simulações realistas para treinamento de médicos e enfermeiros, utilizando avatares que podem responder e interagir em tempo real."
+    },
+    "testimonials": {
+      "title": "Depoimentos de Clientes",
+      "item1Name": "Maria Rossi, Diretora de RH:",
+      "item1Text": "A implementação de avatares 3D em nosso treinamento corporativo revolucionou a forma como nossos funcionários aprendem. A interação natural e as respostas imediatas melhoraram significativamente a eficácia de nossas sessões de treinamento.",
+      "item2Name": "Luca Bianchi, Gerente de Atendimento ao Cliente:",
+      "item2Text": "Os human bots 3D transformaram nosso serviço de atendimento ao cliente. A satisfação dos usuários aumentou em 30% e os tempos de resposta foram reduzidos pela metade."
+    },
+    "faq": {
+      "title": "FAQ (Perguntas Frequentes)",
+      "question1": "Quais são os requisitos técnicos para implementar avatares 3D?",
+      "answer1": "Os requisitos variam de acordo com a complexidade do projeto, mas geralmente requerem uma plataforma com capacidade de renderização 3D e suporte para tecnologias de IA, como NLP e machine learning.",
+      "question2": "Os avatares 3D podem ser integrados aos sistemas existentes?",
+      "answer2": "Sim, nossos avatares são projetados para se integrar facilmente com a maioria dos sistemas CRM, plataformas de e-learning e sites.",
+      "question3": "Qual é o custo para implementar um avatar 3D?",
+      "answer3": "O custo depende da complexidade do projeto e das necessidades específicas do cliente. Entre em contato para um orçamento personalizado."
+    },
+    "cta": {
+      "title": "Descubra como nossas soluções de inteligência artificial 3D podem transformar o seu negócio.",
+      "subtitle": "Contate-nos para mais informações e solicite um orçamento personalizado.",
+      "button": "Contate-Nos"
+    }
+  },
+  "cinematicsService": {
+    "hero": {
+      "mainTitle": "Cinemática 3D",
+      "title": "Dê vida às suas histórias com nossas extraordinárias Cinemáticas 3D.",
+      "description": "Seja criando personagens totalmente digitais ou integrando filmagens reais com ambientes e efeitos 3D, oferecemos soluções cinematográficas de ponta para cada projeto."
+    },
+    "advantages": {
+      "title": "Vantagens Específicas",
+      "item1Title": "Realismo Extraordinário:",
+      "item1Text": "Criamos personagens 3D incrivelmente realistas que podem atuar em suas histórias com naturalidade e precisão.",
+      "item2Title": "Integração Perfeita:",
+      "item2Text": "Combine a realidade com a fantasia, integrando filmagens reais com efeitos 3D para criar cenas impressionantes e imersivas.",
+      "item3Title": "Versatilidade Criativa:",
+      "item3Text": "Nossas cinematográficas 3D se adaptam a qualquer necessidade criativa, melhorando o engajamento e criando experiências inesquecíveis.",
+      "item4Title": "Inovação Tecnológica:",
+      "item4Text": "Utilizamos as tecnologias mais avançadas para garantir a máxima qualidade visual e interativa."
+    },
+    "technologies": {
+      "title": "Tecnologias Utilizadas",
+      "item1Title": "Captura de Movimento:",
+      "item1Text": "Tecnologias de captura de movimento para criar animações realistas e fluidas.",
+      "item2Title": "Renderização em Tempo Real:",
+      "item2Text": "Utilizamos software de renderização avançado para gerar efeitos visuais de alta qualidade em tempo real.",
+      "item3Title": "CGI Avançada:",
+      "item3Text": "Gráficos computadorizados avançados para criar ambientes e personagens detalhados.",
+      "item4Title": "Compositing:",
+      "item4Text": "Técnicas de composição para integrar perfeitamente elementos 3D com filmagens reais."
+    },
+    "projects": {
+      "title": "Exemplos de Projetos Realizados",
+      "item1Title": "Videoclipes Musicais:",
+      "item1Text": "Criação de videoclipes musicais com personagens digitais e ambientes 3D imersivos, melhorando a experiência visual e narrativa.",
+      "item2Title": "Publicidade Televisiva:",
+      "item2Text": "Produção de comerciais que combinam elementos reais e digitais para capturar a atenção do público.",
+      "item3Title": "Filmes e Curtas-Metragens:",
+      "item3Text": "Produção de filmes e curtas-metragens com efeitos especiais 3D que elevam a qualidade da narrativa visual."
+    },
+    "testimonials": {
+      "title": "Depoimentos de Clientes",
+      "item1Name": "Giulia Verdi, Diretora:",
+      "item1Text": "As soluções de Cinemática 3D transformaram meu projeto. Os personagens digitais eram tão realistas que o público teve dificuldade em distinguir entre o real e o virtual.",
+      "item2Name": "Marco Neri, Produtor Publicitário:",
+      "item2Text": "A integração de efeitos 3D em nossos comerciais aumentou o engajamento e tornou nossos anúncios realmente memoráveis."
+    },
+    "faq": {
+      "title": "FAQ (Perguntas Frequentes)",
+      "question1": "Quanto tempo leva para criar uma cinemática 3D?",
+      "answer1": "O tempo de produção varia de acordo com a complexidade do projeto. Entre em contato para uma estimativa personalizada.",
+      "question2": "Quais são os custos associados à criação de uma cinemática 3D?",
+      "answer2": "Os custos dependem das especificações do projeto, incluindo o número de personagens, a complexidade dos efeitos e a duração do vídeo. Solicite um orçamento para detalhes precisos.",
+      "question3": "Posso integrar as cinemáticas 3D com meus vídeos existentes?",
+      "answer3": "Sim, oferecemos serviços de composição para integrar perfeitamente elementos 3D com filmagens reais existentes."
+    },
+    "cta": {
+      "title": "Descubra como nossas soluções de Cinemática 3D podem transformar o seu negócio.",
+      "subtitle": "Contate-nos para mais informações e solicite um orçamento personalizado.",
+      "button": "Contate-Nos"
+    }
+  },
+  "simulationService": {
+    "hero": {
+      "mainTitle": "Simulação 3D",
+      "title": "Leve seu treinamento e avaliação a um novo nível com nossas simulações 3D de ponta.",
+      "description": "Projetadas para indústrias, centros de treinamento e instituições, nossas simulações oferecem um ambiente seguro e realista para preparar os usuários para os desafios do mundo real."
+    },
+    "advantages": {
+      "title": "Vantagens Específicas",
+      "item1Title": "Treinamento Realista:",
+      "item1Text": "Nossas simulações 3D oferecem cenários realistas que preparam os usuários para situações do mundo real, melhorando a eficácia do treinamento.",
+      "item2Title": "Avaliação Eficaz:",
+      "item2Text": "Meça o desempenho dos usuários em tempo real, identificando pontos fortes e áreas de melhoria com precisão.",
+      "item3Title": "Flexibilidade e Adaptabilidade:",
+      "item3Text": "Personalize as simulações de acordo com as necessidades específicas de sua organização, adaptando-se a diferentes cenários e objetivos de aprendizado.",
+      "item4Title": "Redução de Custos:",
+      "item4Text": "Elimine a necessidade de equipamentos físicos caros e treinamentos presenciais, reduzindo custos operacionais significativamente."
+    },
+    "technologies": {
+      "title": "Tecnologias Utilizadas",
+      "item1Title": "Modelagem 3D Avançada:",
+      "item1Text": "Criação de ambientes e objetos tridimensionais de alta fidelidade para simulações imersivas.",
+      "item2Title": "Realidade Virtual (VR):",
+      "item2Text": "Integração com dispositivos de VR para experiências totalmente imersivas e envolventes.",
+      "item3Title": "Inteligência Artificial:",
+      "item3Text": "Implementação de IA para criar cenários dinâmicos e adaptativos que respondem às ações dos usuários.",
+      "item4Title": "Sensores e Feedback Tátil:",
+      "item4Text": "Uso de tecnologias hápticas para fornecer feedback físico realista durante as simulações."
+    },
+    "projects": {
+      "title": "Exemplos de Projetos Realizados",
+      "item1Title": "Treinamento Industrial:",
+      "item1Text": "Desenvolvimento de simulações para treinamento de operadores de máquinas pesadas, reduzindo riscos e aumentando a segurança no local de trabalho.",
+      "item2Title": "Educação Médica:",
+      "item2Text": "Criação de simulações cirúrgicas que permitem a médicos e estudantes praticar procedimentos complexos em um ambiente controlado e sem riscos.",
+      "item3Title": "Preparação Militar:",
+      "item3Text": "Simulações de combate e estratégia militar para treinar soldados em cenários táticos realistas e desafiadores."
+    },
+    "testimonials": {
+      "title": "Depoimentos de Clientes",
+      "item1Name": "Francesco Rossi, Diretor de Treinamento Industrial:",
+      "item1Text": "As simulações 3D transformaram nosso programa de treinamento. A capacidade de treinar operadores em um ambiente virtual seguro reduziu significativamente os acidentes de trabalho.",
+      "item2Name": "Elena Bianchi, Coordenadora de Educação Médica:",
+      "item2Text": "Os estudantes agora podem praticar procedimentos cirúrgicos complexos repetidamente até dominá-los, algo impossível com métodos tradicionais de ensino."
+    },
+    "faq": {
+      "title": "FAQ (Perguntas Frequentes)",
+      "question1": "Quais equipamentos são necessários para usar as simulações 3D?",
+      "answer1": "Os requisitos variam conforme o tipo de simulação, mas geralmente incluem um computador com capacidade gráfica adequada e, opcionalmente, dispositivos de VR para experiências imersivas.",
+      "question2": "As simulações podem ser personalizadas para nossa indústria específica?",
+      "answer2": "Sim, todas as nossas simulações são totalmente personalizáveis para atender às necessidades específicas de diferentes setores e organizações.",
+      "question3": "Quanto tempo leva para desenvolver uma simulação personalizada?",
+      "answer3": "O tempo de desenvolvimento varia de acordo com a complexidade do projeto. Entre em contato para uma estimativa detalhada baseada em suas necessidades específicas."
+    },
+    "cta": {
+      "title": "Descubra como nossas soluções de Simulação 3D podem transformar o seu negócio.",
+      "subtitle": "Contate-nos para mais informações e solicite um orçamento personalizado.",
+      "button": "Contate-Nos"
+    }
+  },
+  "educationService": {
+    "hero": {
+      "mainTitle": "Educação e Treinamento 3D",
+      "title": "Transforme a educação e o treinamento com nossas soluções 3D imersivas.",
+      "description": "Se você é uma instituição pública ou privada, oferecemos experiências de aprendizado que capturam e mantêm a atenção dos alunos."
+    },
+    "advantages": {
+      "title": "Vantagens Específicas",
+      "item1Title": "Experiências Imersivas e Dinâmicas:",
+      "item1Text": "Esqueça os PDFs e apresentações PowerPoint entediantes. Nossas soluções 3D tornam o aprendizado uma aventura visual e envolvente, facilitando a compreensão e a memorização dos conteúdos.",
+      "item2Title": "Tutores Virtuais:",
+      "item2Text": "Integre tutores virtuais para guiar os alunos através de caminhos de aprendizado personalizados, oferecendo suporte e esclarecimentos em tempo real.",
+      "item3Title": "Flexibilidade e Adaptabilidade:",
+      "item3Text": "Nossas soluções são projetadas para se adaptar a qualquer tipo de treinamento, desde cursos escolares até programas de treinamento corporativo, garantindo um aprendizado eficaz e interativo.",
+      "item4Title": "Aumento do Engajamento:",
+      "item4Text": "A interatividade das nossas soluções 3D aumenta o engajamento dos alunos, tornando o aprendizado mais interessante e produtivo."
+    },
+    "technologies": {
+      "title": "Tecnologias Utilizadas",
+      "item1Title": "Gráficos 3D Avançados:",
+      "item1Text": "Utilizamos tecnologias de gráficos 3D de ponta para criar ambientes de aprendizado realistas e envolventes.",
+      "item2Title": "Realidade Virtual (VR) e Aumentada (AR):",
+      "item2Text": "Integração de VR e AR para experiências de aprendizado imersivas e interativas.",
+      "item3Title": "Inteligência Artificial:",
+      "item3Text": "Implementação de IA para personalizar os caminhos de aprendizado e fornecer feedback em tempo real.",
+      "item4Title": "Plataformas de E-Learning:",
+      "item4Text": "Compatibilidade com as principais plataformas de e-learning para fácil integração e gestão de cursos."
+    },
+    "projects": {
+      "title": "Exemplos de Projetos Realizados",
+      "item1Title": "Educação Escolar:",
+      "item1Text": "Implementação de ambientes 3D para o ensino de ciências, história e geografia, melhorando a compreensão e o interesse dos alunos.",
+      "item2Title": "Treinamento Corporativo:",
+      "item2Text": "Criação de módulos de treinamento imersivos para empresas, melhorando a retenção de informações e a preparação dos funcionários.",
+      "item3Title": "Programas Universitários:",
+      "item3Text": "Desenvolvimento de cursos universitários que utilizam realidade virtual para simulações práticas e estudos de caso interativos."
+    },
+    "testimonials": {
+      "title": "Depoimentos de Clientes",
+      "item1Name": "Anna Rossi, Professora:",
+      "item1Text": "As soluções 3D transformaram a forma como meus alunos aprendem. A interatividade e a imersão tornaram as aulas muito mais envolventes e memoráveis.",
+      "item2Name": "Paolo Bianchi, Gerente de Treinamento Corporativo:",
+      "item2Text": "O treinamento 3D melhorou significativamente a preparação dos nossos funcionários. Os módulos interativos aumentaram o engajamento e a retenção de informações."
+    },
+    "faq": {
+      "title": "FAQ (Perguntas Frequentes)",
+      "question1": "Quais são os requisitos técnicos para implementar as soluções 3D?",
+      "answer1": "Os requisitos variam de acordo com a complexidade do projeto, mas geralmente requerem dispositivos compatíveis com VR/AR e plataformas de e-learning.",
+      "question2": "Quanto tempo leva para desenvolver um módulo de treinamento 3D?",
+      "answer2": "O tempo de desenvolvimento depende da complexidade e das especificações do projeto. Entre em contato para uma estimativa personalizada.",
+      "question3": "As soluções 3D podem ser integradas aos nossos sistemas de gestão de aprendizado (LMS)?",
+      "answer3": "Sim, nossas soluções são projetadas para se integrar facilmente com os principais sistemas de gestão de aprendizado."
+    },
+    "cta": {
+      "title": "Descubra como nossas soluções 3D podem revolucionar sua educação e treinamento.",
+      "subtitle": "Contate-nos para mais informações e solicite um orçamento personalizado.",
+      "button": "Contate-Nos"
+    }
+  },
+  "gamesService": {
+    "hero": {
+      "mainTitle": "Desenvolvimento de Jogos 3D",
+      "title": "Traga suas ideias de jogo à vida com nossas soluções de desenvolvimento de jogos 3D.",
+      "description": "Se você está procurando criar um jogo indie ou apoiar um grande projeto, oferecemos expertise de ponta para criar jogos envolventes e de alta qualidade."
+    },
+    "advantages": {
+      "title": "Vantagens Específicas",
+      "item1Title": "Experiências Envolventes:",
+      "item1Text": "Criamos jogos tanto multiplayer quanto single-player, adaptando-se às necessidades do seu projeto para oferecer experiências de jogo imersivas e envolventes.",
+      "item2Title": "Múltiplas Plataformas:",
+      "item2Text": "Desenvolvemos jogos para PC, Android, realidade virtual e outras plataformas, garantindo máxima flexibilidade e acessibilidade.",
+      "item3Title": "Suporte Completo:",
+      "item3Text": "Oferecemos suporte completo ao desenvolvimento, desde a programação até a parte artística. Nossa equipe inclui especialistas em gráficos 3D, design de personagens e ambientes, garantindo um resultado final de altíssima qualidade.",
+      "item4Title": "Tecnologias Avançadas:",
+      "item4Text": "Utilizamos as tecnologias mais avançadas para garantir que cada jogo seja fluido, visualmente surpreendente e altamente interativo."
+    },
+    "technologies": {
+      "title": "Tecnologias Utilizadas",
+      "item1Title": "Motores de Jogo Avançados:",
+      "item1Text": "Utilizamos motores de jogo como Unreal Engine e Unity para desenvolver jogos de alta qualidade.",
+      "item2Title": "Gráficos 3D:",
+      "item2Text": "Tecnologias de renderização 3D de ponta para criar ambientes e personagens detalhados e realistas.",
+      "item3Title": "Inteligência Artificial:",
+      "item3Text": "Implementação de IA para criar NPCs (personagens não jogáveis) inteligentes e reativos.",
+      "item4Title": "Multijogador Online:",
+      "item4Text": "Infraestrutura para suporte a jogos multiplayer online, incluindo servidores dedicados e serviços de matchmaking."
+    },
+    "projects": {
+      "title": "Exemplos de Projetos Realizados",
+      "item1Title": "Jogo Indie de Aventura:",
+      "item1Text": "Desenvolvimento completo de um jogo indie com enredo envolvente e gráficos 3D detalhados, disponível para PC e console.",
+      "item2Title": "Jogo de Realidade Virtual:",
+      "item2Text": "Criação de um jogo VR imersivo que aproveita ao máximo as capacidades da realidade virtual para uma experiência de jogo única.",
+      "item3Title": "Jogo Mobile Multiplayer:",
+      "item3Text": "Desenvolvimento de um jogo mobile multiplayer com funcionalidades de matchmaking e competição em tempo real."
+    },
+    "testimonials": {
+      "title": "Depoimentos de Clientes",
+      "item1Name": "Luca Verdi, Desenvolvedor Indie:",
+      "item1Text": "A equipe transformou minha visão em um jogo extraordinário. A qualidade dos gráficos e a fluidez do gameplay superaram minhas expectativas.",
+      "item2Name": "Elena Rossi, Gerente de Projeto VR:",
+      "item2Text": "Graças à sua experiência, conseguimos criar um jogo VR imersivo que teve grande sucesso entre os jogadores. A colaboração foi fantástica do início ao fim."
+    },
+    "faq": {
+      "title": "FAQ (Perguntas Frequentes)",
+      "question1": "Quanto tempo leva para desenvolver um jogo 3D?",
+      "answer1": "O tempo de desenvolvimento varia de acordo com a complexidade do projeto. Pode variar de alguns meses a um ano ou mais para jogos complexos.",
+      "question2": "Quais são os custos associados ao desenvolvimento de um jogo 3D?",
+      "answer2": "Os custos dependem das especificações do projeto, incluindo a complexidade do gameplay, o nível de detalhe gráfico e as funcionalidades exigidas. Entre em contato para um orçamento detalhado.",
+      "question3": "Vocês podem suportar meu jogo após o lançamento?",
+      "answer3": "Sim, oferecemos serviços de suporte pós-lançamento, incluindo atualizações, correções de bugs e melhorias contínuas."
+    },
+    "cta": {
+      "title": "Descubra como nossas soluções de Desenvolvimento de Jogos 3D podem transformar suas ideias em realidade.",
+      "subtitle": "Contate-nos para mais informações e solicite um orçamento personalizado.",
+      "button": "Contate-Nos"
+    }
+  },
+  "vrarService": {
+    "hero": {
+      "mainTitle": "Realidade Virtual (VR) e Realidade Aumentada (AR)",
+      "title": "Traga a inovação para suas mãos com nossas soluções de realidade virtual e aumentada.",
+      "description": "Oferecemos experiências imersivas e mistas para uma ampla gama de aplicações, transformando sua visão em realidade."
+    },
+    "advantages": {
+      "title": "Vantagens Específicas",
+      "item1Title": "Imersão Completa:",
+      "item1Text": "Com nossa solução de realidade virtual (VR), você pode entrar completamente em um mundo virtual, ideal para projetos como design de interiores, onde você pode modificar, posicionar e experimentar objetos em um ambiente virtual.",
+      "item2Title": "Realidade Mista:",
+      "item2Text": "Combine o mundo real com elementos virtuais através da realidade aumentada (AR). Perfeito para pré-visualizações em canteiro de obras, onde você pode ver como os elementos virtuais se integram ao ambiente real usando óculos de realidade aumentada de última geração.",
+      "item3Title": "Versatilidade e Adaptabilidade:",
+      "item3Text": "Nossas soluções de VR e AR são altamente versáteis, adequadas para treinamento, simulações, jogos e muito mais. Oferecemos experiências personalizadas para atender às necessidades específicas do seu projeto.",
+      "item4Title": "Tecnologias Avançadas:",
+      "item4Text": "Utilizamos as tecnologias mais avançadas para criar experiências fluidas e interativas, garantindo que cada projeto seja visualmente impressionante e altamente funcional."
+    },
+    "technologies": {
+      "title": "Tecnologias Utilizadas",
+      "item1Title": "Plataformas Avançadas de VR/AR:",
+      "item1Text": "Utilizamos plataformas como Oculus Rift, HTC Vive e Microsoft HoloLens para oferecer experiências imersivas de alta qualidade.",
+      "item2Title": "Gráficos 3D Realistas:",
+      "item2Text": "Tecnologias de renderização 3D de ponta para criar ambientes e objetos detalhados e realistas.",
+      "item3Title": "Rastreamento e Sensores:",
+      "item3Text": "Implementação de tecnologias de rastreamento avançadas e sensores para maior interatividade e precisão.",
+      "item4Title": "Inteligência Artificial:",
+      "item4Text": "Integração de IA para melhorar a interatividade e personalizar a experiência do usuário."
+    },
+    "projects": {
+      "title": "Exemplos de Projetos Realizados",
+      "item1Title": "Design de Interiores:",
+      "item1Text": "Desenvolvimento de aplicativos VR para design de interiores, permitindo que os clientes visualizem e modifiquem ambientes em tempo real.",
+      "item2Title": "Pré-Visualização em Canteiro de Obras:",
+      "item2Text": "Criação de soluções AR para pré-visualização de projetos em canteiros de obras, facilitando o planejamento e a implementação.",
+      "item3Title": "Treinamento Médico:",
+      "item3Text": "Implementação de simulações VR para treinamento médico, permitindo que os estudantes pratiquem procedimentos em um ambiente seguro e controlado."
+    },
+    "testimonials": {
+      "title": "Depoimentos de Clientes",
+      "item1Name": "Alessandro Ricci, Arquiteto:",
+      "item1Text": "As soluções de VR revolucionaram a maneira como apresentamos nossos projetos aos clientes. A capacidade de visualizar e modificar interiores em tempo real melhorou muito nossa eficiência e satisfação dos clientes.",
+      "item2Name": "Sofia Bianchi, Engenheira:",
+      "item2Text": "A integração de AR em nossos canteiros de obras facilitou enormemente o planejamento e a execução dos projetos. A precisão e a interatividade das soluções de AR foram um verdadeiro divisor de águas."
+    },
+    "faq": {
+      "title": "FAQ (Perguntas Frequentes)",
+      "question1": "Quais são os requisitos técnicos para implementar as soluções de VR e AR?",
+      "answer1": "Os requisitos variam de acordo com a complexidade do projeto, mas geralmente requerem dispositivos compatíveis com VR/AR e software de suporte.",
+      "question2": "Quanto tempo leva para desenvolver uma solução de VR ou AR?",
+      "answer2": "O tempo de desenvolvimento depende da complexidade e das especificações do projeto. Pode variar de algumas semanas a vários meses.",
+      "question3": "As soluções de VR e AR podem ser integradas aos nossos sistemas existentes?",
+      "answer3": "Sim, nossas soluções são projetadas para se integrar facilmente com sistemas e plataformas existentes."
+    },
+    "cta": {
+      "title": "Descubra como nossas soluções de VR e AR podem revolucionar seu projeto.",
+      "subtitle": "Contate-nos para mais informações e solicite um orçamento personalizado.",
+      "button": "Contate-Nos"
+    }
+  },
+  "privacyPolicy": {
+    "pageTitle": "Política de Privacidade",
+    "metaDescription": "Política de Privacidade da UnicTava - Conheça como coletamos, usamos e protegemos seus dados pessoais",
+    "title": "Política de Privacidade",
+    "lastUpdated": "Última atualização",
+    "section1": {
+      "title": "1. Introdução",
+      "content": "Este site coleta dados pessoais (nome, e-mail, telefone) fornecidos voluntariamente pelo usuário através do formulário de orçamento. A proteção dos seus dados é uma prioridade para nós e este documento explica como tratamos suas informações."
+    },
+    "section2": {
+      "title": "2. Responsável pelo Tratamento de Dados",
+      "content": "O responsável pelo tratamento dos dados pessoais coletados neste site é Rafael Tavares / UnicTava, com sede em Via Montefeltro, 8/10, 20156 Milano MI, Italia."
+    },
+    "section3": {
+      "title": "3. Dados Coletados",
+      "content": "Coletamos as seguintes informações quando você preenche nosso formulário de contato ou orçamento: Nome completo, Endereço de e-mail, Número de telefone (quando fornecido voluntariamente), Tipo de projeto de interesse, Mensagem e detalhes do projeto, Arquivos anexados (quando fornecidos)."
+    },
+    "section4": {
+      "title": "4. Finalidade do Tratamento",
+      "content": "Os dados coletados são utilizados exclusivamente para responder às suas solicitações de orçamento e contato. Não compartilhamos suas informações com terceiros sem sua autorização explícita, exceto quando exigido por lei."
+    },
+    "section5": {
+      "title": "5. Base Legal e Armazenamento",
+      "content": "A base legal para o tratamento dos seus dados é o consentimento explícito fornecido ao marcar a caixa de aceitação no formulário. Os dados são armazenados de forma segura em nossos servidores (Supabase) e mantidos apenas pelo tempo necessário para atender à finalidade para a qual foram coletados, geralmente por até 12 meses."
+    },
+    "section6": {
+      "title": "6. Direitos do Usuário",
+      "intro": "Você tem os seguintes direitos em relação aos seus dados pessoais:",
+      "right1": "Direito de Acesso: solicitar uma cópia dos dados que mantemos sobre você",
+      "right2": "Direito de Retificação: corrigir dados incorretos ou incompletos",
+      "right3": "Direito ao Esquecimento: solicitar a exclusão dos seus dados",
+      "right4": "Direito à Portabilidade: receber seus dados em formato estruturado",
+      "right5": "Direito de Reclamação: apresentar reclamação junto à autoridade de proteção de dados competente (Garante per la Protezione dei Dati Personali - Itália)"
+    },
+    "section7": {
+      "title": "7. Tempo de Retenção",
+      "content": "Os dados pessoais serão conservados pelo tempo estritamente necessário para atingir as finalidades para as quais foram coletados. Após este período, os dados serão excluídos ou anonimizados. Em geral, mantemos os dados de contato por até 12 meses a partir da última interação."
+    },
+    "section8": {
+      "title": "8. Segurança dos Dados",
+      "content": "Implementamos medidas técnicas e organizacionais adequadas para proteger seus dados pessoais contra acesso não autorizado, perda, destruição ou alteração. No entanto, nenhuma transmissão pela Internet é 100% segura, e não podemos garantir segurança absoluta."
+    },
+    "section9": {
+      "title": "9. Contato para Questões de Privacidade",
+      "content": "Para exercer seus direitos ou esclarecer dúvidas sobre o tratamento dos seus dados pessoais, entre em contato conosco através do e-mail:"
+    }
+  },
+  "cookiePolicy": {
+    "pageTitle": "Política de Cookies",
+    "metaDescription": "Política de Cookies da UnicTava - Entenda como usamos cookies para melhorar sua experiência em nosso site",
+    "title": "Política de Cookies",
+    "lastUpdated": "Última atualização",
+    "section1": {
+      "title": "1. O que são Cookies",
+      "content": "Cookies são pequenos arquivos de texto que os sites armazenam no seu dispositivo quando você os visita. Eles são amplamente utilizados para fazer os sites funcionarem de forma mais eficiente, bem como para fornecer informações aos proprietários do site."
+    },
+    "section2": {
+      "title": "2. Cookies Técnicos (Sempre Ativos)",
+      "intro": "Estes cookies são essenciais para o funcionamento básico do site e não requerem seu consentimento prévio:",
+      "cookie1": {
+        "name": "Cookie de Sessão",
+        "description": "Mantém sua sessão ativa enquanto navega pelo site. Expira quando você fecha o navegador."
+      },
+      "cookie2": {
+        "name": "Cookie de Preferência de Idioma",
+        "description": "Armazena sua preferência de idioma (Português, Inglês ou Italiano). Duração: 12 meses."
+      },
+      "cookie3": {
+        "name": "Cookie de Consentimento",
+        "description": "Registra suas escolhas sobre cookies. Duração: 12 meses."
+      }
+    },
+    "section3": {
+      "title": "3. Cookies de Análise (Opcionais)",
+      "intro": "Estes cookies nos ajudam a entender como os visitantes usam o site, sempre de forma anônima. Requerem seu consentimento:",
+      "cookie1": {
+        "name": "Google Analytics (_ga, _ga_*)",
+        "description": "Usados para coletar informações sobre como os visitantes usam nosso site. Usamos essas informações para compilar relatórios e nos ajudar a melhorar o site. Os cookies coletam informações de forma anônima. Duração: 2 anos."
+      },
+      "cookie2": {
+        "name": "Cookies de Terceiros",
+        "description": "Podemos utilizar cookies de terceiros para análise de tráfego e comportamento do usuário."
+      },
+      "note": "Importante: De acordo com as normativas italianas (Garante per la Protezione dei Dati Personali), cookies de análise e terceiros só podem ser ativados após seu consentimento explícito."
+    },
+    "section4": {
+      "title": "4. Gerenciamento de Cookies",
+      "content1": "Ao acessar este site pela primeira vez, você verá um banner de consentimento onde pode escolher quais categorias de cookies aceitar. Você pode alterar suas preferências a qualquer momento clicando no link 'Configurações de Cookies' no rodapé do site.",
+      "content2": "Você também pode gerenciar cookies diretamente nas configurações do seu navegador. Consulte a seção de ajuda do seu navegador para instruções sobre como bloquear ou excluir cookies."
+    },
+    "section5": {
+      "title": "5. Base Legal",
+      "content": "Conforme estabelecido pelo Regulamento Geral de Proteção de Dados (GDPR) e pelas diretrizes do Garante italiano, obtemos seu consentimento explícito antes de ativar cookies não essenciais. Seu consentimento é válido por 12 meses, após o qual solicitaremos novamente."
+    },
+    "section6": {
+      "title": "6. Duração e Renovação",
+      "content": "O consentimento para cookies é válido por 12 meses. Após este período, solicitaremos novamente seu consentimento através do banner de cookies."
+    },
+    "section7": {
+      "title": "7. Contato",
+      "content": "Para dúvidas sobre nossa política de cookies e suas escolhas, entre em contato conosco através do email:"
+    }
+  },
+  "termsOfService": {
+    "pageTitle": "Termos de Serviço",
+    "metaDescription": "Termos de Serviço da UnicTava - Conheça as regras e condições para uso de nossos serviços",
+    "title": "Termos de Serviço",
+    "lastUpdated": "Última atualização",
+    "section1": {
+      "title": "1. Aceitação dos Termos",
+      "content": "Ao acessar e usar este site, você aceita e concorda em ficar vinculado aos termos e condições deste acordo. Se você não concordar com qualquer parte destes termos, não deve usar nosso site ou serviços."
+    },
+    "section2": {
+      "title": "2. Descrição dos Serviços",
+      "content": "A UnicTava oferece serviços especializados em tecnologias 3D, incluindo:",
+      "service1": "Inteligência Artificial 3D e avatares interativos",
+      "service2": "Cinemática 3D e produção visual",
+      "service3": "Simulações 3D para treinamento e avaliação",
+      "service4": "Soluções de Educação e Treinamento 3D",
+      "service5": "Desenvolvimento de Jogos 3D",
+      "service6": "Realidade Virtual (VR) e Realidade Aumentada (AR)"
+    },
+    "section3": {
+      "title": "3. Propriedade Intelectual",
+      "content": "Todo o conteúdo presente neste site, incluindo textos, gráficos, logos, ícones, imagens, clipes de áudio, downloads digitais e compilações de dados, é propriedade da UnicTava ou de seus fornecedores de conteúdo e está protegido pelas leis de direitos autorais italianas e internacionais."
+    },
+    "section4": {
+      "title": "4. Uso do Site",
+      "intro": "Ao usar nosso site, você concorda em não:",
+      "prohibition1": "Usar o site de qualquer maneira que possa danificar, desabilitar, sobrecarregar ou prejudicar o site",
+      "prohibition2": "Tentar obter acesso não autorizado a qualquer parte do site, servidores ou redes conectadas",
+      "prohibition3": "Usar o site para fins ilegais ou não autorizados",
+      "prohibition4": "Violar quaisquer leis aplicáveis em sua jurisdição"
+    },
+    "section5": {
+      "title": "5. Formulários e Solicitações de Orçamento",
+      "content1": "As solicitações de orçamento enviadas através de nosso formulário não constituem uma oferta vinculante. Todos os orçamentos são estimativas sujeitas a confirmação após análise detalhada do projeto.",
+      "content2": "Nos reservamos o direito de recusar qualquer solicitação de orçamento ou proposta de projeto a nosso exclusivo critério.",
+      "content3": "Prazos e custos mencionados em orçamentos são estimativas e estão sujeitos a confirmação formal através de contrato escrito."
+    },
+    "section6": {
+      "title": "6. Limitação de Responsabilidade",
+      "content": "A UnicTava não será responsável por quaisquer danos diretos, indiretos, incidentais, consequenciais ou punitivos decorrentes do seu acesso ou uso (ou incapacidade de acessar ou usar) este site ou qualquer conteúdo nele contido."
+    },
+    "section7": {
+      "title": "7. Modificações dos Termos",
+      "content": "Reservamo-nos o direito de modificar estes termos a qualquer momento. As modificações entrarão em vigor imediatamente após sua publicação neste site. É sua responsabilidade revisar periodicamente estes termos."
+    },
+    "section8": {
+      "title": "8. Lei Aplicável e Jurisdição",
+      "content": "Estes termos são regidos e interpretados de acordo com as leis da República Italiana. Qualquer disputa relacionada a estes termos será submetida à jurisdição exclusiva dos tribunais de Milão, Itália."
+    },
+    "section9": {
+      "title": "9. Contato",
+      "content": "Para dúvidas sobre estes Termos de Serviço, entre em contato conosco através do email:"
+    }
+  }
+}

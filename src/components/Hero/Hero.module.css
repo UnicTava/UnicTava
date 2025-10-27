@@ -1,0 +1,391 @@
+/* Wrapper for entire hero + content section */
+.heroWrapper {
+  position: relative;
+  width: 100%;
+  background: transparent;
+}
+
+/* Particles container covering both sections */
+.particlesContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100vh + 400px); /* Cover hero + content section */
+  z-index: 2; /* Above background but below other content */
+  pointer-events: none;
+}
+
+/* Video Background */
+.videoBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100vh + 400px); /* Cover hero + content section */
+  z-index: 2; /* Above background but below other content */
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.backgroundVideo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  opacity: 0.3; /* Adjust opacity for visibility */
+}
+
+.heroContainer {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+  background: transparent;
+}
+
+/* Camada 2: Imagem de fundo */
+.backgroundImage {
+  position: absolute;
+  top: 0;
+  left: -67px;
+  width: 2055px;
+  height: 1081px;
+  background-image: url('/hero-background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--home-background);
+  background-blend-mode: multiply;
+  filter: blur(15.4px);
+  z-index: 1;
+  opacity: 0.15; /* Reduzido de 0.6 para 0.15 para manter o fundo mais escuro e uniforme */
+}
+
+.heroContent {
+  position: relative;
+  z-index: 3; /* Above particles */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 2rem;
+}
+
+.logoWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeInLogo 1s ease-in-out;
+  padding: 4rem;
+}
+
+@keyframes fadeInLogo {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.heroLogo {
+  filter: brightness(0) invert(1);
+  transform: scale(5);
+  pointer-events: none;
+}
+
+.heroLogo div {
+  pointer-events: none !important;
+  transition: none !important;
+}
+
+.heroLogo div:hover {
+  transform: none !important;
+}
+
+/* Content Section Below Hero */
+.contentSection {
+  position: relative;
+  width: 100%;
+  background: transparent; /* Transparent to show particles */
+  padding: 60px 0 20px 0; /* Reduced bottom padding */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3; /* Above particles but allow interaction */
+}
+
+.contentContainer {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.titleSection {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.heroTitle {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 1.2;
+  background: linear-gradient(90deg, #CFD8F6 0%, #534EB6 99%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0 0 16px 0;
+  max-width: 800px;
+  text-align: center;
+  opacity: 0;
+  animation: fadeInTitle 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s forwards;
+  transform: translateZ(0); /* Force GPU acceleration */
+  will-change: transform, opacity;
+}
+
+@keyframes fadeInTitle {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) translateZ(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) translateZ(0);
+  }
+}
+
+.heroSubtitle {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #D1D1D1;
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: center;
+  opacity: 0;
+  animation: fadeInSubtitle 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.6s forwards;
+  transform: translateZ(0); /* Force GPU acceleration */
+  will-change: transform, opacity;
+}
+
+@keyframes fadeInSubtitle {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) translateZ(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) translateZ(0);
+  }
+}
+
+.ctaButtons {
+  display: flex;
+  gap: 24px;
+  justify-content: center; /* Centralizar botões */
+  opacity: 0;
+  animation: fadeInButtons 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.9s forwards;
+  transform: translateZ(0); /* Force GPU acceleration */
+  will-change: transform, opacity;
+}
+
+@keyframes fadeInButtons {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) translateZ(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) translateZ(0);
+  }
+}
+
+/* Responsividade */
+@media (max-width: 1440px) {
+  .contentContainer {
+    padding: 0 60px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .backgroundImage {
+    width: 150%;
+    height: 100%;
+    left: -25%;
+  }
+
+  .logoWrapper {
+    padding: 3rem;
+  }
+
+  .heroLogo {
+    transform: scale(4);
+  }
+
+  .contentSection {
+    padding: 80px 0;
+  }
+
+  .contentContainer {
+    padding: 0 40px;
+  }
+
+  .heroTitle {
+    font-size: 48px;
+  }
+
+  .heroSubtitle {
+    font-size: 18px;
+  }
+
+  .ctaButtons {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logoWrapper {
+    padding: 2.5rem;
+  }
+
+  .heroLogo {
+    transform: scale(3.5);
+  }
+
+  .contentSection {
+    padding: 60px 0;
+  }
+
+  .contentContainer {
+    padding: 0 20px;
+  }
+
+  .titleSection {
+    text-align: center;
+  }
+
+  .heroTitle {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .heroSubtitle {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .ctaButtons {
+    width: 100%;
+    align-items: center;
+  }
+
+  .ctaButtons button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .logoWrapper {
+    padding: 2rem;
+  }
+
+  .heroLogo {
+    transform: scale(2.5);
+  }
+
+  .contentSection {
+    padding: 40px 0;
+  }
+
+  .heroTitle {
+    font-size: 28px;
+  }
+
+  .heroSubtitle {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 375px) {
+  .heroContainer {
+    height: 80vh;
+  }
+
+  .logoWrapper {
+    padding: 1.5rem;
+  }
+
+  .heroLogo {
+    transform: scale(2);
+  }
+
+  .contentSection {
+    padding: 30px 0;
+  }
+
+  .contentContainer {
+    padding: 0 16px;
+  }
+
+  .heroTitle {
+    font-size: 24px;
+  }
+
+  .heroSubtitle {
+    font-size: 13px;
+  }
+
+  .ctaButtons {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .heroContainer {
+    height: 75vh;
+  }
+
+  .logoWrapper {
+    padding: 1rem;
+  }
+
+  .heroLogo {
+    transform: scale(1.8);
+  }
+
+  .contentSection {
+    padding: 20px 0;
+  }
+
+  .contentContainer {
+    padding: 0 12px;
+  }
+
+  .heroTitle {
+    font-size: 22px;
+  }
+
+  .heroSubtitle {
+    font-size: 12px;
+  }
+}

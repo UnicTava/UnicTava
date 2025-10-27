@@ -1,0 +1,102 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+  background: transparent;
+}
+
+.canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.95;
+  mix-blend-mode: screen;
+  filter: contrast(1.1) brightness(1.05);
+}
+
+.backgroundLayer {
+  z-index: 1;
+  opacity: 0.3;
+  filter: blur(2px);
+}
+
+.midLayer {
+  z-index: 2;
+  opacity: 0.6;
+  filter: blur(0.5px);
+}
+
+.foregroundLayer {
+  z-index: 3;
+  opacity: 1;
+  filter: blur(0px);
+}
+
+.interactiveLayer {
+  z-index: 4;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  background: linear-gradient(180deg,
+    rgba(10, 10, 10, 1) 0%,
+    rgba(10, 10, 10, 0.98) 50%,
+    rgba(10, 10, 10, 0.95) 100%
+  );
+  transform-origin: top center;
+  will-change: transform;
+}
+
+.glowEffect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(96, 92, 207, 0.05) 0%,
+    transparent 70%
+  );
+  mix-blend-mode: screen;
+  opacity: 0;
+  animation: pulseGlow 4s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 0.3; }
+}
+
+.loadingIndicator {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(96, 92, 207, 0.8);
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}

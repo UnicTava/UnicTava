@@ -1,0 +1,86 @@
+.aiChip3D {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(96, 92, 207, 0.05) 0%,
+    rgba(67, 64, 147, 0.02) 40%,
+    transparent 70%
+  );
+  animation: glowPulse 4s ease-in-out infinite;
+  isolation: isolate;
+}
+
+.aiChip3D::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120%;
+  height: 120%;
+  background: radial-gradient(
+    circle at center,
+    rgba(150, 146, 230, 0.1) 0%,
+    transparent 50%
+  );
+  pointer-events: none;
+  animation: rotateGlow 20s linear infinite;
+}
+
+.aiChip3D[data-intensity="low"] {
+  filter: brightness(0.9);
+}
+
+.aiChip3D[data-intensity="medium"] {
+  filter: brightness(1);
+}
+
+.aiChip3D[data-intensity="high"] {
+  filter: brightness(1.1) contrast(1.05);
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    filter: brightness(1) saturate(1);
+  }
+  50% {
+    filter: brightness(1.05) saturate(1.1);
+  }
+}
+
+@keyframes rotateGlow {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+/* Performance optimization for mobile */
+@media (max-width: 768px) {
+  .aiChip3D {
+    min-height: 400px;
+  }
+
+  .aiChip3D::before {
+    animation-duration: 30s;
+  }
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .aiChip3D::before {
+    animation: none;
+  }
+
+  .aiChip3D {
+    animation: none;
+  }
+}

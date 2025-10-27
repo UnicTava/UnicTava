@@ -1,0 +1,92 @@
+/* Global Performance Optimizations for 60fps */
+
+/* Enable hardware acceleration on animated elements */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Optimize scrolling performance */
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+}
+
+/* Force GPU acceleration for common animations */
+.will-change-transform {
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.will-change-opacity {
+  will-change: opacity;
+}
+
+/* Optimize canvas elements */
+canvas {
+  image-rendering: optimizeSpeed;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: pixelated;
+  transform: translateZ(0);
+}
+
+/* Reduce repaints for fixed elements */
+[data-fixed],
+.fixed {
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+/* Optimize transitions */
+* {
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Disable animations for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Optimize button interactions */
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+/* Optimize images */
+img {
+  will-change: contents;
+  contain: layout style paint;
+}
+
+/* Optimize text rendering */
+h1, h2, h3, h4, h5, h6, p {
+  text-rendering: optimizeSpeed;
+}
+
+/* Add GPU acceleration hints for animations */
+@keyframes * {
+  transform: translateZ(0);
+}
+
+/* Optimize backdrop filters */
+.backdrop-blur {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transform: translateZ(0);
+}

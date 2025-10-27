@@ -1,0 +1,123 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 9999;
+  transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.container.fadeOut {
+  opacity: 0;
+}
+
+.loadingContainer {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Loading Wrapper - container for video + logo */
+.loadingWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Logo Wrapper (overlaid on video) */
+.logoWrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(2.5);
+  z-index: 2;
+  animation: fadeInLogo 1s ease-in-out forwards;
+  pointer-events: none;
+}
+
+.loadingLogo {
+  filter: drop-shadow(0 0 30px rgba(96, 92, 207, 0.6))
+          drop-shadow(0 0 60px rgba(96, 92, 207, 0.4));
+}
+
+/* Video Wrapper */
+.videoWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loadingVideo {
+  width: 800px;
+  height: 800px;
+  object-fit: contain;
+  display: block;
+}
+
+/* Animations */
+@keyframes fadeInLogo {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(2);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(2.5);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .logoWrapper {
+    transform: translate(-50%, -50%) scale(2);
+  }
+
+  @keyframes fadeInLogo {
+    from {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(1.5);
+    }
+    to {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(2);
+    }
+  }
+
+  .loadingVideo {
+    width: 600px;
+    height: 600px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logoWrapper {
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+
+  @keyframes fadeInLogo {
+    from {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(1);
+    }
+    to {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1.5);
+    }
+  }
+
+  .loadingVideo {
+    width: 400px;
+    height: 400px;
+  }
+}

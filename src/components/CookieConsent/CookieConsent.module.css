@@ -1,0 +1,289 @@
+/* Customização do banner de cookies vanilla-cookieconsent */
+
+/* Overlay de fundo */
+:global(#cc-main .cm-wrapper) {
+  backdrop-filter: blur(8px);
+  background: rgba(0, 0, 0, 0.75);
+}
+
+/* Modal principal */
+:global(#cc-main .cm) {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  max-width: 500px;
+  padding: 2rem;
+}
+
+/* Título */
+:global(#cc-main .cm__title) {
+  font-family: var(--font-roboto), sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+/* Descrição */
+:global(#cc-main .cm__desc) {
+  font-family: var(--font-roboto), sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 1.5rem;
+}
+
+/* Botões */
+:global(#cc-main .cm__btn) {
+  font-family: var(--font-roboto), sans-serif;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+/* Botão Aceitar Todos */
+:global(#cc-main .cm__btn.cm__btn--primary) {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #ffffff;
+}
+
+:global(#cc-main .cm__btn.cm__btn--primary:hover) {
+  background: linear-gradient(135deg, #5568d3 0%, #63408a 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+/* Botão Rejeitar Opcionais */
+:global(#cc-main .cm__btn.cm__btn--secondary) {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+:global(#cc-main .cm__btn.cm__btn--secondary:hover) {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Botão Gerenciar Preferências */
+:global(#cc-main .cm__btn--link) {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: underline;
+  padding: 0.5rem;
+}
+
+:global(#cc-main .cm__btn--link:hover) {
+  color: #ffffff;
+}
+
+/* Footer com links */
+:global(#cc-main .cm__footer) {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+:global(#cc-main .cm__footer a) {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.85rem;
+  margin-right: 1rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+:global(#cc-main .cm__footer a:hover) {
+  color: #667eea;
+}
+
+/* Modal de Preferências */
+:global(#cc-main .pm) {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  max-width: 700px;
+  max-height: 80vh;
+}
+
+/* Header do modal de preferências */
+:global(#cc-main .pm__header) {
+  background: rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.5rem 2rem;
+}
+
+:global(#cc-main .pm__title) {
+  font-family: var(--font-roboto), sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* Corpo do modal de preferências */
+:global(#cc-main .pm__body) {
+  padding: 2rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* Seções */
+:global(#cc-main .pm__section) {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+:global(#cc-main .pm__section:last-child) {
+  border-bottom: none;
+}
+
+:global(#cc-main .pm__section-title) {
+  font-family: var(--font-roboto), sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+}
+
+:global(#cc-main .pm__section-desc) {
+  font-family: var(--font-roboto), sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Links dentro das seções */
+:global(#cc-main .pm__section-desc a) {
+  color: #667eea;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+:global(#cc-main .pm__section-desc a:hover) {
+  color: #764ba2;
+  text-decoration: underline;
+}
+
+/* Toggle switch */
+:global(#cc-main .section__toggle) {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+:global(#cc-main .section__toggle.toggle--enabled) {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-color: transparent;
+}
+
+:global(#cc-main .section__toggle-btn) {
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Tabela de cookies */
+:global(#cc-main .cookie-table) {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+:global(#cc-main .cookie-table thead) {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+:global(#cc-main .cookie-table th) {
+  font-family: var(--font-roboto), sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  padding: 0.75rem;
+  font-size: 0.85rem;
+  text-align: left;
+}
+
+:global(#cc-main .cookie-table td) {
+  font-family: var(--font-roboto), sans-serif;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 0.75rem;
+  font-size: 0.85rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Footer do modal de preferências */
+:global(#cc-main .pm__footer) {
+  background: rgba(255, 255, 255, 0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.5rem 2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+/* Botão fechar */
+:global(#cc-main .pm__close-btn) {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+:global(#cc-main .pm__close-btn:hover) {
+  background: rgba(255, 255, 255, 0.2);
+  transform: rotate(90deg);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  :global(#cc-main .cm),
+  :global(#cc-main .pm) {
+    margin: 1rem;
+    max-width: calc(100% - 2rem);
+  }
+
+  :global(#cc-main .cm__title),
+  :global(#cc-main .pm__title) {
+    font-size: 1.25rem;
+  }
+
+  :global(#cc-main .cm__btn) {
+    font-size: 0.85rem;
+    padding: 0.65rem 1.25rem;
+  }
+
+  :global(#cc-main .pm__footer) {
+    flex-direction: column;
+  }
+
+  :global(#cc-main .pm__footer .cm__btn) {
+    width: 100%;
+  }
+}
+
+/* Animação de entrada */
+:global(#cc-main .cm),
+:global(#cc-main .pm) {
+  animation: slideUp 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

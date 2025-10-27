@@ -1,0 +1,36 @@
+.geometricBackground3D {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 1;
+}
+
+.geometricBackground3D[data-intensity="low"] {
+  opacity: 0.6;
+}
+
+.geometricBackground3D[data-intensity="medium"] {
+  opacity: 1;
+}
+
+.geometricBackground3D[data-intensity="high"] {
+  opacity: 1;
+}
+
+/* Performance optimization for mobile */
+@media (max-width: 768px) {
+  .geometricBackground3D {
+    opacity: 0.5;
+  }
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .geometricBackground3D {
+    display: none;
+  }
+}

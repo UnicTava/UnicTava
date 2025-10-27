@@ -1,0 +1,300 @@
+.section {
+  position: relative;
+  width: 100%;
+  min-height: auto;
+  background: #050505;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 3rem 0 2rem;
+}
+
+
+.container {
+  width: 100%;
+  max-width: 1694px;
+  margin: 0 auto;
+  padding: 0 60px;
+  position: relative;
+  z-index: 1;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.container.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.title {
+  font-family: 'Roboto', sans-serif;
+  font-size: clamp(48px, 5.2vw, 80px);
+  font-weight: 400;
+  line-height: 1.2;
+  background: linear-gradient(90deg, #CFD8F6 0%, #534EB6 99%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.valoresGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  max-width: 1468px;
+  margin: 0 auto;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px 30px;
+  background: rgba(15, 15, 25, 0.4);
+  border: 1px solid rgba(150, 146, 230, 0.2);
+  border-radius: 20px;
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              border-color 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  cursor: pointer;
+  opacity: 0;
+  animation: cardAppear 0.6s ease-out forwards;
+  backdrop-filter: blur(10px);
+  will-change: transform;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+@keyframes cardAppear {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.02) translateZ(0);
+  z-index: 10;
+  border-color: rgba(150, 146, 230, 0.4);
+}
+
+.card.hovered {
+  transform: translateY(-10px) scale(1.02) translateZ(0);
+  border-color: rgba(150, 146, 230, 0.4);
+}
+
+.iconContainer {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 2;
+}
+
+.cardIcon {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 10px 20px rgba(139, 127, 255, 0.3));
+  transition: all 0.4s ease;
+  animation: floatCard 6s ease-in-out infinite;
+}
+
+@keyframes floatCard {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.card:hover .cardIcon {
+  filter: drop-shadow(0 15px 30px rgba(139, 127, 255, 0.6))
+          drop-shadow(0 5px 10px rgba(255, 100, 200, 0.3));
+  transform: scale(1.1);
+  animation-play-state: paused;
+}
+
+.valueTitle {
+  font-family: 'Roboto', sans-serif;
+  font-size: clamp(24px, 2vw, 32px);
+  font-weight: 600;
+  line-height: 1.3;
+  color: #CFD8F6;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.valueDescription {
+  font-family: 'Roboto', sans-serif;
+  font-size: clamp(14px, 1.2vw, 16px);
+  font-weight: 400;
+  line-height: 1.6;
+  color: rgba(207, 216, 246, 0.8);
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  max-width: 100%;
+}
+
+.glowEffect {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120%;
+  height: 120%;
+  background: radial-gradient(circle at center,
+    rgba(150, 146, 230, 0.2) 0%,
+    rgba(96, 92, 207, 0.1) 30%,
+    transparent 70%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+  z-index: 1;
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.15);
+    opacity: 0.5;
+  }
+}
+
+.card:hover .glowEffect {
+  opacity: 1;
+}
+
+.particleTrail {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200%;
+  height: 200%;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  background: radial-gradient(circle at center,
+    rgba(150, 146, 230, 0.05) 0%,
+    rgba(255, 100, 200, 0.02) 50%,
+    transparent 100%);
+}
+
+.card:hover .particleTrail {
+  opacity: 1;
+  animation: rotateParticles 10s linear infinite;
+}
+
+@keyframes rotateParticles {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@media (max-width: 1200px) {
+  .valoresGrid {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .section {
+    padding: 2rem 0;
+  }
+
+  .container {
+    padding: 0 2rem;
+  }
+
+  .title {
+    font-size: clamp(40px, 8vw, 60px);
+    margin-bottom: 2rem;
+  }
+
+  .valoresGrid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    gap: 2rem;
+  }
+
+  .card:hover {
+    transform: translateY(-10px) scale(1.02);
+  }
+
+  .canvas3d {
+    opacity: 0.7;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 1.5rem 0;
+  }
+
+  .container {
+    padding: 0 1.5rem;
+  }
+
+  .title {
+    font-size: clamp(32px, 8vw, 48px);
+    margin-bottom: 1.5rem;
+  }
+
+  .valoresGrid {
+    gap: 1.5rem;
+  }
+
+  .card {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+  }
+
+  .iconContainer {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1.5rem;
+  }
+
+  .valueTitle {
+    margin-bottom: 1rem;
+  }
+
+  .canvas3d {
+    opacity: 0.5;
+  }
+
+  @keyframes floatCard {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+}
