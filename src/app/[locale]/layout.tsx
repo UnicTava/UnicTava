@@ -33,10 +33,38 @@ export async function generateMetadata({
   const currentUrl = `${baseUrl}/${locale}`
   const ogImage = `${baseUrl}/hero-background.png`
 
+  // Títulos e descrições otimizados por idioma
+  const seoTitle = locale === 'pt-BR' 
+    ? 'UnicTava Milano | Soluções 3D, IA, VR, AR e Jogos | Líder em Tecnologias Imersivas'
+    : locale === 'it'
+    ? 'UnicTava Milano | Soluzioni 3D, IA, VR, AR e Giochi | Leader Tecnologie Immersive'
+    : 'UnicTava Milano | 3D Solutions, AI, VR, AR & Games | Immersive Technology Leader'
+
+  const seoDescription = locale === 'pt-BR'
+    ? 'UnicTava: especialistas em inteligência artificial 3D, realidade virtual, realidade aumentada, simulações industriais, desenvolvimento de jogos e cinemática 3D em Milano. Transforme seu negócio com tecnologias imersivas de ponta.'
+    : locale === 'it'
+    ? 'UnicTava: esperti in intelligenza artificiale 3D, realtà virtuale, realtà aumentata, simulazioni industriali, sviluppo giochi e cinematica 3D a Milano. Trasforma il tuo business con tecnologie immersive.'
+    : 'UnicTava: experts in 3D artificial intelligence, virtual reality, augmented reality, industrial simulations, game development and 3D cinematics in Milano. Transform your business with cutting-edge immersive technologies.'
+
   return {
-    title: metadata.title,
-    description: metadata.description,
-    keywords: metadata.keywords.split(', '),
+    title: seoTitle,
+    description: seoDescription,
+    keywords: [
+      '3D Milano',
+      'inteligência artificial 3D',
+      'realidade virtual',
+      'realidade aumentada',
+      'VR AR',
+      'simulação 3D',
+      'desenvolvimento jogos 3D',
+      'cinemática 3D',
+      'avatares 3D IA',
+      'treinamento virtual',
+      'UnicTava Milano',
+      'tecnologias imersivas',
+      'Unity Unreal Engine',
+      'human bots 3D',
+    ],
     authors: [{ name: 'UnicTava' }],
     creator: 'UnicTava',
     publisher: 'UnicTava',

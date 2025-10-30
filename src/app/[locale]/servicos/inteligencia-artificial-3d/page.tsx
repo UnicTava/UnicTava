@@ -5,13 +5,39 @@ import { Navigation } from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import { PageTransition } from '@/components/PageTransition'
 import Link from 'next/link'
-import { useTranslations } from 'next-intl'
+import { useTranslations, useLocale } from 'next-intl'
 import { StardustCanvas } from '@/components/StardustCanvas'
+import { ServiceSchema, BreadcrumbSchema, FAQPageSchema } from '@/components/StructuredData'
 import styles from './ia3d.module.css'
 
 export default function InteligenciaArtificial3DPage() {
   const t = useTranslations('aiService')
+  const locale = useLocale()
   const [expandedFaq, setExpandedFaq] = useState<number | null>(null)
+
+  const baseUrl = 'https://unictava.com'
+  const currentUrl = `${baseUrl}/${locale}/servicos/inteligencia-artificial-3d`
+
+  const breadcrumbItems = [
+    { name: 'Home', url: `${baseUrl}/${locale}` },
+    { name: 'Serviços', url: `${baseUrl}/${locale}/servicos` },
+    { name: 'Inteligência Artificial 3D', url: currentUrl }
+  ]
+
+  const faqItems = [
+    {
+      question: t('faq.question1'),
+      answer: t('faq.answer1')
+    },
+    {
+      question: t('faq.question2'),
+      answer: t('faq.answer2')
+    },
+    {
+      question: t('faq.question3'),
+      answer: t('faq.answer3')
+    }
+  ]
 
   const toggleFaq = (index: number) => {
     setExpandedFaq(expandedFaq === index ? null : index)
@@ -42,6 +68,14 @@ export default function InteligenciaArtificial3DPage() {
 
   return (
     <PageTransition>
+      <ServiceSchema 
+        name="Inteligência Artificial 3D"
+        description={t('hero.description')}
+        url={currentUrl}
+        locale={locale}
+      />
+      <BreadcrumbSchema items={breadcrumbItems} />
+      <FAQPageSchema faqs={faqItems} />
       <main className={styles.main}>
       <StardustCanvas mode="page" />
       <Navigation />

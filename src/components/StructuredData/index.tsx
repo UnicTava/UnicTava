@@ -120,3 +120,88 @@ export function BreadcrumbSchema({ items }: BreadcrumbSchemaProps) {
     />
   )
 }
+
+interface FAQPageSchemaProps {
+  faqs: Array<{
+    question: string
+    answer: string
+  }>
+}
+
+export function FAQPageSchema({ faqs }: FAQPageSchemaProps) {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map(faq => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer
+      }
+    }))
+  }
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  )
+}
+
+interface ArticleSchemaProps {
+  title: string
+  description: string
+  url: string
+  image: string
+  datePublished: string
+  dateModified: string
+  author: string
+  locale: string
+}
+
+export function ArticleSchema({
+  title,
+  description,
+  url,
+  image,
+  datePublished,
+  dateModified,
+  author,
+  locale
+}: ArticleSchemaProps) {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: title,
+    description,
+    image,
+    datePublished,
+    dateModified,
+    author: {
+      '@type': 'Person',
+      name: author
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'UnicTava',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://unictava.com/Logo/logo.png'
+      }
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': url
+    },
+    inLanguage: locale
+  }
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  )
+}

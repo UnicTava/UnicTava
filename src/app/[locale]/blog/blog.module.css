@@ -1,0 +1,130 @@
+.main {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #0a0a0a 0%, #1a1a2e 100%);
+  color: #ffffff;
+  position: relative;
+}
+
+.hero {
+  padding: 12rem 2rem 6rem;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, #ffffff 0%, #a0a0a0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: #b0b0b0;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.postsSection {
+  padding: 4rem 2rem 8rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.postsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.postCard {
+  background: rgba(26, 26, 46, 0.6);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.postCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(138, 43, 226, 0.3);
+}
+
+.postImage {
+  height: 200px;
+  background: linear-gradient(135deg, #1a1a2e 0%, #2d2d4a 100%);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.category {
+  background: rgba(138, 43, 226, 0.8);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.postContent {
+  padding: 2rem;
+}
+
+.date {
+  font-size: 0.875rem;
+  color: #8a8a8a;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.postTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+  color: #ffffff;
+}
+
+.excerpt {
+  font-size: 1rem;
+  color: #b0b0b0;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.postMeta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.readTime {
+  font-size: 0.875rem;
+  color: #8a8a8a;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  
+  .postsGrid {
+    grid-template-columns: 1fr;
+  }
+}
