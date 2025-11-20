@@ -44,7 +44,7 @@
 .heroContainer {
   position: relative;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -79,6 +79,7 @@
   width: 100%;
   height: 100%;
   padding: 0 2rem;
+  overflow: visible;
 }
 
 .logoWrapper {
@@ -86,7 +87,9 @@
   justify-content: center;
   align-items: center;
   animation: fadeInLogo 1s ease-in-out;
-  padding: 4rem;
+  padding: 6rem 4rem;
+  overflow: visible;
+  min-height: 500px;
 }
 
 @keyframes fadeInLogo {
