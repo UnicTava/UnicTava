@@ -31,7 +31,7 @@ export const ModalCinematica3D: React.FC<ModalCinematica3DProps> = ({ isOpen, on
 
     // Navega após a animação completar
     setTimeout(() => {
-      router.push('/servicos/cinematica-3d')
+      router.push('/servicos/simulacros')
     }, 1400)
   }
 

@@ -7,23 +7,23 @@ import { PageTransition } from '@/components/PageTransition'
 import { useTranslations, useLocale } from 'next-intl'
 import { StardustCanvas } from '@/components/StardustCanvas'
 import {
-  VRHeadsetIcon,
-  ARIcon,
-  GameEngineIcon,
-  MultiAgentIcon,
-  Avatar3DIcon,
-  ServerIcon,
-  DashboardIcon,
-  ModularIcon,
-  PoliceTrainingIcon,
-  EducationalIcon,
-  ArchitectureTourIcon,
-  CorporateIcon
+  Printer3DIcon,
+  MaterialsIcon,
+  EmbeddedElectronicsIcon,
+  MicrocontrollerIcon,
+  SensorIcon,
+  HapticIcon,
+  CalibrationIcon,
+  FirmwareIcon,
+  PistolIcon,
+  TaserIcon,
+  SubmachineIcon,
+  IndustrialToolIcon
 } from '@/components/Icons/AIServiceIcons'
-import styles from './vrar.module.css'
+import styles from './simulacros.module.css'
 
-export default function VrArPage() {
-  const t = useTranslations('vrarService')
+export default function SimulacrosPage() {
+  const t = useTranslations('cinematicsService')
   const locale = useLocale()
   const [expandedFaq, setExpandedFaq] = useState<number | null>(null)
   const [expandedWhatItDoes, setExpandedWhatItDoes] = useState<number | null>(null)
@@ -85,7 +85,6 @@ export default function VrArPage() {
             <p className={styles.heroDescription}>
               {t('hero.description')}
             </p>
-
             <p className={styles.heroDescription}>
               {t('hero.description2')}
             </p>
@@ -102,7 +101,7 @@ export default function VrArPage() {
                   playsInline
                   className={styles.cardVideo}
                 >
-                  <source src="/video/VR (2).mp4" type="video/mp4" />
+                  <source src="/video/CINEMATIC.mp4" type="video/mp4" />
                 </video>
               </div>
             </div>
@@ -118,7 +117,7 @@ export default function VrArPage() {
           </div>
         </div>
         <div className={styles.whatItDoesContainer}>
-          {/* Item 1 - Treinamentos Profissionais */}
+          {/* Item 1 */}
           <div className={styles.whatItDoesItem}>
             <div className={styles.whatItDoesQuestion} onClick={() => toggleWhatItDoes(0)}>
               <span>{t('whatItDoes.item1Title')}</span>
@@ -128,15 +127,15 @@ export default function VrArPage() {
               <div className={styles.whatItDoesAnswer}>
                 <p>{t('whatItDoes.item1Text')}</p>
                 <ul className={styles.whatItDoesList}>
-                  {(t.raw('whatItDoes.item1List') as string[]).map((item, i) => (
-                    <li key={i}>{item}</li>
+                  {t.raw('whatItDoes.item1List').map((item: string, index: number) => (
+                    <li key={index}>{item}</li>
                   ))}
                 </ul>
               </div>
             )}
           </div>
 
-          {/* Item 2 - Simuladores Realistas */}
+          {/* Item 2 */}
           <div className={styles.whatItDoesItem}>
             <div className={styles.whatItDoesQuestion} onClick={() => toggleWhatItDoes(1)}>
               <span>{t('whatItDoes.item2Title')}</span>
@@ -146,15 +145,15 @@ export default function VrArPage() {
               <div className={styles.whatItDoesAnswer}>
                 <p>{t('whatItDoes.item2Text')}</p>
                 <ul className={styles.whatItDoesList}>
-                  {(t.raw('whatItDoes.item2List') as string[]).map((item, i) => (
-                    <li key={i}>{item}</li>
+                  {t.raw('whatItDoes.item2List').map((item: string, index: number) => (
+                    <li key={index}>{item}</li>
                   ))}
                 </ul>
               </div>
             )}
           </div>
 
-          {/* Item 3 - Gamificação */}
+          {/* Item 3 */}
           <div className={styles.whatItDoesItem}>
             <div className={styles.whatItDoesQuestion} onClick={() => toggleWhatItDoes(2)}>
               <span>{t('whatItDoes.item3Title')}</span>
@@ -164,15 +163,15 @@ export default function VrArPage() {
               <div className={styles.whatItDoesAnswer}>
                 <p>{t('whatItDoes.item3Text')}</p>
                 <ul className={styles.whatItDoesList}>
-                  {(t.raw('whatItDoes.item3List') as string[]).map((item, i) => (
-                    <li key={i}>{item}</li>
+                  {t.raw('whatItDoes.item3List').map((item: string, index: number) => (
+                    <li key={index}>{item}</li>
                   ))}
                 </ul>
               </div>
             )}
           </div>
 
-          {/* Item 4 - Experiências Educacionais */}
+          {/* Item 4 */}
           <div className={styles.whatItDoesItem}>
             <div className={styles.whatItDoesQuestion} onClick={() => toggleWhatItDoes(3)}>
               <span>{t('whatItDoes.item4Title')}</span>
@@ -182,132 +181,8 @@ export default function VrArPage() {
               <div className={styles.whatItDoesAnswer}>
                 <p>{t('whatItDoes.item4Text')}</p>
                 <ul className={styles.whatItDoesList}>
-                  {(t.raw('whatItDoes.item4List') as string[]).map((item, i) => (
-                    <li key={i}>{item}</li>
-                  ))}
-                </ul>
-              </div>
-            )}
-          </div>
-
-          {/* Item 5 - Arquitetura em VR */}
-          <div className={styles.whatItDoesItem}>
-            <div className={styles.whatItDoesQuestion} onClick={() => toggleWhatItDoes(4)}>
-              <span>{t('whatItDoes.item5Title')}</span>
-              <span className={styles.whatItDoesIcon}>{expandedWhatItDoes === 4 ? '−' : '+'}</span>
-            </div>
-            {expandedWhatItDoes === 4 && (
-              <div className={styles.whatItDoesAnswer}>
-                <p>{t('whatItDoes.item5Text')}</p>
-                <ul className={styles.whatItDoesList}>
-                  {(t.raw('whatItDoes.item5List') as string[]).map((item, i) => (
-                    <li key={i}>{item}</li>
-                  ))}
-                </ul>
-              </div>
-            )}
-          </div>
-
-          {/* Item 6 - Aplicações Empresariais */}
-          <div className={styles.whatItDoesItem}>
-            <div className={styles.whatItDoesQuestion} onClick={() => toggleWhatItDoes(5)}>
-              <span>{t('whatItDoes.item6Title')}</span>
-              <span className={styles.whatItDoesIcon}>{expandedWhatItDoes === 5 ? '−' : '+'}</span>
-            </div>
-            {expandedWhatItDoes === 5 && (
-              <div className={styles.whatItDoesAnswer}>
-                <p>{t('whatItDoes.item6Text')}</p>
-                <ul className={styles.whatItDoesList}>
-                  {(t.raw('whatItDoes.item6List') as string[]).map((item, i) => (
-                    <li key={i}>{item}</li>
-                  ))}
-                </ul>
-              </div>
-            )}
-          </div>
-
-          {/* Item 7 - Realidade Aumentada */}
-          <div className={styles.whatItDoesItem}>
-            <div className={styles.whatItDoesQuestion} onClick={() => toggleWhatItDoes(6)}>
-              <span>{t('whatItDoes.item7Title')}</span>
-              <span className={styles.whatItDoesIcon}>{expandedWhatItDoes === 6 ? '−' : '+'}</span>
-            </div>
-            {expandedWhatItDoes === 6 && (
-              <div className={styles.whatItDoesAnswer}>
-                <p>{t('whatItDoes.item7Text')}</p>
-                <ul className={styles.whatItDoesList}>
-                  {(t.raw('whatItDoes.item7List') as string[]).map((item, i) => (
-                    <li key={i}>{item}</li>
-                  ))}
-                </ul>
-              </div>
-            )}
-          </div>
-        </div>
-      </section>
-
-      {/* Modos de Entrega Section */}
-      <section className={styles.whatItDoesSection}>
-        <div className={styles.sectionTitleWrapper}>
-          <div className={styles.titleContainer}>
-            <h2 className={styles.sectionTitle}>{t('deliveryModes.title')}</h2>
-          </div>
-        </div>
-        <div className={styles.whatItDoesContainer}>
-          {/* Standalone */}
-          <div className={styles.whatItDoesItem}>
-            <div className={styles.whatItDoesQuestion} onClick={() => toggleWhatItDoes(7)}>
-              <span>{t('deliveryModes.item1Title')}</span>
-              <span className={styles.whatItDoesIcon}>{expandedWhatItDoes === 7 ? '−' : '+'}</span>
-            </div>
-            {expandedWhatItDoes === 7 && (
-              <div className={styles.whatItDoesAnswer}>
-                <p>{t('deliveryModes.item1Text')}</p>
-              </div>
-            )}
-          </div>
-
-          {/* PCVR */}
-          <div className={styles.whatItDoesItem}>
-            <div className={styles.whatItDoesQuestion} onClick={() => toggleWhatItDoes(8)}>
-              <span>{t('deliveryModes.item2Title')}</span>
-              <span className={styles.whatItDoesIcon}>{expandedWhatItDoes === 8 ? '−' : '+'}</span>
-            </div>
-            {expandedWhatItDoes === 8 && (
-              <div className={styles.whatItDoesAnswer}>
-                <p>{t('deliveryModes.item2Text')}</p>
-              </div>
-            )}
-          </div>
-
-          {/* Multiplayer */}
-          <div className={styles.whatItDoesItem}>
-            <div className={styles.whatItDoesQuestion} onClick={() => toggleWhatItDoes(9)}>
-              <span>{t('deliveryModes.item3Title')}</span>
-              <span className={styles.whatItDoesIcon}>{expandedWhatItDoes === 9 ? '−' : '+'}</span>
-            </div>
-            {expandedWhatItDoes === 9 && (
-              <div className={styles.whatItDoesAnswer}>
-                <p>{t('deliveryModes.item3Text')}</p>
-              </div>
-            )}
-          </div>
-        </div>
-      </section>
-
-      {/* Setores Section */}
-      <section className={styles.sectorsSection}>
-        <div className={styles.whatItDoesContainer}>
-          <div className={styles.whatItDoesItem}>
-            <div className={styles.whatItDoesQuestion} onClick={() => toggleWhatItDoes(10)}>
-              <span>{t('sectors.title')}</span>
-              <span className={styles.whatItDoesIcon}>{expandedWhatItDoes === 10 ? '−' : '+'}</span>
-            </div>
-            {expandedWhatItDoes === 10 && (
-              <div className={styles.whatItDoesAnswer}>
-                <ul className={styles.whatItDoesList}>
-                  {(t.raw('sectors.list') as string[]).map((item, i) => (
-                    <li key={i}>{item}</li>
+                  {t.raw('whatItDoes.item4List').map((item: string, index: number) => (
+                    <li key={index}>{item}</li>
                   ))}
                 </ul>
               </div>
@@ -324,52 +199,46 @@ export default function VrArPage() {
           </div>
         </div>
         <div className={styles.advantagesBentoGrid}>
-          {/* Row 1 - Card Grande: Imersão Total */}
+          {/* Row 1 - Card Grande: Treinamento Realista */}
           <div className={`${styles.advantageCard} ${styles.cardLarge}`}>
             <h3 className={styles.advantageTitle}>{t('advantages.item1Title')}</h3>
             <p className={styles.advantageText}>{t('advantages.item1Text')}</p>
           </div>
 
-          {/* Row 1 - Card Normal: Redução de Custos */}
+          {/* Row 1 - Card Normal: Total Segurança */}
           <div className={styles.advantageCard}>
             <h3 className={styles.advantageTitle}>{t('advantages.item2Title')}</h3>
             <p className={styles.advantageText}>{t('advantages.item2Text')}</p>
           </div>
 
-          {/* Row 2 - Card Normal: Maior Retenção */}
+          {/* Row 2 - Card Normal: Precisão e Controle */}
           <div className={styles.advantageCard}>
             <h3 className={styles.advantageTitle}>{t('advantages.item3Title')}</h3>
             <p className={styles.advantageText}>{t('advantages.item3Text')}</p>
           </div>
 
-          {/* Row 2 - Card Grande: Segurança no Treinamento */}
+          {/* Row 2 - Card Grande: Projetos Feitos Sob Medida */}
           <div className={`${styles.advantageCard} ${styles.cardLarge}`}>
             <h3 className={styles.advantageTitle}>{t('advantages.item4Title')}</h3>
             <p className={styles.advantageText}>{t('advantages.item4Text')}</p>
           </div>
 
-          {/* Row 3 - Card Grande: Personalização Completa */}
-          <div className={`${styles.advantageCard} ${styles.cardLarge}`}>
+          {/* Row 3 - Card Normal: Compatibilidade Total */}
+          <div className={styles.advantageCard}>
             <h3 className={styles.advantageTitle}>{t('advantages.item5Title')}</h3>
             <p className={styles.advantageText}>{t('advantages.item5Text')}</p>
           </div>
 
-          {/* Row 3 - Card Normal: Escalável e Atualizável */}
+          {/* Row 3 - Card Normal: Possibilidade de Telemetria */}
           <div className={styles.advantageCard}>
             <h3 className={styles.advantageTitle}>{t('advantages.item6Title')}</h3>
             <p className={styles.advantageText}>{t('advantages.item6Text')}</p>
           </div>
 
-          {/* Row 4 - Card Grande: Compatibilidade Ampla */}
-          <div className={`${styles.advantageCard} ${styles.cardLarge}`}>
+          {/* Row 3 - Card Normal: Atualização Rápida */}
+          <div className={styles.advantageCard}>
             <h3 className={styles.advantageTitle}>{t('advantages.item7Title')}</h3>
             <p className={styles.advantageText}>{t('advantages.item7Text')}</p>
-          </div>
-
-          {/* Row 4 - Card Normal: Possibilidade de Multilíngue */}
-          <div className={styles.advantageCard}>
-            <h3 className={styles.advantageTitle}>{t('advantages.item8Title')}</h3>
-            <p className={styles.advantageText}>{t('advantages.item8Text')}</p>
           </div>
         </div>
       </section>
@@ -383,176 +252,167 @@ export default function VrArPage() {
         </div>
 
         <div className={styles.technologiesGrid}>
-          {/* Card 1: Headsets VR Premium - CLICÁVEL COM MODAL */}
+          {/* Card 1: Impressão 3D */}
           <div className={styles.techCard} onClick={() => setOpenModal(1)}>
             <div className={styles.techCardIconWrapper}>
-              <VRHeadsetIcon className={styles.techCardIcon} size={48} />
+              <Printer3DIcon className={styles.techCardIcon} size={48} />
             </div>
             <h3 className={styles.techCardTitle}>{t('technologies.item1Title')}</h3>
           </div>
 
-          {/* Card 2: Realidade Aumentada (AR) */}
+          {/* Card 2: Materiais Técnicos */}
           <div className={styles.techCard} onClick={() => setOpenModal(2)}>
             <div className={styles.techCardIconWrapper}>
-              <ARIcon className={styles.techCardIcon} size={48} />
+              <MaterialsIcon className={styles.techCardIcon} size={48} />
             </div>
             <h3 className={styles.techCardTitle}>{t('technologies.item2Title')}</h3>
           </div>
 
-          {/* Card 3: Game Engines */}
+          {/* Card 3: Eletrônica Embarcada */}
           <div className={styles.techCard} onClick={() => setOpenModal(3)}>
             <div className={styles.techCardIconWrapper}>
-              <GameEngineIcon className={styles.techCardIcon} size={48} />
+              <EmbeddedElectronicsIcon className={styles.techCardIcon} size={48} />
             </div>
             <h3 className={styles.techCardTitle}>{t('technologies.item3Title')}</h3>
           </div>
 
-          {/* Card 4: Sistemas Multiplayer */}
+          {/* Card 4: Microcontroladores */}
           <div className={styles.techCard} onClick={() => setOpenModal(4)}>
             <div className={styles.techCardIconWrapper}>
-              <MultiAgentIcon className={styles.techCardIcon} size={48} />
+              <MicrocontrollerIcon className={styles.techCardIcon} size={48} />
             </div>
             <h3 className={styles.techCardTitle}>{t('technologies.item4Title')}</h3>
           </div>
 
-          {/* Card 5: Avatares 3D */}
+          {/* Card 5: Sensores */}
           <div className={styles.techCard} onClick={() => setOpenModal(5)}>
             <div className={styles.techCardIconWrapper}>
-              <Avatar3DIcon className={styles.techCardIcon} size={48} />
+              <SensorIcon className={styles.techCardIcon} size={48} />
             </div>
             <h3 className={styles.techCardTitle}>{t('technologies.item5Title')}</h3>
           </div>
 
-          {/* Card 6: Cloud Rendering e PCVR */}
+          {/* Card 6: Feedback Haptic */}
           <div className={styles.techCard} onClick={() => setOpenModal(6)}>
             <div className={styles.techCardIconWrapper}>
-              <ServerIcon className={styles.techCardIcon} size={48} />
+              <HapticIcon className={styles.techCardIcon} size={48} />
             </div>
             <h3 className={styles.techCardTitle}>{t('technologies.item6Title')}</h3>
           </div>
 
-          {/* Card 7: Analytics e Telemetria */}
+          {/* Card 7: Calibração */}
           <div className={styles.techCard} onClick={() => setOpenModal(7)}>
             <div className={styles.techCardIconWrapper}>
-              <DashboardIcon className={styles.techCardIcon} size={48} />
+              <CalibrationIcon className={styles.techCardIcon} size={48} />
             </div>
             <h3 className={styles.techCardTitle}>{t('technologies.item7Title')}</h3>
           </div>
 
-          {/* Card 8: Arquitetura Modular */}
+          {/* Card 8: Firmware */}
           <div className={styles.techCard} onClick={() => setOpenModal(8)}>
             <div className={styles.techCardIconWrapper}>
-              <ModularIcon className={styles.techCardIcon} size={48} />
+              <FirmwareIcon className={styles.techCardIcon} size={48} />
             </div>
             <h3 className={styles.techCardTitle}>{t('technologies.item8Title')}</h3>
           </div>
         </div>
-      </section>
 
-      {/* Modal Universal com Carrossel 3D */}
-      {openModal !== null && (() => {
-        const techCards = [
-          { id: 1, icon: VRHeadsetIcon, title: t('technologies.item1Title'), text: t('technologies.item1Text') },
-          { id: 2, icon: ARIcon, title: t('technologies.item2Title'), text: t('technologies.item2Text') },
-          { id: 3, icon: GameEngineIcon, title: t('technologies.item3Title'), text: t('technologies.item3Text') },
-          { id: 4, icon: MultiAgentIcon, title: t('technologies.item4Title'), text: t('technologies.item4Text') },
-          { id: 5, icon: Avatar3DIcon, title: t('technologies.item5Title'), text: t('technologies.item5Text') },
-          { id: 6, icon: ServerIcon, title: t('technologies.item6Title'), text: t('technologies.item6Text') },
-          { id: 7, icon: DashboardIcon, title: t('technologies.item7Title'), text: t('technologies.item7Text') },
-          { id: 8, icon: ModularIcon, title: t('technologies.item8Title'), text: t('technologies.item8Text') }
-        ]
+        {/* MODAL CARROSSEL */}
+        {openModal !== null && (() => {
+          const techCards = [
+            { id: 1, icon: Printer3DIcon, title: t('technologies.item1Title'), text: t('technologies.item1Text') },
+            { id: 2, icon: MaterialsIcon, title: t('technologies.item2Title'), text: t('technologies.item2Text') },
+            { id: 3, icon: EmbeddedElectronicsIcon, title: t('technologies.item3Title'), text: t('technologies.item3Text') },
+            { id: 4, icon: MicrocontrollerIcon, title: t('technologies.item4Title'), text: t('technologies.item4Text') },
+            { id: 5, icon: SensorIcon, title: t('technologies.item5Title'), text: t('technologies.item5Text') },
+            { id: 6, icon: HapticIcon, title: t('technologies.item6Title'), text: t('technologies.item6Text') },
+            { id: 7, icon: CalibrationIcon, title: t('technologies.item7Title'), text: t('technologies.item7Text') },
+            { id: 8, icon: FirmwareIcon, title: t('technologies.item8Title'), text: t('technologies.item8Text') }
+          ]
 
-        const currentIndex = techCards.findIndex(card => card.id === openModal)
+          const currentIndex = techCards.findIndex(card => card.id === openModal)
+          const leftIndex = currentIndex === 0 ? techCards.length - 1 : currentIndex - 1
+          const rightIndex = currentIndex === techCards.length - 1 ? 0 : currentIndex + 1
 
-        // Lógica circular
-        const leftIndex = currentIndex === 0 ? techCards.length - 1 : currentIndex - 1
-        const rightIndex = currentIndex === techCards.length - 1 ? 0 : currentIndex + 1
+          const LeftIcon = techCards[leftIndex].icon
+          const CenterIcon = techCards[currentIndex].icon
+          const RightIcon = techCards[rightIndex].icon
 
-        const leftCard = techCards[leftIndex]
-        const centerCard = techCards[currentIndex]
-        const rightCard = techCards[rightIndex]
-
-        const LeftIcon = leftCard?.icon
-        const CenterIcon = centerCard?.icon
-        const RightIcon = rightCard?.icon
-
-        return (
-          <div className={styles.carouselOverlay} onClick={() => setOpenModal(null)}>
-            <div className={styles.carouselContainer} onClick={(e) => e.stopPropagation()}>
-              {/* Carrossel de 3 Cards */}
-              <div className={styles.carouselCards} key={`carousel-${openModal}`}>
-                {/* Card Esquerdo - Esmaecido */}
-                <div className={`${styles.carouselCard} ${styles.carouselCardLeft}`} key={`left-${leftCard.id}`}>
-                  <div className={styles.carouselCardIconWrapper}>
-                    {LeftIcon && <LeftIcon className={styles.carouselCardIcon} size={48} />}
+          return (
+            <div className={styles.carouselOverlay} onClick={() => setOpenModal(null)}>
+              <div className={styles.carouselContainer} onClick={(e) => e.stopPropagation()}>
+                <div className={styles.carouselCards}>
+                  {/* Card Esquerdo (faded) */}
+                  <div className={`${styles.carouselCard} ${styles.carouselCardLeft}`}>
+                    <div className={styles.techCardIconWrapper}>
+                      <LeftIcon className={styles.techCardIcon} size={40} />
+                    </div>
+                    <h3 className={styles.techCardTitle}>{techCards[leftIndex].title}</h3>
                   </div>
-                  <h3 className={styles.carouselCardTitle}>{leftCard?.title}</h3>
-                </div>
 
-                {/* Card Central - Destacado com Modal */}
-                <div className={`${styles.carouselCard} ${styles.carouselCardCenter}`} key={`center-${centerCard.id}`}>
-                  <div className={styles.carouselCardIconWrapper}>
-                    {CenterIcon && <CenterIcon className={styles.carouselCardIcon} size={48} />}
-                  </div>
-                  <h3 className={styles.carouselCardTitle}>{centerCard?.title}</h3>
-
-                  {/* Modal sobre o card central */}
-                  <div className={styles.modalContent} onClick={(e) => e.stopPropagation()} key={`modal-${centerCard.id}`}>
-                    <button className={styles.modalCloseButton} onClick={() => setOpenModal(null)}>
-                      ×
-                    </button>
-
-                    <div className={styles.modalHeader}>
-                      <div className={styles.modalIconWrapper}>
-                        {CenterIcon && <CenterIcon className={styles.modalIcon} size={48} />}
+                  {/* Card Central (highlighted) com modal */}
+                  <div className={`${styles.carouselCard} ${styles.carouselCardCenter}`}>
+                    <div className={styles.modalContent}>
+                      <div className={styles.modalHeader}>
+                        <div className={styles.modalIconWrapper}>
+                          <CenterIcon className={styles.modalIcon} size={56} />
+                        </div>
+                        <h2 className={styles.modalTitle}>{techCards[currentIndex].title}</h2>
+                        <button className={styles.modalCloseButton} onClick={() => setOpenModal(null)}>×</button>
                       </div>
-                      <h2 className={styles.modalTitle}>{centerCard?.title}</h2>
+                      <div className={styles.modalBody}>
+                        <p>{techCards[currentIndex].text}</p>
+                      </div>
                     </div>
+                  </div>
 
-                    <div className={styles.modalBody}>
-                      <p>{centerCard?.text}</p>
+                  {/* Card Direito (faded) */}
+                  <div className={`${styles.carouselCard} ${styles.carouselCardRight}`}>
+                    <div className={styles.techCardIconWrapper}>
+                      <RightIcon className={styles.techCardIcon} size={40} />
                     </div>
+                    <h3 className={styles.techCardTitle}>{techCards[rightIndex].title}</h3>
                   </div>
                 </div>
 
-                {/* Card Direito - Esmaecido */}
-                <div className={`${styles.carouselCard} ${styles.carouselCardRight}`} key={`right-${rightCard.id}`}>
-                  <div className={styles.carouselCardIconWrapper}>
-                    {RightIcon && <RightIcon className={styles.carouselCardIcon} size={48} />}
+                {/* Navegação */}
+                <div className={styles.carouselNavigation}>
+                  <button
+                    className={styles.carouselNavArrow}
+                    onClick={(e) => {
+                      e.stopPropagation()
+                      setOpenModal(techCards[leftIndex].id)
+                    }}
+                  >
+                    ‹
+                  </button>
+                  <div className={styles.carouselNavDots}>
+                    {techCards.map((card, index) => (
+                      <button
+                        key={card.id}
+                        className={`${styles.carouselNavDot} ${index === currentIndex ? styles.carouselNavDotActive : ''}`}
+                        onClick={(e) => {
+                          e.stopPropagation()
+                          setOpenModal(card.id)
+                        }}
+                      />
+                    ))}
                   </div>
-                  <h3 className={styles.carouselCardTitle}>{rightCard?.title}</h3>
+                  <button
+                    className={styles.carouselNavArrow}
+                    onClick={(e) => {
+                      e.stopPropagation()
+                      setOpenModal(techCards[rightIndex].id)
+                    }}
+                  >
+                    ›
+                  </button>
                 </div>
-              </div>
-
-              {/* Navegação com Setas Discretas */}
-              <div className={styles.carouselNavigation}>
-                <button
-                  className={styles.carouselNavArrow}
-                  onClick={() => setOpenModal(leftCard.id)}
-                  aria-label="Anterior"
-                >
-                  ←
-                </button>
-                <div className={styles.carouselNavDots}>
-                  {techCards.map((_, idx) => (
-                    <span
-                      key={idx}
-                      className={`${styles.carouselNavDot} ${idx === currentIndex ? styles.carouselNavDotActive : ''}`}
-                    />
-                  ))}
-                </div>
-                <button
-                  className={styles.carouselNavArrow}
-                  onClick={() => setOpenModal(rightCard.id)}
-                  aria-label="Próximo"
-                >
-                  →
-                </button>
               </div>
             </div>
-          </div>
-        )
-      })()}
+          )
+        })()}
+      </section>
 
       {/* Projetos Section */}
       <section className={styles.projetosSection}>
@@ -563,12 +423,12 @@ export default function VrArPage() {
         </div>
         <div className={styles.projetosList}>
           <div
-            className={`${styles.serviceCard} ${styles.serviceCardPolice}`}
+            className={`${styles.serviceCard} ${styles.serviceCardTreinamento}`}
             onMouseMove={handleCardMouseMove}
             onMouseLeave={resetCardTilt}
           >
             <div className={styles.serviceCardIcon}>
-              <PoliceTrainingIcon size={64} className={styles.icon} />
+              <PistolIcon size={64} className={styles.icon} />
             </div>
             <div className={styles.serviceCardContent}>
               <h3 className={styles.serviceCardTitle}>{t('projects.item1Title')}</h3>
@@ -577,12 +437,12 @@ export default function VrArPage() {
           </div>
 
           <div
-            className={`${styles.serviceCard} ${styles.serviceCardEducacional}`}
+            className={`${styles.serviceCard} ${styles.serviceCardAtendimento}`}
             onMouseMove={handleCardMouseMove}
             onMouseLeave={resetCardTilt}
           >
             <div className={styles.serviceCardIcon}>
-              <EducationalIcon size={64} className={styles.icon} />
+              <TaserIcon size={64} className={styles.icon} />
             </div>
             <div className={styles.serviceCardContent}>
               <h3 className={styles.serviceCardTitle}>{t('projects.item2Title')}</h3>
@@ -591,12 +451,12 @@ export default function VrArPage() {
           </div>
 
           <div
-            className={`${styles.serviceCard} ${styles.serviceCardArchitecture}`}
+            className={`${styles.serviceCard} ${styles.serviceCardSimulacao}`}
             onMouseMove={handleCardMouseMove}
             onMouseLeave={resetCardTilt}
           >
             <div className={styles.serviceCardIcon}>
-              <ArchitectureTourIcon size={64} className={styles.icon} />
+              <SubmachineIcon size={64} className={styles.icon} />
             </div>
             <div className={styles.serviceCardContent}>
               <h3 className={styles.serviceCardTitle}>{t('projects.item3Title')}</h3>
@@ -605,12 +465,12 @@ export default function VrArPage() {
           </div>
 
           <div
-            className={`${styles.serviceCard} ${styles.serviceCardCorporativo}`}
+            className={`${styles.serviceCard} ${styles.serviceCardTreinamento}`}
             onMouseMove={handleCardMouseMove}
             onMouseLeave={resetCardTilt}
           >
             <div className={styles.serviceCardIcon}>
-              <CorporateIcon size={64} className={styles.icon} />
+              <IndustrialToolIcon size={64} className={styles.icon} />
             </div>
             <div className={styles.serviceCardContent}>
               <h3 className={styles.serviceCardTitle}>{t('projects.item4Title')}</h3>

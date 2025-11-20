@@ -9,7 +9,7 @@ const staticRoutes = [
   '',
   '/home',
   '/servicos',
-  '/servicos/cinematica-3d',
+  '/servicos/simulacros',
   '/servicos/desenvolvimento-jogos-3d',
   '/servicos/educacao-treinamento-3d',
   '/servicos/inteligencia-artificial-3d',

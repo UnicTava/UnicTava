@@ -84,7 +84,7 @@ export default function ServicosPage() {
           {/* Left 3D Card */}
           <div className={styles.cinematicaLeft}>
             <div className={styles.cardsContainer}>
-              <Link href={`/${locale}/servicos/cinematica-3d`} className={styles.cardLink}>
+              <Link href={`/${locale}/servicos/simulacros`} className={styles.cardLink}>
                 <div className={styles.featuredCardCinematica}>
                   <video
                     autoPlay
@@ -116,7 +116,7 @@ export default function ServicosPage() {
             </p>
 
             <div className={styles.buttonWrapper}>
-              <Link href={`/${locale}/servicos/cinematica-3d`}>
+              <Link href={`/${locale}/servicos/simulacros`}>
                 <Button
                   variant="secondary"
                   size="small"
