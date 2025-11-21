@@ -4,16 +4,24 @@ import { useState, type MouseEvent } from 'react'
 import { Navigation } from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import { PageTransition } from '@/components/PageTransition'
-import { useTranslations } from 'next-intl'
+import { useTranslations, useLocale } from 'next-intl'
 import { StardustCanvas } from '@/components/StardustCanvas'
+import { PCIcon, VRHeadsetIcon, HybridIcon, OperationalSimIcon, EducationalSimIcon, MilitarySimIcon, JudicialSimIcon, SecuritySimIcon } from '@/components/Icons/AIServiceIcons'
 import styles from './simulacao3d.module.css'
 
 export default function Simulacao3DPage() {
   const t = useTranslations('simulationService')
+  const locale = useLocale()
   const [expandedFaq, setExpandedFaq] = useState<number | null>(null)
+  const [expandedWhatItDoes, setExpandedWhatItDoes] = useState<number | null>(null)
+  const [openModal, setOpenModal] = useState<number | null>(null)
 
   const toggleFaq = (index: number) => {
     setExpandedFaq(expandedFaq === index ? null : index)
+  }
+
+  const toggleWhatItDoes = (index: number) => {
+    setExpandedWhatItDoes(expandedWhatItDoes === index ? null : index)
   }
 
   const handleCardMouseMove = (event: MouseEvent<HTMLDivElement>) => {
@@ -85,59 +93,331 @@ export default function Simulacao3DPage() {
         </div>
       </section>
 
-      {/* Vantagens Section */}
+      {/* O que desenvolvemos Section */}
+      <section className={styles.whatItDoesSection}>
+        <div className={styles.sectionTitleWrapper}>
+          <div className={styles.titleContainer}>
+            <h2 className={styles.sectionTitle}>{t('whatItDoes.title')}</h2>
+          </div>
+        </div>
+        <div className={styles.whatItDoesContainer}>
+          {/* Item 1: Simulações Operacionais */}
+          <div className={styles.whatItDoesItem}>
+            <div className={styles.whatItDoesQuestion} onClick={() => toggleWhatItDoes(0)}>
+              <span>{t('whatItDoes.item1Title')}</span>
+              <span className={styles.whatItDoesIcon}>{expandedWhatItDoes === 0 ? '−' : '+'}</span>
+            </div>
+            {expandedWhatItDoes === 0 && (
+              <div className={styles.whatItDoesAnswer}>
+                <p>{t('whatItDoes.item1Text')}</p>
+                <ul className={styles.whatItDoesList}>
+                  {(t.raw('whatItDoes.item1List') as string[]).map((item, idx) => (
+                    <li key={idx}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
+
+          {/* Item 2: Simulações Educacionais */}
+          <div className={styles.whatItDoesItem}>
+            <div className={styles.whatItDoesQuestion} onClick={() => toggleWhatItDoes(1)}>
+              <span>{t('whatItDoes.item2Title')}</span>
+              <span className={styles.whatItDoesIcon}>{expandedWhatItDoes === 1 ? '−' : '+'}</span>
+            </div>
+            {expandedWhatItDoes === 1 && (
+              <div className={styles.whatItDoesAnswer}>
+                <p>{t('whatItDoes.item2Text')}</p>
+                <ul className={styles.whatItDoesList}>
+                  {(t.raw('whatItDoes.item2List') as string[]).map((item, idx) => (
+                    <li key={idx}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
+
+          {/* Item 3: Simulações Profissionais para Empresas */}
+          <div className={styles.whatItDoesItem}>
+            <div className={styles.whatItDoesQuestion} onClick={() => toggleWhatItDoes(2)}>
+              <span>{t('whatItDoes.item3Title')}</span>
+              <span className={styles.whatItDoesIcon}>{expandedWhatItDoes === 2 ? '−' : '+'}</span>
+            </div>
+            {expandedWhatItDoes === 2 && (
+              <div className={styles.whatItDoesAnswer}>
+                <p>{t('whatItDoes.item3Text')}</p>
+                <ul className={styles.whatItDoesList}>
+                  {(t.raw('whatItDoes.item3List') as string[]).map((item, idx) => (
+                    <li key={idx}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
+
+          {/* Item 4: Simulações de Segurança e Prevenção */}
+          <div className={styles.whatItDoesItem}>
+            <div className={styles.whatItDoesQuestion} onClick={() => toggleWhatItDoes(3)}>
+              <span>{t('whatItDoes.item4Title')}</span>
+              <span className={styles.whatItDoesIcon}>{expandedWhatItDoes === 3 ? '−' : '+'}</span>
+            </div>
+            {expandedWhatItDoes === 3 && (
+              <div className={styles.whatItDoesAnswer}>
+                <p>{t('whatItDoes.item4Text')}</p>
+                <ul className={styles.whatItDoesList}>
+                  {(t.raw('whatItDoes.item4List') as string[]).map((item, idx) => (
+                    <li key={idx}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
+
+          {/* Item 5: Simulações Militares e Policiais */}
+          <div className={styles.whatItDoesItem}>
+            <div className={styles.whatItDoesQuestion} onClick={() => toggleWhatItDoes(4)}>
+              <span>{t('whatItDoes.item5Title')}</span>
+              <span className={styles.whatItDoesIcon}>{expandedWhatItDoes === 4 ? '−' : '+'}</span>
+            </div>
+            {expandedWhatItDoes === 4 && (
+              <div className={styles.whatItDoesAnswer}>
+                <p>{t('whatItDoes.item5Text')}</p>
+                <ul className={styles.whatItDoesList}>
+                  {(t.raw('whatItDoes.item5List') as string[]).map((item, idx) => (
+                    <li key={idx}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
+
+          {/* Item 6: Simulações Judiciárias e Investigativas */}
+          <div className={styles.whatItDoesItem}>
+            <div className={styles.whatItDoesQuestion} onClick={() => toggleWhatItDoes(5)}>
+              <span>{t('whatItDoes.item6Title')}</span>
+              <span className={styles.whatItDoesIcon}>{expandedWhatItDoes === 5 ? '−' : '+'}</span>
+            </div>
+            {expandedWhatItDoes === 5 && (
+              <div className={styles.whatItDoesAnswer}>
+                <p>{t('whatItDoes.item6Text')}</p>
+                <ul className={styles.whatItDoesList}>
+                  {(t.raw('whatItDoes.item6List') as string[]).map((item, idx) => (
+                    <li key={idx}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
+
+          {/* Item 7: Simulações Inesperadas e Não Convencionais */}
+          <div className={styles.whatItDoesItem}>
+            <div className={styles.whatItDoesQuestion} onClick={() => toggleWhatItDoes(6)}>
+              <span>{t('whatItDoes.item7Title')}</span>
+              <span className={styles.whatItDoesIcon}>{expandedWhatItDoes === 6 ? '−' : '+'}</span>
+            </div>
+            {expandedWhatItDoes === 6 && (
+              <div className={styles.whatItDoesAnswer}>
+                <p>{t('whatItDoes.item7Text')}</p>
+              </div>
+            )}
+          </div>
+
+          {/* Aplicações */}
+          <div className={styles.applicationsContainer}>
+            <h3 className={styles.applicationsTitle}>{t('whatItDoes.applicationsTitle')}</h3>
+            <div className={styles.applicationsGrid}>
+              {(t.raw('whatItDoes.applications') as string[]).map((app, idx) => (
+                <div key={idx} className={styles.applicationTag}>
+                  {app}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Vantagens Section - Bento Grid */}
       <section className={styles.vantagensSection}>
         <div className={styles.sectionTitleWrapper}>
           <div className={styles.titleContainer}>
             <h2 className={styles.sectionTitle}>{t('advantages.title')}</h2>
           </div>
         </div>
-        <div className={styles.tagsContainer}>
-          <div className={styles.tag}>
-            <strong>{t('advantages.item1Title')}</strong>
-            <p className={styles.tagDescription}>{t('advantages.item1Text')}</p>
+        <div className={styles.advantagesBentoGrid}>
+          {/* Linha 1: Grande + Normal (3 colunas) */}
+          <div className={`${styles.advantageCard} ${styles.cardLarge}`}>
+            <h3 className={styles.advantageTitle}>{t('advantages.item1Title')}</h3>
+            <p className={styles.advantageText}>{t('advantages.item1Text')}</p>
           </div>
-          <div className={styles.tag}>
-            <strong>{t('advantages.item2Title')}</strong>
-            <p className={styles.tagDescription}>{t('advantages.item2Text')}</p>
+
+          <div className={styles.advantageCard}>
+            <h3 className={styles.advantageTitle}>{t('advantages.item2Title')}</h3>
+            <p className={styles.advantageText}>{t('advantages.item2Text')}</p>
           </div>
-          <div className={styles.tag}>
-            <strong>{t('advantages.item3Title')}</strong>
-            <p className={styles.tagDescription}>{t('advantages.item3Text')}</p>
+
+          {/* Linha 2: Normal + Normal + Normal (3 colunas) */}
+          <div className={styles.advantageCard}>
+            <h3 className={styles.advantageTitle}>{t('advantages.item3Title')}</h3>
+            <p className={styles.advantageText}>{t('advantages.item3Text')}</p>
           </div>
-          <div className={styles.tag}>
-            <strong>{t('advantages.item4Title')}</strong>
-            <p className={styles.tagDescription}>{t('advantages.item4Text')}</p>
+
+          <div className={styles.advantageCard}>
+            <h3 className={styles.advantageTitle}>{t('advantages.item4Title')}</h3>
+            <p className={styles.advantageText}>{t('advantages.item4Text')}</p>
+          </div>
+
+          <div className={styles.advantageCard}>
+            <h3 className={styles.advantageTitle}>{t('advantages.item5Title')}</h3>
+            <p className={styles.advantageText}>{t('advantages.item5Text')}</p>
+          </div>
+
+          {/* Linha 3: Grande + Normal (3 colunas) */}
+          <div className={`${styles.advantageCard} ${styles.cardLarge}`}>
+            <h3 className={styles.advantageTitle}>{t('advantages.item6Title')}</h3>
+            <p className={styles.advantageText}>{t('advantages.item6Text')}</p>
+          </div>
+
+          <div className={styles.advantageCard}>
+            <h3 className={styles.advantageTitle}>{t('advantages.item7Title')}</h3>
+            <p className={styles.advantageText}>{t('advantages.item7Text')}</p>
           </div>
         </div>
       </section>
 
-      {/* Tecnologias Section */}
+      {/* Tecnologias Utilizadas Section com Modal */}
       <section className={styles.tecnologiasSection}>
         <div className={styles.sectionTitleWrapper}>
           <div className={styles.titleContainer}>
             <h2 className={styles.sectionTitle}>{t('technologies.title')}</h2>
           </div>
         </div>
-        <div className={styles.tagsContainer}>
-          <div className={styles.tag}>
-            <strong>{t('technologies.item1Title')}</strong>
-            <p className={styles.tagDescription}>{t('technologies.item1Text')}</p>
+
+        <div className={styles.technologiesGrid}>
+          {/* Card 1: PC */}
+          <div className={styles.techCard} onClick={() => setOpenModal(1)}>
+            <div className={styles.techCardIconWrapper}>
+              <PCIcon className={styles.techCardIcon} size={48} />
+            </div>
+            <h3 className={styles.techCardTitle}>{t('technologies.item1Title')}</h3>
           </div>
-          <div className={styles.tag}>
-            <strong>{t('technologies.item2Title')}</strong>
-            <p className={styles.tagDescription}>{t('technologies.item2Text')}</p>
+
+          {/* Card 2: VR */}
+          <div className={styles.techCard} onClick={() => setOpenModal(2)}>
+            <div className={styles.techCardIconWrapper}>
+              <VRHeadsetIcon className={styles.techCardIcon} size={48} />
+            </div>
+            <h3 className={styles.techCardTitle}>{t('technologies.item2Title')}</h3>
           </div>
-          <div className={styles.tag}>
-            <strong>{t('technologies.item3Title')}</strong>
-            <p className={styles.tagDescription}>{t('technologies.item3Text')}</p>
-          </div>
-          <div className={styles.tag}>
-            <strong>{t('technologies.item4Title')}</strong>
-            <p className={styles.tagDescription}>{t('technologies.item4Text')}</p>
+
+          {/* Card 3: Híbrido */}
+          <div className={styles.techCard} onClick={() => setOpenModal(3)}>
+            <div className={styles.techCardIconWrapper}>
+              <HybridIcon className={styles.techCardIcon} size={48} />
+            </div>
+            <h3 className={styles.techCardTitle}>{t('technologies.item3Title')}</h3>
           </div>
         </div>
       </section>
+
+      {/* Modal Universal com Carrossel 3D */}
+      {openModal !== null && (() => {
+        const deliveryCards = [
+          { id: 1, icon: PCIcon, title: t('technologies.item1Title'), text: t('technologies.item1Text') },
+          { id: 2, icon: VRHeadsetIcon, title: t('technologies.item2Title'), text: t('technologies.item2Text') },
+          { id: 3, icon: HybridIcon, title: t('technologies.item3Title'), text: t('technologies.item3Text') }
+        ]
+
+        const currentIndex = deliveryCards.findIndex(card => card.id === openModal)
+
+        // Lógica circular
+        const leftIndex = currentIndex === 0 ? deliveryCards.length - 1 : currentIndex - 1
+        const rightIndex = currentIndex === deliveryCards.length - 1 ? 0 : currentIndex + 1
+
+        const leftCard = deliveryCards[leftIndex]
+        const centerCard = deliveryCards[currentIndex]
+        const rightCard = deliveryCards[rightIndex]
+
+        const LeftIcon = leftCard?.icon
+        const CenterIcon = centerCard?.icon
+        const RightIcon = rightCard?.icon
+
+        return (
+          <div className={styles.carouselOverlay} onClick={() => setOpenModal(null)}>
+            <div className={styles.carouselContainer} onClick={(e) => e.stopPropagation()}>
+              {/* Carrossel de 3 Cards */}
+              <div className={styles.carouselCards} key={`carousel-${openModal}`}>
+                {/* Card Esquerdo - Esmaecido */}
+                <div className={`${styles.carouselCard} ${styles.carouselCardLeft}`} key={`left-${leftCard.id}`}>
+                  <div className={styles.carouselCardIconWrapper}>
+                    {LeftIcon && <LeftIcon className={styles.carouselCardIcon} size={48} />}
+                  </div>
+                  <h3 className={styles.carouselCardTitle}>{leftCard?.title}</h3>
+                </div>
+
+                {/* Card Central - Destacado com Modal */}
+                <div className={`${styles.carouselCard} ${styles.carouselCardCenter}`} key={`center-${centerCard.id}`}>
+                  <div className={styles.carouselCardIconWrapper}>
+                    {CenterIcon && <CenterIcon className={styles.carouselCardIcon} size={48} />}
+                  </div>
+                  <h3 className={styles.carouselCardTitle}>{centerCard?.title}</h3>
+
+                  {/* Modal sobre o card central */}
+                  <div className={styles.modalContent} onClick={(e) => e.stopPropagation()} key={`modal-${centerCard.id}`}>
+                    <button className={styles.modalCloseButton} onClick={() => setOpenModal(null)}>
+                      ×
+                    </button>
+
+                    <div className={styles.modalHeader}>
+                      <div className={styles.modalIconWrapper}>
+                        {CenterIcon && <CenterIcon className={styles.modalIcon} size={48} />}
+                      </div>
+                      <h2 className={styles.modalTitle}>{centerCard?.title}</h2>
+                    </div>
+
+                    <div className={styles.modalBody}>
+                      <p>{centerCard?.text}</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Card Direito - Esmaecido */}
+                <div className={`${styles.carouselCard} ${styles.carouselCardRight}`} key={`right-${rightCard.id}`}>
+                  <div className={styles.carouselCardIconWrapper}>
+                    {RightIcon && <RightIcon className={styles.carouselCardIcon} size={48} />}
+                  </div>
+                  <h3 className={styles.carouselCardTitle}>{rightCard?.title}</h3>
+                </div>
+              </div>
+
+              {/* Navegação com Setas Discretas */}
+              <div className={styles.carouselNavigation}>
+                <button
+                  className={styles.carouselNavArrow}
+                  onClick={() => setOpenModal(leftCard.id)}
+                  aria-label="Anterior"
+                >
+                  ←
+                </button>
+                <div className={styles.carouselNavDots}>
+                  {deliveryCards.map((_, idx) => (
+                    <span
+                      key={idx}
+                      className={`${styles.carouselNavDot} ${idx === currentIndex ? styles.carouselNavDotActive : ''}`}
+                    />
+                  ))}
+                </div>
+                <button
+                  className={styles.carouselNavArrow}
+                  onClick={() => setOpenModal(rightCard.id)}
+                  aria-label="Próximo"
+                >
+                  →
+                </button>
+              </div>
+            </div>
+          </div>
+        )
+      })()}
 
       {/* Projetos Section */}
       <section className={styles.projetosSection}>
@@ -147,36 +427,78 @@ export default function Simulacao3DPage() {
           </div>
         </div>
         <div className={styles.projetosList}>
+          {/* Projeto 1 */}
           <div
-            className={`${styles.serviceCard} ${styles.serviceCardTreinamento}`}
+            className={`${styles.serviceCard} ${styles.serviceCardOperacional}`}
             onMouseMove={handleCardMouseMove}
             onMouseLeave={resetCardTilt}
           >
+            <div className={styles.serviceCardIcon}>
+              <OperationalSimIcon size={64} className={styles.icon} />
+            </div>
             <div className={styles.serviceCardContent}>
               <h3 className={styles.serviceCardTitle}>{t('projects.item1Title')}</h3>
               <p className={styles.serviceCardDescription}>{t('projects.item1Text')}</p>
             </div>
           </div>
 
+          {/* Projeto 2 */}
           <div
-            className={`${styles.serviceCard} ${styles.serviceCardAtendimento}`}
+            className={`${styles.serviceCard} ${styles.serviceCardEducacional}`}
             onMouseMove={handleCardMouseMove}
             onMouseLeave={resetCardTilt}
           >
+            <div className={styles.serviceCardIcon}>
+              <EducationalSimIcon size={64} className={styles.icon} />
+            </div>
             <div className={styles.serviceCardContent}>
               <h3 className={styles.serviceCardTitle}>{t('projects.item2Title')}</h3>
               <p className={styles.serviceCardDescription}>{t('projects.item2Text')}</p>
             </div>
           </div>
 
+          {/* Projeto 3 */}
           <div
-            className={`${styles.serviceCard} ${styles.serviceCardSimulacao}`}
+            className={`${styles.serviceCard} ${styles.serviceCardMilitar}`}
             onMouseMove={handleCardMouseMove}
             onMouseLeave={resetCardTilt}
           >
+            <div className={styles.serviceCardIcon}>
+              <MilitarySimIcon size={64} className={styles.icon} />
+            </div>
             <div className={styles.serviceCardContent}>
               <h3 className={styles.serviceCardTitle}>{t('projects.item3Title')}</h3>
               <p className={styles.serviceCardDescription}>{t('projects.item3Text')}</p>
+            </div>
+          </div>
+
+          {/* Projeto 4 */}
+          <div
+            className={`${styles.serviceCard} ${styles.serviceCardJudiciario}`}
+            onMouseMove={handleCardMouseMove}
+            onMouseLeave={resetCardTilt}
+          >
+            <div className={styles.serviceCardIcon}>
+              <JudicialSimIcon size={64} className={styles.icon} />
+            </div>
+            <div className={styles.serviceCardContent}>
+              <h3 className={styles.serviceCardTitle}>{t('projects.item4Title')}</h3>
+              <p className={styles.serviceCardDescription}>{t('projects.item4Text')}</p>
+            </div>
+          </div>
+
+          {/* Projeto 5 */}
+          <div
+            className={`${styles.serviceCard} ${styles.serviceCardSeguranca}`}
+            onMouseMove={handleCardMouseMove}
+            onMouseLeave={resetCardTilt}
+          >
+            <div className={styles.serviceCardIcon}>
+              <SecuritySimIcon size={64} className={styles.icon} />
+            </div>
+            <div className={styles.serviceCardContent}>
+              <h3 className={styles.serviceCardTitle}>{t('projects.item5Title')}</h3>
+              <p className={styles.serviceCardDescription}>{t('projects.item5Text')}</p>
             </div>
           </div>
         </div>
@@ -225,7 +547,56 @@ export default function Simulacao3DPage() {
               </div>
             )}
           </div>
+
+          <div className={styles.faqItem}>
+            <div className={styles.faqQuestion} onClick={() => toggleFaq(3)}>
+              <span>{t('faq.question4')}</span>
+              <span className={styles.faqIcon}>{expandedFaq === 3 ? '−' : '+'}</span>
+            </div>
+            {expandedFaq === 3 && (
+              <div className={styles.faqAnswer}>
+                {t('faq.answer4')}
+              </div>
+            )}
+          </div>
+
+          <div className={styles.faqItem}>
+            <div className={styles.faqQuestion} onClick={() => toggleFaq(4)}>
+              <span>{t('faq.question5')}</span>
+              <span className={styles.faqIcon}>{expandedFaq === 4 ? '−' : '+'}</span>
+            </div>
+            {expandedFaq === 4 && (
+              <div className={styles.faqAnswer}>
+                {t('faq.answer5')}
+              </div>
+            )}
+          </div>
+
+          <div className={styles.faqItem}>
+            <div className={styles.faqQuestion} onClick={() => toggleFaq(5)}>
+              <span>{t('faq.question6')}</span>
+              <span className={styles.faqIcon}>{expandedFaq === 5 ? '−' : '+'}</span>
+            </div>
+            {expandedFaq === 5 && (
+              <div className={styles.faqAnswer}>
+                {t('faq.answer6')}
+              </div>
+            )}
+          </div>
         </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className={styles.ctaSection}>
+        <div className={styles.ctaTitleWrapper}>
+          <div className={styles.titleContainer}>
+            <h2 className={styles.ctaTitle}>{t('cta.title')}</h2>
+          </div>
+        </div>
+        <p className={styles.ctaSubtitle}>{t('cta.subtitle')}</p>
+        <a href={`/${locale}/home#contact-form-section`} className={styles.ctaButton}>
+          {t('cta.button')}
+        </a>
       </section>
 
       <Footer />

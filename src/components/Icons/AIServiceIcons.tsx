@@ -1119,3 +1119,369 @@ export const IndustrialToolIcon: React.FC<IconProps> = ({ className, size = 48 }
     <path d="M24 12L26 10M28 12L30 10M32 12L34 10" stroke="currentColor" strokeWidth="1" strokeLinecap="round" opacity="0.25" />
   </svg>
 )
+
+// Ícone PC - Desktop Computer
+export const PCIcon: React.FC<IconProps> = ({ className, size = 48 }) => (
+  <svg width={size} height={size} viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
+    {/* Monitor principal */}
+    <rect x="8" y="10" width="48" height="32" rx="3" stroke="currentColor" strokeWidth="2.5" fill="currentColor" opacity="0.1" />
+
+    {/* Tela interna */}
+    <rect x="11" y="13" width="42" height="26" rx="1.5" stroke="currentColor" strokeWidth="2" fill="currentColor" opacity="0.05" />
+
+    {/* Brilho da tela */}
+    <path d="M14 16L48 16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" opacity="0.3" />
+    <path d="M14 20L40 20" stroke="currentColor" strokeWidth="1" strokeLinecap="round" opacity="0.2" />
+
+    {/* Base do monitor */}
+    <path d="M28 42L28 48" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+    <path d="M36 42L36 48" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+
+    {/* Suporte/pé do monitor */}
+    <rect x="20" y="48" width="24" height="4" rx="2" fill="currentColor" opacity="0.2" />
+
+    {/* Detalhes da moldura */}
+    <circle cx="32" cy="44" r="1.5" fill="currentColor" opacity="0.4" />
+
+    {/* Elementos de interface na tela */}
+    <rect x="15" y="24" width="8" height="8" rx="1" stroke="currentColor" strokeWidth="1.5" fill="none" opacity="0.25" />
+    <rect x="26" y="24" width="8" height="8" rx="1" stroke="currentColor" strokeWidth="1.5" fill="none" opacity="0.25" />
+    <rect x="37" y="24" width="8" height="8" rx="1" stroke="currentColor" strokeWidth="1.5" fill="none" opacity="0.25" />
+  </svg>
+)
+
+// Ícone Simulação Operacional - Engrenagens/Industrial
+export const OperationalSimIcon: React.FC<IconProps> = ({ className, size = 48 }) => (
+  <svg width={size} height={size} viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
+    {/* Engrenagem principal grande */}
+    <circle cx="32" cy="32" r="16" stroke="currentColor" strokeWidth="2.5" fill="currentColor" opacity="0.08" />
+    <circle cx="32" cy="32" r="11" stroke="currentColor" strokeWidth="2" fill="none" opacity="0.3" />
+    <circle cx="32" cy="32" r="5" stroke="currentColor" strokeWidth="2.5" fill="currentColor" opacity="0.15" />
+
+    {/* Dentes principais - 8 dentes */}
+    <rect x="30" y="10" width="4" height="7" rx="1.5" fill="currentColor" opacity="0.6" />
+    <rect x="30" y="47" width="4" height="7" rx="1.5" fill="currentColor" opacity="0.6" />
+    <rect x="10" y="30" width="7" height="4" rx="1.5" fill="currentColor" opacity="0.6" />
+    <rect x="47" y="30" width="7" height="4" rx="1.5" fill="currentColor" opacity="0.6" />
+
+    {/* Dentes diagonais */}
+    <rect x="19" y="15" width="4" height="7" rx="1.5" fill="currentColor" opacity="0.55" transform="rotate(-45 21 18.5)" />
+    <rect x="41" y="15" width="4" height="7" rx="1.5" fill="currentColor" opacity="0.55" transform="rotate(45 43 18.5)" />
+    <rect x="19" y="42" width="4" height="7" rx="1.5" fill="currentColor" opacity="0.55" transform="rotate(45 21 45.5)" />
+    <rect x="41" y="42" width="4" height="7" rx="1.5" fill="currentColor" opacity="0.55" transform="rotate(-45 43 45.5)" />
+
+    {/* Engrenagem menor conectada */}
+    <circle cx="52" cy="16" r="9" stroke="currentColor" strokeWidth="2.5" fill="currentColor" opacity="0.08" />
+    <circle cx="52" cy="16" r="6" stroke="currentColor" strokeWidth="2" fill="none" opacity="0.25" />
+    <circle cx="52" cy="16" r="3" stroke="currentColor" strokeWidth="2" fill="currentColor" opacity="0.12" />
+
+    {/* Dentes engrenagem menor - 6 dentes */}
+    <rect x="50.5" y="5" width="3" height="5" rx="1" fill="currentColor" opacity="0.55" />
+    <rect x="50.5" y="22" width="3" height="5" rx="1" fill="currentColor" opacity="0.55" />
+    <rect x="60" y="14.5" width="5" height="3" rx="1" fill="currentColor" opacity="0.55" />
+    <rect x="41" y="14.5" width="5" height="3" rx="1" fill="currentColor" opacity="0.55" />
+    <rect x="56" y="9" width="3" height="5" rx="1" fill="currentColor" opacity="0.5" transform="rotate(45 57.5 11.5)" />
+    <rect x="45" y="20" width="3" height="5" rx="1" fill="currentColor" opacity="0.5" transform="rotate(-45 46.5 22.5)" />
+
+    {/* Parafusos centrais */}
+    <circle cx="32" cy="32" r="2.5" fill="currentColor" opacity="0.5" />
+    <circle cx="52" cy="16" r="1.5" fill="currentColor" opacity="0.5" />
+
+    {/* Detalhes industriais */}
+    <path d="M12 52L16 52M12 56L16 56" stroke="currentColor" strokeWidth="2" strokeLinecap="round" opacity="0.3" />
+    <circle cx="14" cy="54" r="1.5" fill="currentColor" opacity="0.4" />
+
+    {/* Linha de conexão entre engrenagens */}
+    <path d="M42 22L48 18" stroke="currentColor" strokeWidth="1.5" strokeDasharray="2 2" opacity="0.25" />
+  </svg>
+)
+
+// Ícone Simulação Educacional - Graduação/Conhecimento
+export const EducationalSimIcon: React.FC<IconProps> = ({ className, size = 48 }) => (
+  <svg width={size} height={size} viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
+    {/* Capelo de formatura - topo */}
+    <path d="M6 22L32 12L58 22L32 32L6 22Z" stroke="currentColor" strokeWidth="2.5" fill="currentColor" opacity="0.12" strokeLinejoin="round" />
+
+    {/* Linha central do capelo */}
+    <line x1="32" y1="12" x2="32" y2="32" stroke="currentColor" strokeWidth="2" opacity="0.2" />
+
+    {/* Detalhes do capelo */}
+    <path d="M10 24L14 26M22 20L26 22M38 22L42 20M50 26L54 24" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" opacity="0.25" />
+
+    {/* Base do capelo - lateral */}
+    <path d="M12 26L12 38C12 38 18 44 32 44C46 44 52 38 52 38V26" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" fill="none" opacity="0.6" />
+
+    {/* Sombra interna da lateral */}
+    <path d="M16 28C16 28 22 32 32 32C42 32 48 28 48 28" stroke="currentColor" strokeWidth="1.5" strokeDasharray="3 2" opacity="0.2" />
+
+    {/* Tassel (borla) no topo */}
+    <line x1="32" y1="12" x2="32" y2="6" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
+    <circle cx="32" cy="5" r="2.5" fill="currentColor" opacity="0.7" />
+
+    {/* Franjas da borla */}
+    <path d="M32 5L28 3M32 5L36 3M32 5L29 7M32 5L35 7M32 5L30 8M32 5L34 8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" opacity="0.4" />
+
+    {/* Livro aberto na base */}
+    <rect x="18" y="48" width="28" height="2" rx="1" fill="currentColor" opacity="0.15" />
+    <path d="M18 48L18 58C18 58 22 56 28 56C32 56 32 58 32 58M32 58C32 58 32 56 36 56C42 56 46 58 46 58V48" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" fill="none" />
+
+    {/* Divisor central do livro */}
+    <line x1="32" y1="48" x2="32" y2="58" stroke="currentColor" strokeWidth="2" strokeLinecap="round" opacity="0.3" />
+
+    {/* Páginas do livro - esquerda */}
+    <path d="M22 50L28 50M22 52L27 52M22 54L26 54" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" opacity="0.35" />
+
+    {/* Páginas do livro - direita */}
+    <path d="M36 50L42 50M37 52L42 52M38 54L42 54" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" opacity="0.35" />
+
+    {/* Marcador de página */}
+    <rect x="31" y="46" width="2" height="4" rx="0.5" fill="currentColor" opacity="0.25" />
+
+    {/* Estrelas de conhecimento */}
+    <circle cx="8" cy="40" r="1.2" fill="currentColor" opacity="0.4" />
+    <circle cx="56" cy="40" r="1.2" fill="currentColor" opacity="0.4" />
+    <circle cx="10" cy="50" r="0.8" fill="currentColor" opacity="0.3" />
+  </svg>
+)
+
+// Ícone Simulação Militar - Estrela Tática
+export const MilitarySimIcon: React.FC<IconProps> = ({ className, size = 48 }) => (
+  <svg width={size} height={size} viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
+    {/* Estrela militar (5 pontas) - mais definida */}
+    <path d="M32 8L37 24L54 24L40 34L45 50L32 40L19 50L24 34L10 24L27 24L32 8Z"
+      stroke="currentColor" strokeWidth="2.5" fill="currentColor" opacity="0.12" strokeLinejoin="round" />
+
+    {/* Linhas internas da estrela */}
+    <path d="M32 8L32 40" stroke="currentColor" strokeWidth="1.5" opacity="0.15" />
+    <path d="M27 24L40 34M37 24L24 34" stroke="currentColor" strokeWidth="1.5" opacity="0.15" />
+
+    {/* Círculos concêntricos centrais */}
+    <circle cx="32" cy="32" r="12" stroke="currentColor" strokeWidth="2" fill="none" opacity="0.25" />
+    <circle cx="32" cy="32" r="8" stroke="currentColor" strokeWidth="2.5" fill="currentColor" opacity="0.15" />
+    <circle cx="32" cy="32" r="4" stroke="currentColor" strokeWidth="2" fill="none" opacity="0.4" />
+
+    {/* Mira tática - cruz principal */}
+    <line x1="32" y1="26" x2="32" y2="22" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
+    <line x1="32" y1="38" x2="32" y2="42" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
+    <line x1="26" y1="32" x2="22" y2="32" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
+    <line x1="38" y1="32" x2="42" y2="32" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
+
+    {/* Marcadores de mira diagonais */}
+    <line x1="28" y1="28" x2="26" y2="26" stroke="currentColor" strokeWidth="2" strokeLinecap="round" opacity="0.5" />
+    <line x1="36" y1="28" x2="38" y2="26" stroke="currentColor" strokeWidth="2" strokeLinecap="round" opacity="0.5" />
+    <line x1="28" y1="36" x2="26" y2="38" stroke="currentColor" strokeWidth="2" strokeLinecap="round" opacity="0.5" />
+    <line x1="36" y1="36" x2="38" y2="38" stroke="currentColor" strokeWidth="2" strokeLinecap="round" opacity="0.5" />
+
+    {/* Pontos cardinais nas pontas da estrela */}
+    <circle cx="32" cy="8" r="2" fill="currentColor" opacity="0.6" />
+    <circle cx="54" cy="24" r="2" fill="currentColor" opacity="0.6" />
+    <circle cx="45" cy="50" r="2" fill="currentColor" opacity="0.6" />
+    <circle cx="19" cy="50" r="2" fill="currentColor" opacity="0.6" />
+    <circle cx="10" cy="24" r="2" fill="currentColor" opacity="0.6" />
+
+    {/* Linhas táticas de rastreamento */}
+    <path d="M32 32L36 18" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeDasharray="3 2" opacity="0.3" />
+    <path d="M32 32L48 26" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeDasharray="3 2" opacity="0.3" />
+    <path d="M32 32L42 46" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeDasharray="3 2" opacity="0.3" />
+    <path d="M32 32L22 46" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeDasharray="3 2" opacity="0.3" />
+    <path d="M32 32L16 26" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeDasharray="3 2" opacity="0.3" />
+
+    {/* Centro focal */}
+    <circle cx="32" cy="32" r="1.5" fill="currentColor" opacity="0.7" />
+
+    {/* Indicadores de canto */}
+    <path d="M8 8L10 8L10 10M56 8L54 8L54 10M8 56L10 56L10 54M56 56L54 56L54 54" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" opacity="0.25" />
+  </svg>
+)
+
+// Ícone Simulação Judiciária - Martelo + Balança (Melhorado)
+export const JudicialSimIcon: React.FC<IconProps> = ({ className, size = 48 }) => (
+  <svg width={size} height={size} viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
+    {/* Martelo do juiz - cabeça principal */}
+    <rect x="36" y="8" width="20" height="10" rx="2.5" stroke="currentColor" strokeWidth="2.5" fill="currentColor" opacity="0.12" />
+    
+    {/* Detalhes internos do martelo */}
+    <rect x="38" y="10.5" width="16" height="5" rx="1.5" fill="currentColor" opacity="0.2" />
+    <line x1="40" y1="9" x2="40" y2="17" stroke="currentColor" strokeWidth="1.5" opacity="0.15" />
+    <line x1="52" y1="9" x2="52" y2="17" stroke="currentColor" strokeWidth="1.5" opacity="0.15" />
+    
+    {/* Cabo do martelo - com textura */}
+    <rect x="32" y="13" width="7" height="26" rx="2.5" stroke="currentColor" strokeWidth="2.5" fill="currentColor" opacity="0.12" />
+    
+    {/* Linhas de grip no cabo */}
+    <line x1="32.5" y1="18" x2="38.5" y2="18" stroke="currentColor" strokeWidth="1.5" opacity="0.2" />
+    <line x1="32.5" y1="23" x2="38.5" y2="23" stroke="currentColor" strokeWidth="1.5" opacity="0.2" />
+    <line x1="32.5" y1="28" x2="38.5" y2="28" stroke="currentColor" strokeWidth="1.5" opacity="0.2" />
+    <line x1="32.5" y1="33" x2="38.5" y2="33" stroke="currentColor" strokeWidth="1.5" opacity="0.2" />
+    
+    {/* Base do martelo (podium) */}
+    <rect x="24" y="37" width="26" height="5" rx="2.5" fill="currentColor" opacity="0.18" stroke="currentColor" strokeWidth="2" />
+    <rect x="26" y="39" width="22" height="2" rx="1" fill="currentColor" opacity="0.25" />
+    
+    {/* Ondas de impacto */}
+    <path d="M20 38C20 38 22 36 24 36M50 36C52 36 54 38 54 38" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" opacity="0.25" />
+
+    {/* Balança da justiça - poste central */}
+    <line x1="14" y1="46" x2="14" y2="57" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
+    <circle cx="14" cy="46" r="2.5" stroke="currentColor" strokeWidth="2" fill="currentColor" opacity="0.15" />
+    
+    {/* Base da balança - três camadas */}
+    <ellipse cx="14" cy="57" rx="7" ry="2.5" fill="currentColor" opacity="0.2" />
+    <ellipse cx="14" cy="56.5" rx="5" ry="1.5" fill="currentColor" opacity="0.25" />
+    <rect x="7" y="57" width="14" height="3" rx="1.5" fill="currentColor" opacity="0.18" />
+    
+    {/* Braço da balança - com detalhes */}
+    <line x1="4" y1="50" x2="24" y2="50" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+    <line x1="5" y1="50" x2="23" y2="50" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" opacity="0.3" />
+    
+    {/* Ponto de equilíbrio central */}
+    <circle cx="14" cy="50" r="2" fill="currentColor" opacity="0.4" />
+    <circle cx="14" cy="50" r="1" fill="currentColor" opacity="0.6" />
+
+    {/* Correntes da balança - esquerda */}
+    <line x1="4" y1="50" x2="4" y2="54" stroke="currentColor" strokeWidth="2" strokeLinecap="round" opacity="0.5" />
+    <circle cx="4" cy="51" r="0.8" fill="currentColor" opacity="0.3" />
+    <circle cx="4" cy="53" r="0.8" fill="currentColor" opacity="0.3" />
+    
+    {/* Correntes da balança - direita */}
+    <line x1="24" y1="50" x2="24" y2="54" stroke="currentColor" strokeWidth="2" strokeLinecap="round" opacity="0.5" />
+    <circle cx="24" cy="51" r="0.8" fill="currentColor" opacity="0.3" />
+    <circle cx="24" cy="53" r="0.8" fill="currentColor" opacity="0.3" />
+
+    {/* Pratos da balança - mais detalhados */}
+    <ellipse cx="4" cy="54" rx="4" ry="1.5" stroke="currentColor" strokeWidth="2.5" fill="currentColor" opacity="0.12" />
+    <ellipse cx="24" cy="54" rx="4" ry="1.5" stroke="currentColor" strokeWidth="2.5" fill="currentColor" opacity="0.12" />
+    
+    {/* Bordas dos pratos */}
+    <path d="M1 54C1 54 1 55.5 4 55.5C7 55.5 7 54 7 54" stroke="currentColor" strokeWidth="1.5" opacity="0.2" />
+    <path d="M21 54C21 54 21 55.5 24 55.5C27 55.5 27 54 27 54" stroke="currentColor" strokeWidth="1.5" opacity="0.2" />
+
+    {/* Livro de leis (canto superior direito) */}
+    <rect x="50" y="46" width="10" height="14" rx="1.5" stroke="currentColor" strokeWidth="2" fill="currentColor" opacity="0.1" />
+    <line x1="52" y1="50" x2="58" y2="50" stroke="currentColor" strokeWidth="1.5" opacity="0.25" />
+    <line x1="52" y1="53" x2="57" y2="53" stroke="currentColor" strokeWidth="1.5" opacity="0.25" />
+    <line x1="52" y1="56" x2="58" y2="56" stroke="currentColor" strokeWidth="1.5" opacity="0.25" />
+    
+    {/* Marcador de página */}
+    <rect x="54.5" y="46" width="1.5" height="8" fill="currentColor" opacity="0.3" />
+    
+    {/* Símbolos de parágrafo/artigo */}
+    <circle cx="52" cy="48" r="1.2" fill="currentColor" opacity="0.35" />
+    <circle cx="55" cy="48" r="1.2" fill="currentColor" opacity="0.35" />
+  </svg>
+)
+
+// Ícone Simulação de Segurança - Escudo + Alerta (Melhorado)
+export const SecuritySimIcon: React.FC<IconProps> = ({ className, size = 48 }) => (
+  <svg width={size} height={size} viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
+    {/* Escudo principal - contorno externo */}
+    <path d="M32 8C32 8 16 12 16 16C16 24 16 38 32 58C48 38 48 24 48 16C48 12 32 8 32 8Z"
+      stroke="currentColor" strokeWidth="3" fill="currentColor" opacity="0.12" strokeLinejoin="round" />
+    
+    {/* Escudo interno - segunda camada */}
+    <path d="M32 12C32 12 20 15 20 18C20 24 20 36 32 52C44 36 44 24 44 18C44 15 32 12 32 12Z"
+      stroke="currentColor" strokeWidth="2" fill="currentColor" opacity="0.08" strokeLinejoin="round" />
+
+    {/* Divisão interna do escudo - cruz central */}
+    <path d="M32 12L32 52" stroke="currentColor" strokeWidth="2" strokeLinecap="round" opacity="0.2" />
+    <path d="M20 26C24 26 28 26 32 26C36 26 40 26 44 26" stroke="currentColor" strokeWidth="2" strokeLinecap="round" opacity="0.2" />
+    
+    {/* Quadrantes decorativos */}
+    <circle cx="26" cy="20" r="1.5" fill="currentColor" opacity="0.25" />
+    <circle cx="38" cy="20" r="1.5" fill="currentColor" opacity="0.25" />
+    <circle cx="26" cy="32" r="1.5" fill="currentColor" opacity="0.25" />
+    <circle cx="38" cy="32" r="1.5" fill="currentColor" opacity="0.25" />
+
+    {/* Símbolo de alerta/exclamação central - círculo externo */}
+    <circle cx="32" cy="30" r="11" stroke="currentColor" strokeWidth="2.5" fill="currentColor" opacity="0.15" />
+    <circle cx="32" cy="30" r="8" stroke="currentColor" strokeWidth="2" fill="none" opacity="0.25" />
+
+    {/* Exclamação - linha principal */}
+    <line x1="32" y1="23" x2="32" y2="32" stroke="currentColor" strokeWidth="3.5" strokeLinecap="round" />
+    
+    {/* Exclamação - ponto */}
+    <circle cx="32" cy="36" r="2" fill="currentColor" />
+    <circle cx="32" cy="36" r="1.2" fill="currentColor" opacity="0.5" />
+
+    {/* Ondas de alerta emanando */}
+    <path d="M24 22C22 24 20 26 19 28M40 22C42 24 44 26 45 28" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeDasharray="2 2" opacity="0.3" />
+    <path d="M24 38C22 40 20 42 19 44M40 38C42 40 44 42 45 44" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeDasharray="2 2" opacity="0.3" />
+
+    {/* Sistema de vigilância - câmera no topo */}
+    <rect x="29" y="4" width="6" height="4" rx="1.5" stroke="currentColor" strokeWidth="1.5" fill="currentColor" opacity="0.15" />
+    <circle cx="32" cy="6" r="1.5" fill="currentColor" opacity="0.4" />
+    <path d="M30 4L32 2L34 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" opacity="0.3" />
+
+    {/* Detalhes de proteção - laterais superiores */}
+    <path d="M18 12L20 14M22 10L24 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" opacity="0.35" />
+    <path d="M46 12L44 14M42 10L40 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" opacity="0.35" />
+    
+    {/* Escudos secundários nas laterais */}
+    <path d="M12 20C12 20 10 21 10 22C10 24 10 28 14 32C14 32 12 28 12 24C12 22 12 20 12 20Z" 
+      stroke="currentColor" strokeWidth="1.5" fill="currentColor" opacity="0.1" strokeLinejoin="round" />
+    <path d="M52 20C52 20 54 21 54 22C54 24 54 28 50 32C50 32 52 28 52 24C52 22 52 20 52 20Z" 
+      stroke="currentColor" strokeWidth="1.5" fill="currentColor" opacity="0.1" strokeLinejoin="round" />
+
+    {/* Cruz de primeiros socorros (canto inferior direito) */}
+    <circle cx="52" cy="52" r="6" stroke="currentColor" strokeWidth="2" fill="currentColor" opacity="0.12" />
+    <line x1="52" y1="48" x2="52" y2="56" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+    <line x1="48" y1="52" x2="56" y2="52" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+
+    {/* Símbolo de fogo/emergência (canto inferior esquerdo) */}
+    <path d="M12 48C12 48 14 44 16 44C18 44 18 46 18 48C18 52 16 54 14 54C12 54 10 52 10 50"
+      stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" fill="currentColor" opacity="0.1" />
+    
+    {/* Detalhes internos do fogo */}
+    <path d="M14 48C14 48 15 46.5 15.5 46.5C16 46.5 16 47.5 16 48.5C16 50.5 15 51.5 14.5 51.5C14 51.5 13.5 50.5 13.5 49.5"
+      stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" opacity="0.35" fill="none" />
+    
+    {/* Cadeado de segurança na base do escudo */}
+    <rect x="28" y="44" width="8" height="6" rx="1.5" stroke="currentColor" strokeWidth="2" fill="currentColor" opacity="0.12" />
+    <path d="M30 44C30 44 30 42 32 42C34 42 34 44 34 44" stroke="currentColor" strokeWidth="2" strokeLinecap="round" fill="none" />
+    <circle cx="32" cy="47" r="1.2" fill="currentColor" opacity="0.5" />
+  </svg>
+)
+
+// Ícone Híbrido - PC + VR Combined
+export const HybridIcon: React.FC<IconProps> = ({ className, size = 48 }) => (
+  <svg width={size} height={size} viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
+    {/* Monitor/PC (lado esquerdo) */}
+    <rect x="4" y="12" width="26" height="20" rx="2" stroke="currentColor" strokeWidth="2.5" fill="currentColor" opacity="0.1" />
+    <rect x="6" y="14" width="22" height="16" rx="1" fill="currentColor" opacity="0.05" />
+
+    {/* Base do monitor */}
+    <path d="M14 32L14 36M20 32L20 36" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+    <rect x="11" y="36" width="12" height="2" rx="1" fill="currentColor" opacity="0.2" />
+
+    {/* VR Headset (lado direito) */}
+    <path d="M34 16C34 14 36 12 40 12H48C52 12 54 14 54 16V22C54 24 52 26 48 26H40C36 26 34 24 34 22V16Z"
+      stroke="currentColor" strokeWidth="2.5" fill="currentColor" opacity="0.1" strokeLinejoin="round" />
+
+    {/* Lentes do VR */}
+    <circle cx="40" cy="19" r="4" stroke="currentColor" strokeWidth="2" fill="currentColor" opacity="0.15" />
+    <circle cx="48" cy="19" r="4" stroke="currentColor" strokeWidth="2" fill="currentColor" opacity="0.15" />
+
+    {/* Alças do VR */}
+    <path d="M34 19C32 19 30 20 28 22" stroke="currentColor" strokeWidth="2" strokeLinecap="round" opacity="0.3" />
+    <path d="M54 19C56 19 58 20 60 22" stroke="currentColor" strokeWidth="2" strokeLinecap="round" opacity="0.3" />
+
+    {/* Símbolo de conexão/alternância no centro */}
+    <circle cx="32" cy="32" r="10" stroke="currentColor" strokeWidth="2.5" fill="currentColor" opacity="0.05" />
+
+    {/* Setas de alternância */}
+    <path d="M28 30L32 26L36 30" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" opacity="0.6" />
+    <path d="M36 34L32 38L28 34" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" opacity="0.6" />
+
+    {/* Linhas de conexão */}
+    <path d="M17 24L17 28L24 32" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeDasharray="2 2" opacity="0.4" />
+    <path d="M44 26L44 30L40 32" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeDasharray="2 2" opacity="0.4" />
+
+    {/* Indicador de sincronização */}
+    <circle cx="32" cy="32" r="2" fill="currentColor" opacity="0.5" />
+
+    {/* Detalhes adicionais */}
+    <path d="M8 18L12 18" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" opacity="0.3" />
+    <circle cx="38" cy="14" r="0.8" fill="currentColor" opacity="0.4" />
+    <circle cx="50" cy="14" r="0.8" fill="currentColor" opacity="0.4" />
+  </svg>
+)
