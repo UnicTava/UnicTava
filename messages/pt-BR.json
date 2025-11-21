@@ -252,7 +252,7 @@
       "description": "Revolucione suas experiências com avatares 3D dotados de inteligência artificial. Se você está procurando melhorar simulações, potencializar treinamentos ou oferecer assistência online sem precedentes, nossos avatares interagem de forma natural, elevando a eficácia e o engajamento a novos níveis."
     },
     "cinematics": {
-      "mainTitle": "Cinemática 3D",
+      "mainTitle": "Simulacros",
       "heroTitle": "Dê vida às suas histórias com nossas extraordinárias Cinemáticas 3D.",
       "description": "Seja criando personagens totalmente digitais ou integrando filmagens reais com ambientes e efeitos 3D, oferecemos soluções cinematográficas de ponta para cada projeto."
     },
@@ -779,19 +779,63 @@
   "educationService": {
     "hero": {
       "mainTitle": "Educação e Treinamento 3D",
-      "title": "Transforme a educação e o treinamento com nossas soluções 3D imersivas.",
-      "description": "Se você é uma instituição pública ou privada, oferecemos experiências de aprendizado que capturam e mantêm a atenção dos alunos."
+      "title": "Aprendizado mais rápido, envolvente e preparado para o futuro.",
+      "description": "A educação tradicional está ficando rapidamente ultrapassada. Materiais estáticos, aulas expositivas e metodologias antigas já não acompanham a velocidade do mundo moderno e a forma como as pessoas aprendem hoje.",
+      "description2": "Por isso, a UnicTava desenvolve programas de educação e treinamento em 3D, totalmente interativos, imersivos e gamificados — projetados para acelerar o aprendizado e melhorar a retenção dos conteúdos.",
+      "description3": "Nossa metodologia permite que o aluno:",
+      "bulletPoints": [
+        "aprenda mais rápido",
+        "memorize melhor",
+        "entenda conteúdos complexos",
+        "sinta-se mais motivado",
+        "experimente, pratique e avance de forma natural"
+      ]
+    },
+    "whatItDoes": {
+      "title": "Formação para qualquer área",
+      "description": "Transformamos qualquer tipo de conteúdo em uma experiência educativa interativa — até mesmo temas considerados difíceis, técnicos ou \"impossíveis\" de transmitir em 3D.",
+      "subtitle": "Exemplos:",
+      "item1Title": "Jurídico",
+      "item1Text": "Aulas virtuais, simulação de casos, ambientes processuais",
+      "item2Title": "Corporativo",
+      "item2Text": "Onboarding, procedimentos internos, treinamentos operacionais",
+      "item3Title": "Técnico e industrial",
+      "item3Text": "Processos, máquinas, manutenção, operação",
+      "item4Title": "Saúde e psicologia",
+      "item4Text": "Casos clínicos, simulações, protocolos",
+      "item5Title": "Escolas e universidades",
+      "item5Text": "Laboratórios, museus virtuais, aulas interativas",
+      "item6Title": "Turismo e cultura",
+      "item6Text": "Visitas guiadas, storytelling imersivo",
+      "conclusion": "Se existe um conteúdo a ser ensinado, nós conseguimos transformá-lo em uma experiência 3D inteligente e envolvente."
+    },
+    "experienceTypes": {
+      "title": "Tipos de experiências que criamos",
+      "item1Title": "Formação Gamificada",
+      "item1Text": "Níveis, desafios, pontos, metas e feedback em tempo real — garantindo engajamento e motivação. Transformamos o aprendizado em uma jornada interativa e recompensadora, onde cada conquista impulsiona o aluno a avançar.",
+      "item2Title": "Salas de Aula Virtuais em 3D",
+      "item2Text": "Ambientes completos com vídeos, textos, animações, quiz, avatares e caminhos personalizados. Criamos espaços virtuais que replicam e superam a experiência presencial, oferecendo recursos impossíveis no mundo físico.",
+      "item3Title": "Laboratórios e Práticas Simuladas",
+      "item3Text": "Experimentos, cenários controlados, estudos de caso e procedimentos replicáveis. Permitimos que os alunos pratiquem procedimentos complexos em um ambiente seguro, sem riscos ou custos de equipamentos físicos.",
+      "item4Title": "Treinamentos Operacionais",
+      "item4Text": "Treinamentos realistas para empresas, escolas técnicas e setores especializados. Desenvolvemos simulações precisas de processos industriais, operação de maquinários e protocolos corporativos.",
+      "item5Title": "Experiências Multimídia",
+      "item5Text": "Conteúdos combinados com animações 3D, vídeos, narração, interações e storytelling. Integramos múltiplas mídias para criar experiências educacionais ricas e envolventes que atendem diferentes estilos de aprendizagem."
     },
     "advantages": {
-      "title": "Vantagens Específicas",
-      "item1Title": "Experiências Imersivas e Dinâmicas:",
-      "item1Text": "Esqueça os PDFs e apresentações PowerPoint entediantes. Nossas soluções 3D tornam o aprendizado uma aventura visual e envolvente, facilitando a compreensão e a memorização dos conteúdos.",
-      "item2Title": "Tutores Virtuais:",
-      "item2Text": "Integre tutores virtuais para guiar os alunos através de caminhos de aprendizado personalizados, oferecendo suporte e esclarecimentos em tempo real.",
-      "item3Title": "Flexibilidade e Adaptabilidade:",
-      "item3Text": "Nossas soluções são projetadas para se adaptar a qualquer tipo de treinamento, desde cursos escolares até programas de treinamento corporativo, garantindo um aprendizado eficaz e interativo.",
-      "item4Title": "Aumento do Engajamento:",
-      "item4Text": "A interatividade das nossas soluções 3D aumenta o engajamento dos alunos, tornando o aprendizado mais interessante e produtivo."
+      "title": "Por que nossas soluções funcionam?",
+      "item1Title": "Aprendizagem acelerada",
+      "item1Text": "O cérebro aprende até 3x mais rápido com experiências visuais e interativas.",
+      "item2Title": "Maior engajamento",
+      "item2Text": "O aluno participa, toma decisões e interage — o que aumenta drasticamente a retenção.",
+      "item3Title": "Totalmente adaptável",
+      "item3Text": "Conseguimos transformar qualquer tema em um conteúdo claro e bem estruturado.",
+      "item4Title": "Redução de custos",
+      "item4Text": "Menos necessidade de laboratórios físicos, deslocamentos, materiais impressos.",
+      "item5Title": "Replicável e escalável",
+      "item5Text": "O mesmo curso pode ser usado por milhares de pessoas, de forma idêntica.",
+      "item6Title": "Resultados mensuráveis",
+      "item6Text": "Sistema de avaliação, estatísticas, progresso e relatórios."
     },
     "technologies": {
       "title": "Tecnologias Utilizadas",
@@ -806,12 +850,12 @@
     },
     "projects": {
       "title": "Exemplos de Projetos Realizados",
-      "item1Title": "Educação Escolar:",
-      "item1Text": "Implementação de ambientes 3D para o ensino de ciências, história e geografia, melhorando a compreensão e o interesse dos alunos.",
-      "item2Title": "Treinamento Corporativo:",
-      "item2Text": "Criação de módulos de treinamento imersivos para empresas, melhorando a retenção de informações e a preparação dos funcionários.",
-      "item3Title": "Programas Universitários:",
-      "item3Text": "Desenvolvimento de cursos universitários que utilizam realidade virtual para simulações práticas e estudos de caso interativos."
+      "item1Title": "Curso Jurídico Interativo em 3D",
+      "item1Text": "Simulações de processos, ambiente de tribunal virtual e tutores digitais.",
+      "item2Title": "Treinamento Técnico Industrial",
+      "item2Text": "Máquinas, ferramentas e procedimentos operacionais com interação direta.",
+      "item3Title": "Percursos Educativos para Escolas",
+      "item3Text": "Lições 3D gamificadas, quizzes, ambientes dinâmicos e narrativa educativa."
     },
     "testimonials": {
       "title": "Depoimentos de Clientes",
