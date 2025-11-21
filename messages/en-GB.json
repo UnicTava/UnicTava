@@ -788,20 +788,65 @@
   },
   "educationService": {
     "hero": {
-      "mainTitle": "3D Education and Training",
-      "title": "Transform education and training with our immersive 3D solutions.",
-      "description": "Whether you're a public or private institution, we offer learning experiences that capture and maintain students' attention."
+      "mainTitle": "Education & Training in 3D",
+      "title": "Faster learning, higher engagement, and training built for the future.",
+      "description": "Traditional education is quickly becoming outdated.",
+      "description2": "Static materials, passive lectures and old methodologies no longer match the pace of the modern world — nor the way people learn today.",
+      "description3": "That's why UnicTava develops fully interactive, immersive and gamified 3D education and training programs, designed to accelerate learning and increase retention.",
+      "description4": "Our methodology allows learners to:",
+      "bulletPoints": [
+        "learn faster",
+        "remember more",
+        "understand complex topics",
+        "stay motivated",
+        "practice, experiment and progress naturally"
+      ]
+    },
+    "whatItDoes": {
+      "title": "Training for Any Field",
+      "description": "We transform any type of content into an interactive educational experience — even topics considered difficult, technical or \"impossible\" to represent in 3D.",
+      "subtitle": "Examples:",
+      "item1Title": "Legal field",
+      "item1Text": "Virtual lessons, case simulations, procedural environments",
+      "item2Title": "Corporate",
+      "item2Text": "Onboarding, internal procedures, operational training",
+      "item3Title": "Technical & industrial",
+      "item3Text": "Machinery, maintenance, processes, operations",
+      "item4Title": "Health & psychology",
+      "item4Text": "Clinical cases, simulations, protocols",
+      "item5Title": "Schools & universities",
+      "item5Text": "Labs, virtual museums, interactive lessons",
+      "item6Title": "Tourism & culture",
+      "item6Text": "Guided tours, immersive storytelling",
+      "conclusion": "If there is content to teach, we can turn it into a smart and engaging 3D experience."
+    },
+    "experienceTypes": {
+      "title": "Types of Experiences We Create",
+      "item1Title": "Gamified Training",
+      "item1Text": "Levels, challenges, points, goals and real-time feedback — maximizing engagement. We transform learning into an interactive and rewarding journey, where every achievement drives the learner to advance.",
+      "item2Title": "3D Virtual Classrooms",
+      "item2Text": "Complete environments with videos, text, animations, quizzes, avatars and custom paths. We create virtual spaces that replicate and surpass the in-person experience, offering resources impossible in the physical world.",
+      "item3Title": "Laboratories & Simulated Practice",
+      "item3Text": "Experiments, controlled scenarios, case studies and replicable procedures. We allow students to practice complex procedures in a safe environment, without risks or costs of physical equipment.",
+      "item4Title": "Operational Training",
+      "item4Text": "Realistic training for companies, technical schools and specialized sectors. We develop precise simulations of industrial processes, machinery operation and corporate protocols.",
+      "item5Title": "Multimedia Experiences",
+      "item5Text": "Content combining 3D animation, video, narration, interactions and storytelling. We integrate multiple media to create rich and engaging educational experiences that cater to different learning styles."
     },
     "advantages": {
-      "title": "Specific Advantages",
-      "item1Title": "Immersive and Dynamic Experiences:",
-      "item1Text": "Forget boring PDFs and PowerPoint presentations. Our 3D solutions make learning a visual and engaging adventure, facilitating content comprehension and memorization.",
-      "item2Title": "Virtual Tutors:",
-      "item2Text": "Integrate virtual tutors to guide students through personalized learning paths, offering real-time support and clarifications.",
-      "item3Title": "Flexibility and Adaptability:",
-      "item3Text": "Our solutions are designed to adapt to any type of training, from school courses to corporate training programs, ensuring effective and interactive learning.",
-      "item4Title": "Increased Engagement:",
-      "item4Text": "The interactivity of our 3D solutions increases student engagement, making learning more interesting and productive."
+      "title": "Why Our Solutions Work",
+      "item1Title": "Accelerated Learning",
+      "item1Text": "The brain learns up to 3x faster with interactive visual experiences.",
+      "item2Title": "Higher Engagement",
+      "item2Text": "Students participate, decide and interact — resulting in dramatically higher retention.",
+      "item3Title": "Fully Adaptable",
+      "item3Text": "We turn any subject into clear, structured, interactive content.",
+      "item4Title": "Cost Reduction",
+      "item4Text": "Less need for physical labs, travel or printed materials.",
+      "item5Title": "Scalable & Replicable",
+      "item5Text": "The same course can be used by thousands of students.",
+      "item6Title": "Measurable Results",
+      "item6Text": "Built-in evaluation, statistics, progress tracking and reports."
     },
     "technologies": {
       "title": "Technologies Used",
@@ -815,13 +860,13 @@
       "item4Text": "Compatibility with major e-learning platforms for easy integration and course management."
     },
     "projects": {
-      "title": "Examples of Completed Projects",
-      "item1Title": "School Education:",
-      "item1Text": "Implementation of 3D environments for teaching science, history, and geography, improving student comprehension and interest.",
-      "item2Title": "Corporate Training:",
-      "item2Text": "Creation of immersive training modules for companies, improving information retention and employee preparation.",
-      "item3Title": "University Programs:",
-      "item3Text": "Development of university courses using virtual reality for practical simulations and interactive case studies."
+      "title": "Example Projects",
+      "item1Title": "Interactive 3D Legal Course",
+      "item1Text": "Process simulations, virtual courtroom and digital tutors.",
+      "item2Title": "Industrial Technical Training",
+      "item2Text": "Machinery, tools and operational procedures with direct interaction.",
+      "item3Title": "Educational Paths for Schools",
+      "item3Text": "Gamified lessons, quizzes, dynamic environments and storytelling."
     },
     "testimonials": {
       "title": "Client Testimonials",
@@ -831,56 +876,131 @@
       "item2Text": "The 3D training significantly improved our employees' preparation. The interactive modules increased engagement and information retention."
     },
     "faq": {
-      "title": "FAQ (Frequently Asked Questions)",
-      "question1": "What are the technical requirements to implement 3D solutions?",
-      "answer1": "Requirements vary according to project complexity, but generally require VR/AR compatible devices and e-learning platforms.",
-      "question2": "How long does it take to develop a 3D training module?",
-      "answer2": "Development time depends on project complexity and specifications. Contact us for a personalized estimate.",
-      "question3": "Can 3D solutions be integrated with our learning management systems (LMS)?",
-      "answer3": "Yes, our solutions are designed to easily integrate with major learning management systems."
+      "title": "FAQ — Frequently Asked Questions",
+      "question1": "Does it work without VR goggles?",
+      "answer1": "Yes. Most courses are built for PC, with optional VR mode.",
+      "question2": "Can I use my own content?",
+      "answer2": "Yes. The course is entirely based on the material you provide.",
+      "question3": "Are quizzes included?",
+      "answer3": "Yes — with scores, statistics and automatic reporting.",
+      "question4": "Do you create complex courses (like legal training)?",
+      "answer4": "Yes. We have experience in highly technical fields.",
+      "question5": "How long does development take?",
+      "answer5": "Between 20 days and 3 months, depending on complexity."
     },
     "cta": {
-      "title": "Discover how our 3D solutions can revolutionize your education and training.",
-      "subtitle": "Contact us for more information and request a personalized quote.",
+      "title": "Want to turn an ordinary course into a modern, engaging and unforgettable learning experience?",
+      "subtitle": "Contact us today. We create 3D educational experiences that truly transform learning.",
       "button": "Contact Us"
     }
   },
   "gamesService": {
     "hero": {
       "mainTitle": "3D Game Development",
-      "title": "Bring your game ideas to life with our 3D game development solutions.",
-      "description": "Whether you're looking to create an indie game or support a major project, we offer cutting-edge expertise to create engaging, high-quality games."
+      "title": "We create interactive, immersive and optimized games, fully tailored to each project.",
+      "description": "UnicTava develops professional 3D games focused on visual quality, performance and user experience.",
+      "description2": "Our process blends creativity, technical expertise and optimization to deliver games that run smoothly, remain stable, captivate players and perfectly match client objectives.",
+      "description3": "We build complete games for:",
+      "bulletPoints": [
+        "companies",
+        "internal teams",
+        "gamified training",
+        "events",
+        "institutions",
+        "digital platforms",
+        "independent projects",
+        "interactive experiences"
+      ],
+      "description4": "From concept to final product, everything is developed in-house."
+    },
+    "whatItDoes": {
+      "title": "What We Develop",
+      "item1Title": "Custom 3D Games",
+      "item1Text": "Games built from scratch — educational, operational, interactive, narrative, competitive or corporate.",
+      "item2Title": "High-Quality Visual Games",
+      "item2Text": "3D models, environments, animations and effects created with artistic and technical care.",
+      "item3Title": "Optimized Games for Any Platform",
+      "item3Text": "Full focus on:",
+      "item3List": [
+        "stable FPS",
+        "strong performance",
+        "compatibility",
+        "fast loading times",
+        "optimized assets",
+        "smooth gameplay"
+      ],
+      "item4Title": "Multiplayer & Shared Experiences",
+      "item4Text": "Real-time multiplayer support with dedicated servers or replicated systems.",
+      "item5Title": "Games for Companies & Training",
+      "item5Text": "We transform corporate processes into interactive games with:",
+      "item5List": [
+        "gamification",
+        "challenges",
+        "goals",
+        "feedback",
+        "scoring",
+        "level progression"
+      ],
+      "item6Title": "Gamified Experiences",
+      "item6Text": "Games or minigames for events, workshops, presentations and educational platforms.",
+      "item7Title": "Collaboration with External Teams",
+      "item7Text": "We integrate our work with the client's designers, artists or developers when required."
     },
     "advantages": {
-      "title": "Specific Advantages",
-      "item1Title": "Engaging Experiences:",
-      "item1Text": "We create both multiplayer and single-player games, adapting to your project's needs to offer immersive and engaging gaming experiences.",
-      "item2Title": "Multiple Platforms:",
-      "item2Text": "We develop games for PC, Android, virtual reality, and other platforms, ensuring maximum flexibility and accessibility.",
-      "item3Title": "Complete Support:",
-      "item3Text": "We offer complete development support, from programming to art. Our team includes specialists in 3D graphics, character and environment design, ensuring an extremely high-quality final result.",
-      "item4Title": "Advanced Technologies:",
-      "item4Text": "We use the most advanced technologies to ensure each game is fluid, visually stunning, and highly interactive."
+      "title": "Development Process",
+      "item1Title": "Understanding the Goal",
+      "item1Text": "We analyze the client's needs and define the ideal game type.",
+      "item2Title": "Game Structure Creation",
+      "item2Text": "We develop:",
+      "item2List": [
+        "story & narrative",
+        "mechanic flowcharts",
+        "internal systems",
+        "core logic",
+        "gamification",
+        "UI/UX",
+        "mission or level structure"
+      ],
+      "item3Title": "3D Art & Modeling",
+      "item3Text": "All created internally:",
+      "item3List": [
+        "characters",
+        "environments",
+        "props",
+        "effects",
+        "animations",
+        "lighting"
+      ],
+      "item4Title": "Programming & Gameplay",
+      "item4Text": "Implementation of all interactions and game mechanics.",
+      "item5Title": "Advanced Optimization",
+      "item5Text": "Compilation, testing, refining and performance tuning.",
+      "item6Title": "Testing & Polishing",
+      "item6Text": "Fixes and refinements until the game is ready for release."
     },
     "technologies": {
-      "title": "Technologies Used",
-      "item1Title": "Advanced Game Engines:",
-      "item1Text": "We use game engines like Unreal Engine and Unity to develop high-quality games.",
-      "item2Title": "3D Graphics:",
-      "item2Text": "Cutting-edge 3D rendering technologies to create detailed and realistic environments and characters.",
-      "item3Title": "Artificial Intelligence:",
-      "item3Text": "Implementation of AI to create intelligent and reactive NPCs (non-playable characters).",
-      "item4Title": "Online Multiplayer:",
-      "item4Text": "Infrastructure to support online multiplayer games, including dedicated servers and matchmaking services."
+      "title": "Why Our Games Work Well",
+      "item1Title": "Performance First",
+      "item1Text": "Our projects are optimized and well-structured.",
+      "item2Title": "Professional Visual Quality",
+      "item2Text": "Art and design aligned with the game's purpose.",
+      "item3Title": "Full Control Over Development",
+      "item3Text": "Everything is done in-house for maximum consistency.",
+      "item4Title": "Total Flexibility",
+      "item4Text": "We create simple, mid-level or visually advanced games — depending on the goal.",
+      "item5Title": "Smart Collaboration",
+      "item5Text": "We can work independently or integrate with external teams."
     },
     "projects": {
-      "title": "Examples of Completed Projects",
-      "item1Title": "Indie Adventure Game:",
-      "item1Text": "Complete development of an indie game with an engaging storyline and detailed 3D graphics, available for PC and console.",
-      "item2Title": "Virtual Reality Game:",
-      "item2Text": "Creation of an immersive VR game that fully leverages virtual reality capabilities for a unique gaming experience.",
-      "item3Title": "Mobile Multiplayer Game:",
-      "item3Text": "Development of a mobile multiplayer game with matchmaking features and real-time competition."
+      "title": "Example Projects",
+      "item1Title": "Gamified Corporate Minigame",
+      "item1Text": "Designed for events and internal training with challenges, scoring and a modern interface.",
+      "item2Title": "Interactive Educational Game",
+      "item2Text": "Lessons transformed into playable stages with feedback and progression.",
+      "item3Title": "Collaborative Multiplayer",
+      "item3Text": "A team-based experience to practice communication, strategy and decision-making.",
+      "item4Title": "3D Narrative Game",
+      "item4Text": "An interactive story with characters, voice acting, animations and linear progression."
     },
     "testimonials": {
       "title": "Client Testimonials",
@@ -890,18 +1010,24 @@
       "item2Text": "Thanks to their expertise, we managed to create an immersive VR game that was hugely successful among players. The collaboration was fantastic from start to finish."
     },
     "faq": {
-      "title": "FAQ (Frequently Asked Questions)",
-      "question1": "How long does it take to develop a 3D game?",
-      "answer1": "Development time varies according to project complexity. It can range from a few months to a year or more for complex games.",
-      "question2": "What are the costs associated with developing a 3D game?",
-      "answer2": "Costs depend on project specifications, including gameplay complexity, level of graphic detail, and required features. Contact us for a detailed quote.",
-      "question3": "Can you support my game after launch?",
-      "answer3": "Yes, we offer post-launch support services, including updates, bug fixes, and ongoing improvements."
+      "title": "FAQ — Frequently Asked Questions",
+      "question1": "Do you develop complex games?",
+      "answer1": "Yes — from minigames to fully structured professional titles.",
+      "question2": "Do you build multiplayer games?",
+      "answer2": "Yes, with dedicated servers, private rooms and advanced replication.",
+      "question3": "Does the client need technical knowledge?",
+      "answer3": "No. We handle everything.",
+      "question4": "Do you deliver the final build?",
+      "answer4": "Yes, including initial support.",
+      "question5": "Do you create the artwork as well?",
+      "answer5": "Yes. All art is produced in-house.",
+      "question6": "Do you work with external teams?",
+      "answer6": "Yes, when needed."
     },
     "cta": {
-      "title": "Discover how our 3D Game Development solutions can turn your ideas into reality.",
-      "subtitle": "Contact us for more information and request a personalized quote.",
-      "button": "Contact Us"
+      "title": "Want to develop a 3D game for your company, project, event or platform?",
+      "subtitle": "We create interactive, beautiful and optimized games — from concept to final delivery.",
+      "button": "Contact Us Today"
     }
   },
   "vrarService": {

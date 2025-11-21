@@ -4,7 +4,7 @@ import { useState, type MouseEvent } from 'react'
 import { Navigation } from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import { PageTransition } from '@/components/PageTransition'
-import { useTranslations } from 'next-intl'
+import { useTranslations, useLocale } from 'next-intl'
 import { StardustCanvas } from '@/components/StardustCanvas'
 import {
   GamificationIcon,
@@ -24,6 +24,7 @@ import styles from './educacao3d.module.css'
 
 export default function EducacaoTreinamento3DPage() {
   const t = useTranslations('educationService')
+  const locale = useLocale()
   const [expandedFaq, setExpandedFaq] = useState<number | null>(null)
   const [expandedWhatItDoes, setExpandedWhatItDoes] = useState<number | null>(null)
   const [openModal, setOpenModal] = useState<number | null>(null)
@@ -84,6 +85,24 @@ export default function EducacaoTreinamento3DPage() {
             <p className={styles.heroDescription}>
               {t('hero.description')}
             </p>
+
+            <p className={styles.heroDescription}>
+              {t('hero.description2')}
+            </p>
+
+            <p className={styles.heroDescription}>
+              {t('hero.description3')}
+            </p>
+
+            <p className={styles.heroDescription}>
+              {t('hero.description4')}
+            </p>
+
+            <ul className={styles.heroBulletList}>
+              {(t.raw('hero.bulletPoints') as string[]).map((point, index) => (
+                <li key={index}>{point}</li>
+              ))}
+            </ul>
           </div>
 
           {/* Right Video Card */}
@@ -526,7 +545,44 @@ export default function EducacaoTreinamento3DPage() {
               </div>
             )}
           </div>
+
+          <div className={styles.faqItem}>
+            <div className={styles.faqQuestion} onClick={() => toggleFaq(3)}>
+              <span>{t('faq.question4')}</span>
+              <span className={styles.faqIcon}>{expandedFaq === 3 ? '−' : '+'}</span>
+            </div>
+            {expandedFaq === 3 && (
+              <div className={styles.faqAnswer}>
+                {t('faq.answer4')}
+              </div>
+            )}
+          </div>
+
+          <div className={styles.faqItem}>
+            <div className={styles.faqQuestion} onClick={() => toggleFaq(4)}>
+              <span>{t('faq.question5')}</span>
+              <span className={styles.faqIcon}>{expandedFaq === 4 ? '−' : '+'}</span>
+            </div>
+            {expandedFaq === 4 && (
+              <div className={styles.faqAnswer}>
+                {t('faq.answer5')}
+              </div>
+            )}
+          </div>
         </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className={styles.ctaSection}>
+        <div className={styles.ctaTitleWrapper}>
+          <div className={styles.titleContainer}>
+            <h2 className={styles.ctaTitle}>{t('cta.title')}</h2>
+          </div>
+        </div>
+        <p className={styles.ctaSubtitle}>{t('cta.subtitle')}</p>
+        <a href={`/${locale}/home#contact-form-section`} className={styles.ctaButton}>
+          {t('cta.button')}
+        </a>
       </section>
 
       <Footer />
