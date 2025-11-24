@@ -16,6 +16,11 @@ export const metadata: Metadata = {
   authors: [{ name: 'UnicTava' }],
   creator: 'UnicTava',
   publisher: 'UnicTava',
+  icons: {
+    icon: '/logoaba.webp',
+    shortcut: '/logoaba.webp',
+    apple: '/logoaba.webp',
+  },
   formatDetection: {
     email: false,
     address: false,

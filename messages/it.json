@@ -120,8 +120,8 @@
   "modals": {
     "ai": {
       "title": "Intelligenza",
-      "titleHighlight": "Artificiale 3D",
-      "description": "Rivoluziona le tue esperienze 3D con avatar intelligenti, formazione interattiva e servizio umanizzato.",
+      "titleHighlight": "Artificiale Personalizzata",
+      "description": "Soluzioni di IA su misura che rispondono, guidano, insegnano e automatizzano processi con massima precisione.",
       "feature1Title": "I Nostri Corsi di Formazione",
       "feature1Text": "Trasforma ogni sessione in un'esperienza coinvolgente e realistica con risposte immediate e personalizzate dai nostri avatar 3D. Aumenta l'interazione e l'apprendimento con la nostra tecnologia all'avanguardia.",
       "feature2Title": "Servizio Online",
@@ -134,7 +134,7 @@
     "games": {
       "title": "Sviluppo",
       "titleHighlight": "di Giochi 3D",
-      "description": "Dal concetto al lancio: sviluppiamo giochi 3D immersivi su più piattaforme.",
+      "description": "Produciamo giochi 3D completi — educativi, aziendali, multiplayer o gamificati — ottimizzati per ogni piattaforma.",
       "feature1Title": "I Nostri Corsi di Formazione",
       "feature1Text": "Trasforma ogni sessione in un'esperienza coinvolgente e realistica con risposte immediate e personalizzate dai nostri avatar 3D. Aumenta l'interazione e l'apprendimento con la nostra tecnologia all'avanguardia.",
       "feature2Title": "Servizio Online",
@@ -145,8 +145,8 @@
       "imageAlt": "Sviluppo di Giochi 3D"
     },
     "cinematics": {
-      "titleHighlight": "Cinematica 3D",
-      "description": "Prepara i tuoi team con esperienze realistiche e sicure attraverso ambienti simulati in 3D.",
+      "titleHighlight": "Simulacri & Dispositivi VR/AR",
+      "description": "Realizziamo repliche funzionali — armi, strumenti e apparecchiature tecniche — collegate al VR/AR per addestramenti professionali di alta precisione.",
       "feature1Title": "I Nostri Corsi di Formazione",
       "feature1Text": "Trasforma ogni sessione in un'esperienza coinvolgente e realistica con risposte immediate e personalizzate dai nostri avatar 3D. Aumenta l'interazione e l'apprendimento con la nostra tecnologia all'avanguardia.",
       "feature2Title": "Servizio Online",
@@ -157,9 +157,9 @@
       "imageAlt": "Cinematica 3D"
     },
     "education": {
-      "title": "Educazione e",
+      "title": "Educazione &",
       "titleHighlight": "Formazione 3D",
-      "description": "Trasforma l'insegnamento con esperienze di apprendimento immersive e tecnologiche.",
+      "description": "Trasformiamo qualsiasi contenuto in lezioni interattive, laboratori 3D ed esperienze formative ad alta ritenzione.",
       "feature1Title": "I Nostri Corsi di Formazione",
       "feature1Text": "Trasforma ogni sessione in un'esperienza coinvolgente e realistica con risposte immediate e personalizzate dai nostri avatar 3D. Aumenta l'interazione e l'apprendimento con la nostra tecnologia all'avanguardia.",
       "feature2Title": "Servizio Online",
@@ -171,8 +171,8 @@
     },
     "vr": {
       "title": "Realtà Virtuale",
-      "titleHighlight": "e Aumentata",
-      "description": "Crea esperienze immersive con realtà aumentata e virtuale per diversi contesti.",
+      "titleHighlight": "& Aumentata (VR/AR)",
+      "description": "Sviluppiamo applicazioni VR/AR per addestramenti, architettura, eventi, simulatori e formazione — standalone o PCVR.",
       "feature1Title": "I Nostri Corsi di Formazione",
       "feature1Text": "Trasforma ogni sessione in un'esperienza coinvolgente e realistica con risposte immediate e personalizzate dai nostri avatar 3D. Aumenta l'interazione e l'apprendimento con la nostra tecnologia all'avanguardia.",
       "feature2Title": "Servizio Online",
@@ -183,8 +183,8 @@
       "imageAlt": "Realtà Virtuale e Aumentata"
     },
     "simulation": {
-      "titleHighlight": "Simulazione 3D",
-      "description": "Prepara i tuoi team con esperienze realistiche e sicure attraverso ambienti simulati in 3D.",
+      "titleHighlight": "Simulazioni 3D Professionali",
+      "description": "Creiamo simulazioni realistiche per aziende, scuole e settori critici: operativi, tecnici, militari, corporativi e giudiziari.",
       "feature1Title": "I Nostri Corsi di Formazione",
       "feature1Text": "Trasforma ogni sessione in un'esperienza coinvolgente e realistica con risposte immediate e personalizzate dai nostri avatar 3D. Aumenta l'interazione e l'apprendimento con la nostra tecnologia all'avanguardia.",
       "feature2Title": "Servizio Online",
@@ -247,34 +247,34 @@
   "servicesPage": {
     "learnMore": "Scopri di Più",
     "ai": {
-      "mainTitle": "Intelligenza Artificiale 3D",
-      "heroTitle": "Scopri come le nostre soluzioni di intelligenza artificiale 3D possono trasformare il tuo business.",
-      "description": "Rivoluziona le tue esperienze con avatar 3D dotati di intelligenza artificiale. Che tu stia cercando di migliorare le simulazioni, potenziare la formazione o offrire assistenza online senza precedenti, i nostri avatar interagiscono in modo naturale, elevando l'efficacia e il coinvolgimento a nuovi livelli."
+      "mainTitle": "Intelligenza Artificiale Personalizzata",
+      "heroTitle": "Trasforma la conoscenza della tua azienda in un'IA intelligente, veloce e perfettamente addestrata per le tue esigenze.",
+      "description": "Sviluppiamo sistemi di IA professionali addestrati sui tuoi documenti e processi, capaci di rispondere, insegnare, assistere team e supportare la formazione con precisione. Soluzioni con o senza avatar 3D, in locale o in cloud, personalizzate per qualsiasi settore."
     },
     "cinematics": {
-      "mainTitle": "Cinematica 3D",
-      "heroTitle": "Dai vita alle tue storie con le nostre straordinarie Cinematiche 3D.",
-      "description": "Che si tratti di creare personaggi completamente digitali o di integrare riprese reali con ambienti ed effetti 3D, offriamo soluzioni cinematografiche all'avanguardia per ogni progetto."
+      "mainTitle": "Simulacri VR/AR e Dispositivi Intelligenti",
+      "heroTitle": "Dispositivi fisici realistici, completamente integrati con i tuoi training in VR/AR.",
+      "description": "Creiamo simulacri fisici — armi, strumenti e attrezzature tecniche — con sensori, grilletti, vibrazione e calibrazione precisa per ambienti VR/AR. Soluzioni complete hardware + software per addestramento professionale, sicurezza, industria e forze operative."
     },
     "simulation": {
-      "mainTitle": "Simulazione 3D",
-      "heroTitle": "Porta la tua formazione e valutazione a un nuovo livello con le nostre simulazioni 3D all'avanguardia.",
-      "description": "Progettate per industrie, centri di formazione e istituzioni, le nostre simulazioni offrono un ambiente sicuro e realistico per preparare i tuoi utenti al mondo reale."
+      "mainTitle": "Simulazione 3D Professionale",
+      "heroTitle": "Training realistici per qualsiasi settore — dall'ambiente aziendale al contesto militare e giudiziario.",
+      "description": "Sviluppiamo simulazioni 3D complete per formazione tecnica, educazione, sicurezza, processi operativi e analisi di scenari. Ambienti realistici che permettono di esercitare, valutare, ripetere e apprendere senza rischi."
     },
     "education": {
-      "mainTitle": "Educazione e Formazione 3D",
-      "heroTitle": "Trasforma l'educazione e la formazione con le nostre soluzioni 3D immersive.",
-      "description": "Che tu sia un'istituzione pubblica o privata, offriamo esperienze di apprendimento che catturano e mantengono l'attenzione degli studenti."
+      "mainTitle": "Educazione e Formazione in 3D",
+      "heroTitle": "Apprendimento accelerato attraverso esperienze interattive, gamificate e totalmente immersive.",
+      "description": "Trasformiamo contenuti educativi in lezioni 3D coinvolgenti — con laboratori virtuali, pratiche simulate, storytelling e gamification. Ideale per scuole, università, aziende e istituzioni che desiderano modernizzare la formazione."
     },
     "games": {
       "mainTitle": "Sviluppo di Giochi 3D",
-      "heroTitle": "Dai vita alle tue idee di gioco con le nostre soluzioni di sviluppo di giochi 3D.",
-      "description": "Che tu stia cercando di creare un gioco indie o di supportare un grande progetto, offriamo competenze all'avanguardia per creare giochi coinvolgenti e di alta qualità."
+      "heroTitle": "Giochi completi, ottimizzati e realizzati su misura per la tua idea o progetto.",
+      "description": "Creiamo giochi 3D professionali — educativi, aziendali, narrativi, multiplayer o gamificati. Dal concept al gameplay finale, consegniamo arte, meccaniche, animazioni e ottimizzazione con giocabilità fluida e qualità professionale."
     },
     "vrar": {
       "mainTitle": "Realtà Virtuale (VR) e Realtà Aumentata (AR)",
-      "heroTitle": "Porta l'innovazione nelle tue mani con le nostre soluzioni di realtà virtuale e aumentata.",
-      "description": "Offriamo esperienze immersive e miste per una vasta gamma di applicazioni, trasformando la tua visione in realtà."
+      "heroTitle": "Applicazioni immersive su misura per training, simulatori, educazione, eventi e architettura.",
+      "description": "Sviluppiamo soluzioni VR/AR compatibili con Meta Quest, Pico, Vive e PCVR. Creiamo esperienze standalone o ad alte prestazioni, tra cui simulatori, tour architettonici, giochi e training operativi completamente personalizzati."
     },
     "advantages": {
       "title": "Vantaggi Specifici",

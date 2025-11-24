@@ -119,9 +119,9 @@
   },
   "modals": {
     "ai": {
-      "title": "Artificial",
-      "titleHighlight": "Intelligence 3D",
-      "description": "Revolutionize your 3D experiences with intelligent avatars, interactive training, and humanized service.",
+      "title": "Custom",
+      "titleHighlight": "Artificial Intelligence",
+      "description": "Bespoke AI solutions that respond, guide, teach and automate internal processes with absolute precision.",
       "feature1Title": "Our Training Programs",
       "feature1Text": "Transform each session into an engaging and realistic experience with immediate and personalized responses from our 3D avatars. Increase interaction and learning with our cutting-edge technology.",
       "feature2Title": "Online Service",
@@ -134,7 +134,7 @@
     "games": {
       "title": "3D Game",
       "titleHighlight": "Development",
-      "description": "From concept to launch: we develop immersive 3D games across multiple platforms.",
+      "description": "We create complete 3D games — educational, corporate, multiplayer or gamified — optimized for any platform.",
       "feature1Title": "Our Training Programs",
       "feature1Text": "Transform each session into an engaging and realistic experience with immediate and personalized responses from our 3D avatars. Increase interaction and learning with our cutting-edge technology.",
       "feature2Title": "Online Service",
@@ -145,8 +145,8 @@
       "imageAlt": "3D Game Development"
     },
     "cinematics": {
-      "titleHighlight": "3D Cinematics",
-      "description": "Prepare your teams with realistic and safe experiences through 3D simulated environments.",
+      "titleHighlight": "VR/AR Simulators & Devices",
+      "description": "We build functional replicas — weapons, tools and technical equipment — connected to VR/AR for high-precision professional training.",
       "feature1Title": "Our Training Programs",
       "feature1Text": "Transform each session into an engaging and realistic experience with immediate and personalized responses from our 3D avatars. Increase interaction and learning with our cutting-edge technology.",
       "feature2Title": "Online Service",
@@ -158,8 +158,8 @@
     },
     "education": {
       "title": "3D Education",
-      "titleHighlight": "and Training",
-      "description": "Transform education with immersive and technological learning experiences.",
+      "titleHighlight": "& Training",
+      "description": "We transform any content into interactive lessons, 3D labs and educational experiences with high retention and engagement.",
       "feature1Title": "Our Training Programs",
       "feature1Text": "Transform each session into an engaging and realistic experience with immediate and personalized responses from our 3D avatars. Increase interaction and learning with our cutting-edge technology.",
       "feature2Title": "Online Service",
@@ -170,9 +170,9 @@
       "imageAlt": "3D Education and Training"
     },
     "vr": {
-      "title": "Virtual Reality",
-      "titleHighlight": "and Augmented",
-      "description": "Create immersive experiences with augmented and virtual reality for various contexts.",
+      "title": "Virtual",
+      "titleHighlight": "& Augmented Reality (VR/AR)",
+      "description": "We build VR/AR applications for training, architecture, events, simulators and education — standalone or PCVR.",
       "feature1Title": "Our Training Programs",
       "feature1Text": "Transform each session into an engaging and realistic experience with immediate and personalized responses from our 3D avatars. Increase interaction and learning with our cutting-edge technology.",
       "feature2Title": "Online Service",
@@ -183,8 +183,8 @@
       "imageAlt": "Virtual and Augmented Reality"
     },
     "simulation": {
-      "titleHighlight": "3D Simulation",
-      "description": "Prepare your teams with realistic and safe experiences through 3D simulated environments.",
+      "titleHighlight": "Professional 3D Simulations",
+      "description": "We develop realistic simulations for companies, schools and critical sectors — operational, technical, military, corporate and judicial.",
       "feature1Title": "Our Training Programs",
       "feature1Text": "Transform each session into an engaging and realistic experience with immediate and personalized responses from our 3D avatars. Increase interaction and learning with our cutting-edge technology.",
       "feature2Title": "Online Service",
@@ -247,34 +247,34 @@
   "servicesPage": {
     "learnMore": "Learn More",
     "ai": {
-      "mainTitle": "3D Artificial Intelligence",
-      "heroTitle": "Discover how our 3D artificial intelligence solutions can transform your business.",
-      "description": "Revolutionize your experiences with 3D avatars powered by artificial intelligence. Whether you're looking to enhance simulations, empower training, or offer unprecedented online assistance, our avatars interact naturally, elevating effectiveness and engagement to new levels."
+      "mainTitle": "Custom Artificial Intelligence",
+      "heroTitle": "Turn your company's knowledge into a smart, fast and fully tailored AI.",
+      "description": "We develop professional AI systems trained on your documents and processes—capable of answering, teaching, supporting teams and enhancing training with precision. Solutions available with or without 3D avatars, on local servers or cloud infrastructure."
     },
     "cinematics": {
-      "mainTitle": "3D Cinematics",
-      "heroTitle": "Bring your stories to life with our extraordinary 3D Cinematics.",
-      "description": "Whether creating fully digital characters or integrating real footage with 3D environments and effects, we offer cutting-edge cinematic solutions for every project."
+      "mainTitle": "VR/AR Simulators & Smart Devices",
+      "heroTitle": "Realistic physical devices fully integrated with your VR/AR training.",
+      "description": "We build physical simulators—firearms, tools and technical equipment—with sensors, triggers, haptics and precise calibration for VR/AR environments. Complete hardware + software solutions for professional training, security, industry and operational forces."
     },
     "simulation": {
-      "mainTitle": "3D Simulation",
-      "heroTitle": "Take your training and assessment to the next level with our cutting-edge 3D simulations.",
-      "description": "Designed for industries, training centers, and institutions, our simulations provide a safe and realistic environment to prepare your users for the real world."
+      "mainTitle": "Professional 3D Simulation",
+      "heroTitle": "Realistic training for any field—from corporate operations to military and judicial environments.",
+      "description": "We create full 3D simulations for technical training, education, safety, operational processes and scenario analysis. Realistic environments designed to train, assess, repeat and learn safely and effectively."
     },
     "education": {
-      "mainTitle": "3D Education and Training",
-      "heroTitle": "Transform education and training with our immersive 3D solutions.",
-      "description": "Whether you're a public or private institution, we offer learning experiences that capture and maintain students' attention."
+      "mainTitle": "3D Education & Training",
+      "heroTitle": "Accelerated learning through immersive, gamified and fully interactive experiences.",
+      "description": "We transform educational content into engaging 3D lessons—featuring virtual labs, simulated practice, storytelling and gamification. Ideal for schools, universities, companies and institutions seeking modern, impactful training."
     },
     "games": {
       "mainTitle": "3D Game Development",
-      "heroTitle": "Bring your game ideas to life with our 3D game development solutions.",
-      "description": "Whether you're looking to create an indie game or support a major project, we offer cutting-edge expertise to create engaging, high-quality games."
+      "heroTitle": "Complete, optimized and fully tailored 3D games for any idea or platform.",
+      "description": "We develop professional 3D games—educational, corporate, narrative, multiplayer or gamified. From concept to final gameplay, we deliver art, mechanics, animations, optimization and a smooth, high-quality experience."
     },
     "vrar": {
-      "mainTitle": "Virtual Reality (VR) and Augmented Reality (AR)",
-      "heroTitle": "Bring innovation to your hands with our virtual and augmented reality solutions.",
-      "description": "We offer immersive and mixed experiences for a wide range of applications, transforming your vision into reality."
+      "mainTitle": "Virtual Reality (VR) & Augmented Reality (AR)",
+      "heroTitle": "Immersive applications tailored for training, simulators, education, events and architectural visualization.",
+      "description": "We develop VR/AR solutions compatible with Meta Quest, Pico, Vive and PCVR. Custom-built standalone or high-performance experiences, including simulators, architectural tours, games and professional training applications."
     },
     "advantages": {
       "title": "Specific Advantages",

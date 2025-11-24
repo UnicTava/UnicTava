@@ -49,5 +49,5 @@ a
 Thumbs.db
 
 # Claude & Serena
-.claude/
-.serena/
+.claude
+.serena
