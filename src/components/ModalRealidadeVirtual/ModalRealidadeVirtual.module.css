@@ -13,7 +13,7 @@
 
 .modalContainer {
   display: flex;
-  min-height: auto;
+  min-height: 700px;
   background: linear-gradient(
     135deg,
     rgba(15, 15, 25, 0.95) 0%,
@@ -67,7 +67,7 @@
   flex: 1;
   padding: 60px 50px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   position: relative;
   overflow-y: auto;
 }
@@ -97,14 +97,32 @@
   font-weight: 400;
 }
 
+.subtitle {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.35;
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 28px;
+  letter-spacing: -0.01em;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  opacity: 0;
+  will-change: transform, opacity;
+  animation: slideInLeft 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.08s forwards;
+}
+
 .description {
-  font-size: 1.125rem;
-  line-height: 1.6;
-  color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 40px;
+  font-size: 1.3rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 70px;
+  margin-bottom: 0;
   font-weight: 300;
   word-wrap: break-word;
   overflow-wrap: break-word;
+  opacity: 0;
+  will-change: transform, opacity;
+  animation: slideInLeft 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.12s forwards;
 }
 
 .featuresGrid {

@@ -43,37 +43,16 @@ export const ModalRealidadeVirtual: React.FC<ModalRealidadeVirtualProps> = ({ is
         <div className={styles.leftSection}>
           <div className={styles.content}>
             <h1 className={styles.title}>
-              {t('title')}
-              <br />
               <span className={styles.highlight}>{t('titleHighlight')}</span>
             </h1>
+
+            <h2 className={styles.subtitle}>
+              {t('subtitle')}
+            </h2>
 
             <p className={styles.description}>
               {t('description')}
             </p>
-
-            <div className={styles.featuresGrid}>
-              <div className={styles.feature}>
-                <h3 className={styles.featureTitle}>{t('feature1Title')}</h3>
-                <p className={styles.featureText}>
-                  {t('feature1Text')}
-                </p>
-              </div>
-
-              <div className={styles.feature}>
-                <h3 className={styles.featureTitle}>{t('feature2Title')}</h3>
-                <p className={styles.featureText}>
-                  {t('feature2Text')}
-                </p>
-              </div>
-
-              <div className={styles.feature}>
-                <h3 className={styles.featureTitle}>{t('feature3Title')}</h3>
-                <p className={styles.featureText}>
-                  {t('feature3Text')}
-                </p>
-              </div>
-            </div>
           </div>
         </div>
 
