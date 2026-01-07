@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react'
 import { useRouter } from 'next/navigation'
-import { useTranslations } from 'next-intl'
+import { useTranslations, useLocale } from 'next-intl'
 import { InlineModal3D } from '@/components/InlineModal3D'
 import { Button } from '@/components/Button'
 import { CallMadeIcon } from '@/components/Button/icons'
@@ -17,6 +17,7 @@ interface ModalCinematica3DProps {
 export const ModalCinematica3D: React.FC<ModalCinematica3DProps> = ({ isOpen, onClose }) => {
   const t = useTranslations('modals.cinematics')
   const router = useRouter()
+  const locale = useLocale()
   const [isTransitioning, setIsTransitioning] = useState(false)
   const [isExpanding, setIsExpanding] = useState(false)
 
@@ -31,7 +32,7 @@ export const ModalCinematica3D: React.FC<ModalCinematica3DProps> = ({ isOpen, on
 
     // Navega após a animação completar
     setTimeout(() => {
-      router.push('/servicos/simulacros')
+      router.push(`/${locale}/servicos/simulacros`)
     }, 1400)
   }
 

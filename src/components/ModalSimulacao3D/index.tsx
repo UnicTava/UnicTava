@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react'
 import { useRouter } from 'next/navigation'
-import { useTranslations } from 'next-intl'
+import { useTranslations, useLocale } from 'next-intl'
 import { InlineModal3D } from '@/components/InlineModal3D'
 import { Button } from '@/components/Button'
 import { CallMadeIcon } from '@/components/Button/icons'
@@ -17,6 +17,7 @@ interface ModalSimulacao3DProps {
 export const ModalSimulacao3D: React.FC<ModalSimulacao3DProps> = ({ isOpen, onClose }) => {
   const t = useTranslations('modals.simulation')
   const router = useRouter()
+  const locale = useLocale()
   const [isTransitioning, setIsTransitioning] = useState(false)
   const [isExpanding, setIsExpanding] = useState(false)
 
@@ -31,7 +32,7 @@ export const ModalSimulacao3D: React.FC<ModalSimulacao3DProps> = ({ isOpen, onCl
 
     // Navega após a animação completar
     setTimeout(() => {
-      router.push('/servicos/simulacao-3d')
+      router.push(`/${locale}/servicos/simulacao-3d`)
     }, 1400)
   }
 

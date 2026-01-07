@@ -1666,6 +1666,50 @@
     padding: 70px 18px;
   }
 
+  .advantagesBentoGrid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    gap: 16px;
+  }
+
+  .cardLarge {
+    grid-column: span 2;
+  }
+
+  .advantageCard {
+    padding: 24px 28px;
+  }
+
+  .advantageTitle {
+    font-size: 17px;
+  }
+
+  .advantageText {
+    font-size: 15px;
+  }
+
+  .cardLarge .advantageTitle {
+    font-size: 19px;
+  }
+
+  .technologiesGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .techCard {
+    padding: 32px 20px;
+  }
+
+  .techCardIconWrapper {
+    width: 70px;
+    height: 70px;
+  }
+
+  .techCardTitle {
+    font-size: 16px;
+  }
+
   .tag {
     padding: 20px 28px;
     font-size: 18px;
@@ -1791,6 +1835,55 @@
     padding: 60px 16px;
   }
 
+  .advantagesBentoGrid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    gap: 14px;
+  }
+
+  .cardLarge {
+    grid-column: span 1;
+  }
+
+  .advantageCard {
+    padding: 20px 24px;
+    min-height: auto;
+  }
+
+  .advantageTitle {
+    font-size: 16px;
+  }
+
+  .advantageText {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .cardLarge .advantageTitle {
+    font-size: 17px;
+  }
+
+  .technologiesGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+
+  .techCard {
+    padding: 24px 16px;
+    gap: 14px;
+    border-radius: 18px;
+  }
+
+  .techCardIconWrapper {
+    width: 60px;
+    height: 60px;
+    border-radius: 16px;
+  }
+
+  .techCardTitle {
+    font-size: 14px;
+  }
+
   .tagsContainer {
     gap: 16px;
   }
@@ -1818,16 +1911,26 @@
   }
 
   .serviceCard {
-    padding: 36px;
-    gap: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 28px 24px;
+    gap: 20px;
+  }
+
+  .serviceCardIcon {
+    width: 64px;
+    height: 64px;
+    min-width: 64px;
+    border-radius: 14px;
   }
 
   .serviceCardTitle {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .serviceCardDescription {
     font-size: 14px;
+    max-width: 100%;
   }
 
   .faqSection {

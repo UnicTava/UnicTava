@@ -1488,16 +1488,26 @@
   }
 
   .serviceCard {
-    padding: 30px;
-    gap: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 28px 24px;
+    gap: 20px;
+  }
+
+  .serviceCardIcon {
+    width: 64px;
+    height: 64px;
+    min-width: 64px;
+    border-radius: 14px;
   }
 
   .serviceCardTitle {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .serviceCardDescription {
-    font-size: 15px;
+    font-size: 14px;
+    max-width: 100%;
   }
 
   .faqSection {

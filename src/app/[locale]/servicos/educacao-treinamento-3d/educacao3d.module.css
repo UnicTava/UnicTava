@@ -617,6 +617,8 @@
   border-radius: 24px;
   backdrop-filter: blur(22px);
   overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
   transition: transform 0.05s ease-out, box-shadow 0.45s ease, border-color 0.45s ease, background 0.45s ease;
   box-shadow: 0 36px 72px rgba(0, 0, 0, 0.38);
   --card-rotate-x: 0deg;
@@ -696,6 +698,8 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+  min-width: 0;
+  overflow: hidden;
 }
 
 .serviceCardIcon {
@@ -737,6 +741,8 @@
   color: #F5F7FF;
   text-shadow: 0 10px 28px rgba(0, 0, 0, 0.4);
   transition: color 0.4s ease;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .serviceCardDescription {
@@ -747,6 +753,8 @@
   color: rgba(229, 232, 255, 0.78);
   max-width: 560px;
   transition: color 0.4s ease;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .serviceCard:hover .serviceCardTitle,
@@ -1116,6 +1124,81 @@
   .ctaSubtitle {
     font-size: 20px;
   }
+
+  /* Advantages Bento Grid - Tablet */
+  .advantagesBentoGrid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    gap: 16px;
+  }
+
+  .cardLarge {
+    grid-column: span 2;
+  }
+
+  .advantageCard {
+    padding: 24px 28px;
+  }
+
+  .advantageTitle {
+    font-size: 17px;
+  }
+
+  .advantageText {
+    font-size: 15px;
+  }
+
+  .cardLarge .advantageTitle {
+    font-size: 19px;
+  }
+
+  /* Technologies Grid - Tablet */
+  .technologiesGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  /* Reset all specific column positions for tablet */
+  .technologiesGrid .techCard:nth-child(1),
+  .technologiesGrid .techCard:nth-child(2),
+  .technologiesGrid .techCard:nth-child(3),
+  .technologiesGrid .techCard:nth-child(4),
+  .technologiesGrid .techCard:nth-child(5),
+  .technologiesGrid .techCard:nth-child(6),
+  .technologiesGrid .techCard:nth-child(7),
+  .technologiesGrid .techCard:nth-child(8),
+  .technologiesGrid .techCard:nth-child(9) {
+    grid-column: auto;
+  }
+
+  .techCard {
+    padding: 32px 20px;
+  }
+
+  .techCardIconWrapper {
+    width: 70px;
+    height: 70px;
+  }
+
+  .techCardTitle {
+    font-size: 16px;
+  }
+
+  /* Reset advantages grid spans for tablet */
+  .advantagesBentoGrid .advantageCard:nth-child(1),
+  .advantagesBentoGrid .advantageCard:nth-child(2) {
+    grid-column: span 1;
+  }
+
+  .advantagesBentoGrid .advantageCard:nth-child(3),
+  .advantagesBentoGrid .advantageCard:nth-child(6) {
+    grid-column: span 2;
+  }
+
+  .advantagesBentoGrid .advantageCard:nth-child(4),
+  .advantagesBentoGrid .advantageCard:nth-child(5) {
+    grid-column: span 1;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1329,6 +1412,181 @@
     padding: 20px 40px;
     font-size: 20px;
   }
+
+  /* Advantages Bento Grid - Mobile */
+  .advantagesBentoGrid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    gap: 14px;
+  }
+
+  /* Reset all specific column spans for mobile */
+  .advantagesBentoGrid .advantageCard:nth-child(1),
+  .advantagesBentoGrid .advantageCard:nth-child(2),
+  .advantagesBentoGrid .advantageCard:nth-child(3),
+  .advantagesBentoGrid .advantageCard:nth-child(4),
+  .advantagesBentoGrid .advantageCard:nth-child(5),
+  .advantagesBentoGrid .advantageCard:nth-child(6) {
+    grid-column: span 1;
+  }
+
+  .cardLarge {
+    grid-column: span 1;
+  }
+
+  .advantageCard {
+    padding: 20px 24px;
+    min-height: auto;
+  }
+
+  .advantageTitle {
+    font-size: 16px;
+  }
+
+  .advantageText {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .cardLarge .advantageTitle {
+    font-size: 17px;
+  }
+
+  /* Technologies Grid - Mobile - 2 colunas verticais */
+  .technologiesGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  /* Reset all specific column positions for mobile */
+  .technologiesGrid .techCard:nth-child(1),
+  .technologiesGrid .techCard:nth-child(2),
+  .technologiesGrid .techCard:nth-child(3),
+  .technologiesGrid .techCard:nth-child(4),
+  .technologiesGrid .techCard:nth-child(5),
+  .technologiesGrid .techCard:nth-child(6),
+  .technologiesGrid .techCard:nth-child(7),
+  .technologiesGrid .techCard:nth-child(8),
+  .technologiesGrid .techCard:nth-child(9) {
+    grid-column: auto;
+  }
+
+  .techCard {
+    padding: 24px 16px;
+    gap: 14px;
+    border-radius: 16px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+  }
+
+  .techCardIconWrapper {
+    width: 56px;
+    height: 56px;
+    min-width: 56px;
+    border-radius: 14px;
+  }
+
+  .techCardTitle {
+    font-size: 14px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.3;
+  }
+
+  /* Service Cards - Mobile */
+  .serviceCard {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 28px 24px;
+    gap: 20px;
+  }
+
+  .serviceCardIcon {
+    width: 64px;
+    height: 64px;
+    min-width: 64px;
+    border-radius: 14px;
+  }
+
+  .serviceCardIcon svg {
+    width: 36px;
+    height: 36px;
+  }
+
+  .serviceCardTitle {
+    font-size: 22px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+
+  .serviceCardDescription {
+    font-size: 14px;
+    max-width: none;
+    width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .serviceCardContent {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Carousel/Modal - Mobile */
+  .carouselCardLeft,
+  .carouselCardRight {
+    display: none;
+  }
+
+  .carouselCards {
+    gap: 20px;
+  }
+
+  .carouselCard {
+    width: 100%;
+    max-width: 320px;
+    min-height: 180px;
+    padding: 28px 20px;
+  }
+
+  .modalContent {
+    width: calc(100vw - 24px);
+    max-width: 400px;
+    padding: 28px 24px;
+    max-height: 80vh;
+  }
+
+  .modalHeader {
+    gap: 16px;
+    margin-bottom: 24px;
+    padding-bottom: 20px;
+  }
+
+  .modalIconWrapper {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    border-radius: 16px;
+  }
+
+  .modalTitle {
+    font-size: 20px;
+  }
+
+  .modalBody {
+    font-size: 14px;
+  }
+
+  .carouselNavigation {
+    gap: 20px;
+  }
+
+  .carouselNavArrow {
+    font-size: 24px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1467,13 +1725,20 @@
   }
 
   .serviceCard {
-    padding: 28px;
+    padding: 24px 20px;
     gap: 16px;
     border-radius: 18px;
   }
 
+  .serviceCardIcon {
+    width: 56px;
+    height: 56px;
+    min-width: 56px;
+    border-radius: 12px;
+  }
+
   .serviceCardTitle {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .serviceCardDescription {
@@ -1523,6 +1788,105 @@
 
   .ctaButton {
     padding: 18px 36px;
+    font-size: 18px;
+  }
+
+  /* Advantages Bento Grid - 480px */
+  .advantagesBentoGrid {
+    gap: 12px;
+  }
+
+  .advantageCard {
+    padding: 18px 20px;
+  }
+
+  .advantageTitle {
+    font-size: 15px;
+  }
+
+  .advantageText {
+    font-size: 13px;
+  }
+
+  /* Technologies Grid - 480px - 2 colunas verticais */
+  .technologiesGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .techCard {
+    padding: 20px 12px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .techCardIconWrapper {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    border-radius: 12px;
+  }
+
+  .techCardTitle {
+    font-size: 13px;
+    line-height: 1.3;
+  }
+
+  /* Carousel/Modal - 480px */
+  .carouselOverlay {
+    padding: 20px 12px;
+  }
+
+  .carouselCard {
+    max-width: 280px;
+    padding: 24px 18px;
+    min-height: 160px;
+  }
+
+  .carouselCardIconWrapper {
+    width: 60px;
+    height: 60px;
+  }
+
+  .carouselCardTitle {
+    font-size: 16px;
+  }
+
+  .modalContent {
+    width: calc(100vw - 16px);
+    max-width: 350px;
+    padding: 24px 20px;
+  }
+
+  .modalHeader {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .modalIconWrapper {
+    width: 56px;
+    height: 56px;
+    min-width: 56px;
+  }
+
+  .modalTitle {
+    font-size: 18px;
+  }
+
+  .modalBody {
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .modalCloseButton {
+    top: 12px;
+    right: 12px;
+    width: 28px;
+    height: 28px;
     font-size: 18px;
   }
 }
@@ -1660,13 +2024,20 @@
   }
 
   .serviceCard {
-    padding: 24px;
+    padding: 20px 18px;
     gap: 14px;
     border-radius: 16px;
   }
 
+  .serviceCardIcon {
+    width: 52px;
+    height: 52px;
+    min-width: 52px;
+    border-radius: 12px;
+  }
+
   .serviceCardTitle {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .serviceCardDescription {
@@ -1718,6 +2089,114 @@
   .ctaButton {
     padding: 16px 32px;
     font-size: 17px;
+  }
+
+  /* Advantages Bento Grid - 375px */
+  .advantagesBentoGrid {
+    gap: 10px;
+  }
+
+  .advantageCard {
+    padding: 16px 18px;
+  }
+
+  .advantageTitle {
+    font-size: 14px;
+  }
+
+  .advantageText {
+    font-size: 12px;
+  }
+
+  /* Technologies Grid - 375px - 2 colunas verticais */
+  .technologiesGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .techCard {
+    padding: 18px 10px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .techCardIconWrapper {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    border-radius: 10px;
+  }
+
+  .techCardTitle {
+    font-size: 12px;
+    line-height: 1.3;
+  }
+
+  /* Carousel/Modal - 375px */
+  .carouselOverlay {
+    padding: 16px 10px;
+  }
+
+  .carouselCard {
+    max-width: 260px;
+    padding: 20px 16px;
+    min-height: 140px;
+  }
+
+  .carouselCardIconWrapper {
+    width: 50px;
+    height: 50px;
+  }
+
+  .carouselCardTitle {
+    font-size: 14px;
+  }
+
+  .modalContent {
+    width: calc(100vw - 12px);
+    max-width: 320px;
+    padding: 20px 16px;
+    border-radius: 20px;
+  }
+
+  .modalHeader {
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+  }
+
+  .modalIconWrapper {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    border-radius: 14px;
+  }
+
+  .modalTitle {
+    font-size: 16px;
+  }
+
+  .modalBody {
+    font-size: 12px;
+  }
+
+  .carouselNavigation {
+    gap: 16px;
+  }
+
+  .carouselNavArrow {
+    font-size: 20px;
+  }
+
+  .carouselNavDot {
+    width: 6px;
+    height: 6px;
+  }
+
+  .carouselNavDotActive {
+    width: 24px;
   }
 }
 
@@ -1862,7 +2341,7 @@
   }
 
   .serviceCard {
-    padding: 20px;
+    padding: 18px 16px;
     gap: 12px;
     border-radius: 14px;
   }
@@ -1871,8 +2350,15 @@
     inset: 1px;
   }
 
+  .serviceCardIcon {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    border-radius: 10px;
+  }
+
   .serviceCardTitle {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .serviceCardDescription {
@@ -1925,6 +2411,125 @@
     padding: 14px 28px;
     font-size: 16px;
     border-radius: 50px;
+  }
+
+  /* Advantages Bento Grid - 320px */
+  .advantagesBentoGrid {
+    gap: 8px;
+  }
+
+  .advantageCard {
+    padding: 14px 16px;
+  }
+
+  .advantageTitle {
+    font-size: 13px;
+  }
+
+  .advantageText {
+    font-size: 11px;
+  }
+
+  /* Technologies Grid - 320px - 2 colunas verticais */
+  .technologiesGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  .techCard {
+    padding: 14px 8px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+    border-radius: 14px;
+  }
+
+  .techCardIconWrapper {
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+    border-radius: 10px;
+  }
+
+  .techCardTitle {
+    font-size: 11px;
+    line-height: 1.3;
+  }
+
+  /* Carousel/Modal - 320px */
+  .carouselOverlay {
+    padding: 12px 8px;
+  }
+
+  .carouselCard {
+    max-width: 240px;
+    padding: 18px 14px;
+    min-height: 120px;
+    border-radius: 16px;
+  }
+
+  .carouselCardIconWrapper {
+    width: 44px;
+    height: 44px;
+  }
+
+  .carouselCardTitle {
+    font-size: 13px;
+  }
+
+  .modalContent {
+    width: calc(100vw - 8px);
+    max-width: 300px;
+    padding: 18px 14px;
+    border-radius: 16px;
+  }
+
+  .modalHeader {
+    gap: 8px;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+  }
+
+  .modalIconWrapper {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    border-radius: 12px;
+  }
+
+  .modalTitle {
+    font-size: 14px;
+  }
+
+  .modalBody {
+    font-size: 11px;
+  }
+
+  .modalCloseButton {
+    top: 10px;
+    right: 10px;
+    width: 24px;
+    height: 24px;
+    font-size: 16px;
+    border-radius: 8px;
+  }
+
+  .carouselNavigation {
+    gap: 12px;
+  }
+
+  .carouselNavArrow {
+    font-size: 18px;
+  }
+
+  .carouselNavDot {
+    width: 5px;
+    height: 5px;
+  }
+
+  .carouselNavDotActive {
+    width: 20px;
   }
 }
 
@@ -2592,5 +3197,166 @@
   100% {
     width: 32px;
     box-shadow: 0 0 20px rgba(150, 146, 230, 0.7);
+  }
+}
+/* ========================================
+   TECHNOLOGIES GRID - RESPONSIVE OVERRIDES
+   ======================================== */
+
+@media (max-width: 1024px) {
+  .technologiesGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .technologiesGrid .techCard:nth-child(1),
+  .technologiesGrid .techCard:nth-child(2),
+  .technologiesGrid .techCard:nth-child(3),
+  .technologiesGrid .techCard:nth-child(4),
+  .technologiesGrid .techCard:nth-child(5),
+  .technologiesGrid .techCard:nth-child(6),
+  .technologiesGrid .techCard:nth-child(7),
+  .technologiesGrid .techCard:nth-child(8),
+  .technologiesGrid .techCard:nth-child(9) {
+    grid-column: auto;
+  }
+
+  .techCard {
+    padding: 32px 20px;
+  }
+
+  .techCardIconWrapper {
+    width: 70px;
+    height: 70px;
+  }
+
+  .techCardTitle {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .technologiesGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .technologiesGrid .techCard:nth-child(1),
+  .technologiesGrid .techCard:nth-child(2),
+  .technologiesGrid .techCard:nth-child(3),
+  .technologiesGrid .techCard:nth-child(4),
+  .technologiesGrid .techCard:nth-child(5),
+  .technologiesGrid .techCard:nth-child(6),
+  .technologiesGrid .techCard:nth-child(7),
+  .technologiesGrid .techCard:nth-child(8),
+  .technologiesGrid .techCard:nth-child(9) {
+    grid-column: auto;
+  }
+
+  .techCard {
+    padding: 24px 16px;
+    gap: 14px;
+    border-radius: 16px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+  }
+
+  .techCardIconWrapper {
+    width: 56px;
+    height: 56px;
+    min-width: 56px;
+    border-radius: 14px;
+  }
+
+  .techCardTitle {
+    font-size: 14px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.3;
+  }
+}
+
+@media (max-width: 480px) {
+  .technologiesGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .techCard {
+    padding: 20px 12px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .techCardIconWrapper {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    border-radius: 12px;
+  }
+
+  .techCardTitle {
+    font-size: 13px;
+    line-height: 1.3;
+  }
+}
+
+@media (max-width: 375px) {
+  .technologiesGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .techCard {
+    padding: 18px 10px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .techCardIconWrapper {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    border-radius: 10px;
+  }
+
+  .techCardTitle {
+    font-size: 12px;
+    line-height: 1.3;
+  }
+}
+
+@media (max-width: 320px) {
+  .technologiesGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  .techCard {
+    padding: 14px 8px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+    border-radius: 14px;
+  }
+
+  .techCardIconWrapper {
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+    border-radius: 10px;
+  }
+
+  .techCardTitle {
+    font-size: 11px;
+    line-height: 1.3;
   }
 }
